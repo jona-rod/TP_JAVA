@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Staff {
+public class Staff extends Persona{
 }

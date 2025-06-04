@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Acceso {
+public class Acceso{
 }

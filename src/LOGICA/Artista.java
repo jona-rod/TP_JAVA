@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Artista {
+public class Artista extends Persona{
 }

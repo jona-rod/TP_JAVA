@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Evento {
+public class Evento{
 }

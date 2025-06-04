@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Comun {
+public class Comun extends Zona {
 }

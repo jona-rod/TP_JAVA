@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Gedtion {
+public class Gestion {
 }

@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Restringida {
+public class Restringida extends Zona {
 }

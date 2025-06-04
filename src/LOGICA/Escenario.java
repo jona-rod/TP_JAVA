@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Escenario {
+public class Escenario extends Zona{
 }

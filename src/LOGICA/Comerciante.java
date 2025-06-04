@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Comerciante {
+public class Comerciante extends Persona {
 }

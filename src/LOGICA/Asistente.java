@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Asistente {
+public class Asistente extends Persona {
 }

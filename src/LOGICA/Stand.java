@@ -1,4 +1,4 @@
 package LOGICA;
 
-public class Stand {
+public class Stand extends Zona{
 }
