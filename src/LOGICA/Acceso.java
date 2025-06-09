@@ -1,13 +1,13 @@
 package LOGICA;
 
 public class Acceso{
-    String zona;
+    Zona zona;
     String fecha;
     String hora;
     int cantidadMinutosPermanencia;
     boolean estado;
 
-    public Acceso(String zona, String fecha, String hora, int cantidadMinutosPermanencia, boolean estado) {
+    public Acceso(Zona zona, String fecha, String hora, int cantidadMinutosPermanencia, boolean estado) {
         this.zona = zona;
         this.fecha = fecha;
         this.hora = hora;
@@ -15,12 +15,12 @@ public class Acceso{
         this.estado = estado;
     }
 
-    public String getZona() {
-        return zona;
-    }
 
     public String getFecha() {
         return fecha;
+    }
+    public void setEstado(boolean estado){
+        this.estado=estado;
     }
 
     public String getHora() {

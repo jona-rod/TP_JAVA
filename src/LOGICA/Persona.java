@@ -1,12 +1,14 @@
 package LOGICA;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.TreeMap;
 
 public abstract class Persona {
         String id;
         String nombre;
         ArrayList<Acceso> accesos;
-        ArrayList<String> zonasAutorizadas;
+        ArrayList<Zona> zonasAutorizadas;
 
     public Persona(String id, String nombre) {
         this.id = id;
@@ -33,19 +35,21 @@ public abstract class Persona {
         return accesos;
     }
 
-    public ArrayList<String> getZonasAutorizadas() {
+    public ArrayList<Zona> getZonasAutorizadas() {
         return zonasAutorizadas;
     }
 
-    public void cargaAcceso(String zona, String fecha, String hora, int cantidadMinutosPermanencia, boolean estado) {
-        accesos.add(new Acceso(zona,fecha,hora,cantidadMinutosPermanencia,estado));
+    public void cargaAcceso(Zona zona, String fecha, String hora, int cantidadMinutosPermanencia) {
+       Acceso ac=new Acceso(zona,fecha,hora,cantidadMinutosPermanencia,false);
+       if ( zona instanceof  Comun ){
+           ac.setEstado(true);
+           accesos.add(ac);
+       }
     }
 
-    public void cargaZonaAutorizada(String zona) {
-        zonasAutorizadas.add(zona);
-    }
+    public void cargaZonaAutorizada(Zona zona) {zonasAutorizadas.add(zona);}
 
-    public boolean habilitado(String zonaAVerificar){} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
+    public boolean habilitado(String zonaAVerificar){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
 
 
 }
