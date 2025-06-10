@@ -1,4 +1,4 @@
-package LOGICA;
+package LOGICA.ZONAS;
 
 public class Restringida extends Zona {
 

@@ -1,8 +1,9 @@
-package LOGICA;
+package LOGICA.PERSONAS;
+
+import LOGICA.ZONAS.Comun;
+import LOGICA.ZONAS.Zona;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.TreeMap;
 
 public abstract class Persona {
         String id;
@@ -41,7 +42,7 @@ public abstract class Persona {
 
     public void cargaAcceso(Zona zona, String fecha, String hora, int cantidadMinutosPermanencia) {
        Acceso ac=new Acceso(zona,fecha,hora,cantidadMinutosPermanencia,false);
-       if ( zona instanceof  Comun ){
+       if ( zona instanceof Comun){
            ac.setEstado(true);
            accesos.add(ac);
        }

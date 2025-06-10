@@ -1,4 +1,4 @@
-package LOGICA;
+package LOGICA.ZONAS;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

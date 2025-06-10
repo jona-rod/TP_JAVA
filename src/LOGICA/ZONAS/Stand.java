@@ -1,6 +1,6 @@
-package LOGICA;
+package LOGICA.ZONAS;
 
-public class Stand extends Restringida{
+public class Stand extends Restringida {
     String id;
     String ubicacion;
     String comerciante;

@@ -1,7 +1,8 @@
-package LOGICA;
+package LOGICA.ZONAS;
+
 import java.util.ArrayList;
 import java.util.List;
-public class Escenario extends Zona{
+public class Escenario extends Zona {
 
     int cantidadPersonas;
     List<Evento> eventos;

@@ -1,4 +1,4 @@
-package LOGICA;
+package LOGICA.ZONAS;
 
 public abstract class Zona {
 

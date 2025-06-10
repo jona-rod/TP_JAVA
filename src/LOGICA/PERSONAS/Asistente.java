@@ -1,4 +1,4 @@
-package LOGICA;
+package LOGICA.PERSONAS;
 
 public class Asistente extends Persona {
 

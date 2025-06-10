@@ -1,4 +1,6 @@
-package LOGICA;
+package LOGICA.PERSONAS;
+
+import LOGICA.ZONAS.Zona;
 
 public class Acceso{
     Zona zona;

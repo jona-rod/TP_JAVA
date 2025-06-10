@@ -1,4 +1,4 @@
-package LOGICA;
+package LOGICA.REPORTES;
 
 public class Reportes{
 }
