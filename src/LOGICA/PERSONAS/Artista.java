@@ -9,6 +9,6 @@ public class Artista extends Persona {
         super(identificador, nom);
     }
     public void agregaEvento(){
-            
+
     }
 }

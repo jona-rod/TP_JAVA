@@ -26,4 +26,9 @@ public abstract class Zona {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    public void muestra(){
+        System.out.println(codigo);
+        System.out.println(descripcion);
+    }
 }

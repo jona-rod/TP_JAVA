@@ -2,6 +2,8 @@ package LOGICA.PERSONAS;
 
 import LOGICA.ZONAS.Zona;
 
+import LOGICA.ZONAS.Zona;
+
 public class Acceso{
     Zona zona;
     String fecha;

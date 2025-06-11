@@ -1,5 +1,6 @@
 package LOGICA.PERSONAS;
 
+import LOGICA.PERSONAS.Acceso;
 import LOGICA.ZONAS.Comun;
 import LOGICA.ZONAS.Zona;
 
@@ -32,6 +33,12 @@ public abstract class Persona {
         this.nombre = nombre;
     }
 
+    public void muestraDatos(){
+        System.out.println(id);
+        System.out.println(nombre);
+        muestraAccesos();
+    }
+
     public ArrayList<Acceso> getAccesos() {
         return accesos;
     }
@@ -52,5 +59,10 @@ public abstract class Persona {
 
     public boolean habilitado(String zonaAVerificar){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
 
+    public void muestraAccesos(){
+        zonasAutorizadas.forEach(zona->{
+            zona.muestra();
+        });
+    }
 
 }
