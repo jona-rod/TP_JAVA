@@ -17,4 +17,6 @@ public class Restringida extends Zona {
     public void setCantidadPersonas(int cantidadPersonas) {
         this.cantidadPersonas = cantidadPersonas;
     }
+    @Override
+    public char tipoZona(){return 'R';}
 }

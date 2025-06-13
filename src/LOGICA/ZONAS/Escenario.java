@@ -34,4 +34,6 @@ public class Escenario extends Zona {
     public String toString() {
         return "Escenario [" + codigo + "] " + descripcion + " (Capacidad: " + capacidadMaxima + ")";
     }
+    @Override
+    public char tipoZona(){return 'E';}
 }
