@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 public class Escenario extends Zona {
 
-    int cantidadPersonas;
     List<Evento> eventos;
     static final int capacidadMaxima = 1000;
 

@@ -20,6 +20,10 @@ public abstract class Zona {
         return codigo;
     }
 
+    public TreeMap<String, Persona> getConjuntoPersona() {
+        return conjuntoPersona;
+    }
+
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
@@ -39,6 +43,8 @@ public abstract class Zona {
         System.out.println(descripcion);
     }
 
+
+/*
     public void agregaPersona(String idPersona, Persona per, boolean confirmacion) {
         if (tipoZona() == 'R') {
             if (conjuntoPersona.size() < Escenario.capacidadMaxima) {
@@ -51,6 +57,20 @@ public abstract class Zona {
                 conjuntoPersona.put(idPersona, per);
             }
         }
+    }
+*/
+
+    //vuelvo a definir el metodo y la validacion la hacemos en clase gestion (capacidad maxima y restriccion de la persona)
+
+    public void agregaPersona(Persona per){
+        conjuntoPersona.put(per.getId(), per);
+    }
+
+
+    // agrego metodo que devuelve confirmacion de agregar persona
+
+    public boolean confirmacionAgregaPersona(String idPersona) {
+        return conjuntoPersona.containsKey(idPersona);
     }
 
     public void eliminaPersona(String idPersona) {

@@ -4,13 +4,15 @@ import LOGICA.PERSONAS.Acceso;
 import LOGICA.ZONAS.Comun;
 import LOGICA.ZONAS.Zona;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public abstract class Persona {
         String id;
         String nombre;
-        ArrayList<Acceso> accesos;
+        ArrayList<Acceso> listaAccesos;
         ArrayList<Zona> zonasAutorizadas;
+        String idZonaActual;
 
     public Persona(String id, String nombre) {
         this.id = id;
@@ -47,17 +49,15 @@ public abstract class Persona {
         return zonasAutorizadas;
     }
 
-    public void cargaAcceso(Zona zona, String fecha, String hora, int cantidadMinutosPermanencia) {
-       Acceso ac=new Acceso(zona,fecha,hora,cantidadMinutosPermanencia,false);
-       if ( zona instanceof Comun){
-           ac.setEstado(true);
-           accesos.add(ac);
-       }
+    public void cargaAcceso(Acceso ac) {
+        listaAccesos.add(ac);
     }
+
+    public abstract char tipoPersona();
 
     public void cargaZonaAutorizada(Zona zona) {zonasAutorizadas.add(zona);}
 
-    public boolean habilitado(String zonaAVerificar){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
+    public boolean habilitado(Zona zona){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
 
     public void muestraAccesos(){
         zonasAutorizadas.forEach(zona->{
@@ -65,4 +65,10 @@ public abstract class Persona {
         });
     }
 
+    public String getIdZonaActual() {
+        return idZonaActual;
+    }
+    public void setIdZonaActual(String idZonaActual) {
+        this.idZonaActual = idZonaActual;
+    }
 }

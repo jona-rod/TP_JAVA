@@ -6,3 +6,8 @@ public class Asistente extends Persona {
         super(id, nombre);
     }
 }
+
+@Override
+public char tipoPersona() {
+    return 'S';
+}

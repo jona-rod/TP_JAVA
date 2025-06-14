@@ -13,7 +13,7 @@ public class Restringida extends Zona {
     public int getCantidadPersonas() {
         return cantidadPersonas;
     }
-
+    public int getCapacidadMaxima() {return capacidadMaxima;}
     public void setCantidadPersonas(int cantidadPersonas) {
         this.cantidadPersonas = cantidadPersonas;
     }

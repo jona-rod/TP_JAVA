@@ -8,4 +8,9 @@ public class Comerciante extends Persona {
             super(identificador,nombre);
             this.suStand = suStand;
         }
+
+    @Override
+    public char tipoPersona() {
+        return 'C';
+    }
 }
