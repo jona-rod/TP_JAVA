@@ -9,18 +9,8 @@ public class Escenario extends Zona {
 
     public Escenario(String codigo, String descripcion) {
         super(codigo, descripcion);
-        this.cantidadPersonas = capacidadMaxima;
         this.eventos = new ArrayList<>();
     }
-
-    public int getCantidadPersonas() {
-        return cantidadPersonas;
-    }
-
-    public void setCantidadPersonas(int cantidadPersonas) {
-        this.cantidadPersonas = cantidadPersonas;
-    }
-
 
     public void agregarEvento(Evento evento) {
         eventos.add(evento);

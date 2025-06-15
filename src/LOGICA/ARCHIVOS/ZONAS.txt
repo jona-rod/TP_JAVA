@@ -1,0 +1,32 @@
+C;CO01;Plaza Central
+C;CO02;Patio de comidas
+C;CO03;Zona de descanso
+C;CO04;Zona de compras
+S;ST01;
+
+
+E;[ES01];Rock
+E;[ES02];Hip-Hop
+E;[ES03];Pop
+E;[ES04];Folcklore
+E;[ES05];Reggae
+E;[ES06];Electrónica
+E;[ES07];Jazz
+E;[ES08];Indie
+E;[ES09];Metal
+E;[ES10];Alternativo
+R;[RE01];Camarines
+R;[RE02];Backstage Rock
+R;[RE03];Backstage HipHop
+R;[RE04];Backstage Pop
+R;[RE05];Backstage Folk
+R;[RE06];Backstage Reggae
+R;[RE07];Técnica
+R;[RE08];Depósito
+R;[RE09];Organización
+R;[RE10];Prensa
+R;[RE11];Seguridad
+R;[RE12];Cocina staff
+R;[RE13];Almacén
+R;[RE14];Parking artistas
+R;[RE15];Reuniones
