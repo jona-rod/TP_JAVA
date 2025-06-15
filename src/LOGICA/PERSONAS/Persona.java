@@ -12,7 +12,7 @@ public abstract class Persona {
         String nombre;
         ArrayList<Acceso> listaAccesos;
         ArrayList<Zona> zonasAutorizadas;
-        String idZonaActual;
+//        String idZonaActual;  lo reemplazo por metodo devuelve zona actual
 
     public Persona(String id, String nombre) {
         this.id = id;
@@ -35,12 +35,6 @@ public abstract class Persona {
         this.nombre = nombre;
     }
 
-    public void muestraDatos(){
-        System.out.println(id);
-        System.out.println(nombre);
-        muestraAccesos();
-    }
-
     public ArrayList<Acceso> getAccesos() {
         return accesos;
     }
@@ -49,15 +43,34 @@ public abstract class Persona {
         return zonasAutorizadas;
     }
 
+
+
+    public void muestraDatos(){         //no es necesario, redefinir toString()
+        System.out.println(id);
+        System.out.println(nombre);
+        muestraAccesos();
+    }
+
+
+
     public void cargaAcceso(Acceso ac) {
         listaAccesos.add(ac);
     }
 
-    public abstract char tipoPersona();
-
     public void cargaZonaAutorizada(Zona zona) {zonasAutorizadas.add(zona);}
 
+
+    public abstract char tipoPersona();
+
     public boolean habilitado(Zona zona){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
+
+    public String zonaActual(){
+        for(Acceso acceso : listaAccesos){
+            if(acceso.getEstado()){
+                return acceso.getZona().getCodigo();
+            }
+        }
+    }
 
     public void muestraAccesos(){
         zonasAutorizadas.forEach(zona->{
@@ -65,10 +78,9 @@ public abstract class Persona {
         });
     }
 
-    public String getIdZonaActual() {
-        return idZonaActual;
-    }
-    public void setIdZonaActual(String idZonaActual) {
-        this.idZonaActual = idZonaActual;
-    }
+
+
+// no hacen falta, zona actual se obtiene a partir de ultimo acceso habilitado
+//    public String getIdZonaActual() {return idZonaActual;}
+//    public void setIdZonaActual(String idZonaActual) {this.idZonaActual = idZonaActual;}
 }

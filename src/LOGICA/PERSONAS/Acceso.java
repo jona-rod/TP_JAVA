@@ -20,7 +20,8 @@ public class Acceso{
     }
 
 
-
+    public boolean getEstado() { return estado; }
+    public Zona getZona() { return zona; }
     public LocalDate getFecha() {
         return fechaHora;
     }

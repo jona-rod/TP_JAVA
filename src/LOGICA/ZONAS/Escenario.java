@@ -35,4 +35,9 @@ public class Escenario extends Zona {
     }
     @Override
     public char tipoZona(){return 'E';}
+
+    @Override
+    public boolean zonaLlena(){
+        return !(conjuntoPersona.size() < capacidadMaxima);
+    }
 }

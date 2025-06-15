@@ -19,4 +19,9 @@ public class Restringida extends Zona {
     }
     @Override
     public char tipoZona(){return 'R';}
+
+    @Override
+    public boolean zonaLlena(){
+        return !(conjuntoPersona.size() < capacidadMaxima);
+    }
 }

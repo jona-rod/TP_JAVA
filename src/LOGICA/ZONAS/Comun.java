@@ -19,4 +19,7 @@ public class Comun extends Zona {
     public int getCapacidadMax() {return capacidadMax;}
     @Override
     public char tipoZona(){return 'C';}
+
+    @Override
+    public boolean zonaLlena(){return false;}
 }

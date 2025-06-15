@@ -2,6 +2,7 @@ package LOGICA.GESTION;
 
 import LOGICA.PERSONAS.Acceso;
 import LOGICA.PERSONAS.Persona;
+import LOGICA.REPORTES.ReporteAcceso;
 import LOGICA.ZONAS.Restringida;
 import LOGICA.ZONAS.Stand;
 import LOGICA.ZONAS.Zona;
@@ -20,6 +21,7 @@ public class Gestion {
     ArrayList<Zona> listadoZonas;   //lista auxiliar para generar listado ordenado de zonas
 
     ArrayList<Stand> listadoStands; //lista auxiliar para generar listado ordenado de stands
+    ReporteAcceso reporte;
 
 
 
@@ -28,17 +30,16 @@ public class Gestion {
         listadoPersonas = new TreeMap<>();
         listadoZonas = new ArrayList<>();
         listadoStands = new ArrayList<>();
+        reporte = new ReporteAcceso();
+
     }
-
-
-
 
     public void agregarZona(Zona zona) {
         conjuntoZonas.put(zona.getCodigo(), zona);
         if(zona.tipoZona() != 'S')//zona
             listadoZonas.add(zona);
         else //stand
-            listadoStands.add(Stand);
+            listadoStands.add((Stand) zona);
 
     }
 
@@ -50,31 +51,49 @@ public class Gestion {
             listadoStands.remove(zona);
     }
 
-`
 
 
-    public void muevePersona(String idPersona, String idZonaDestino){
+    public void cargaPersona(Persona persona,String zona) {}
 
-        Acceso nuevo = new Acceso(listadoZonas.get(idZonaDestino), LocalDate.now(),30,false);
-        Persona per = listadoPersonas.get(idPersona);
-        String zonaActual = per.getIdZonaActual();
-        if(per.tipoPersona() != 'S'){
-            nuevo.setEstado(true);
-            conjuntoZonas.get(per.getIdZonaActual()).getConjuntoPersona().remove(idPersona);
-            per.setIdZonaActual(idZonaDestino);
+    public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException{
 
+        if(listadoPersonas.containsKey(idPersona)){
+            if(conjuntoZonas.containsKey(idZonaDestino)) {
+                Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDate.now(), 30, false);
+                Persona per = listadoPersonas.get(idPersona);
+                String zonaOrigen = per.zonaActual();
+                StringBuilder mensaje = new StringBuilder();
+
+                if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
+                    char tipoPersona = per.tipoPersona();
+                    char tipoZona = conjuntoZonas.get(idZonaDestino).tipoZona();
+                    boolean habilitado = per.habilitado(conjuntoZonas.get(idZonaDestino));
+
+                    boolean condicion1 = (tipoZona == 'C');
+                    boolean condicion2 = (tipoPersona == 'P' && tipoZona == 'E'); // publico general
+                    boolean condicion3 = ((tipoPersona == 'A' || tipoPersona == 'S' || tipoPersona == 'C') && habilitado);
+                    if (condicion1 || condicion2 || condicion3) {
+                        nuevo.setEstado(true);
+                        conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per));
+                        conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
+                        mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                    } else {
+                        mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        // agregar lanzamiento excepcion
+                    }
+                } else {
+                    //capacidad llena y agregar excepcion
+                    mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+
+                }
+                reporte.agregaAcceso(mensaje.toString());
+                listadoPersonas.get(idPersona).getAccesos().add(nuevo);
+
+            }else{
+                throw new IllegalArgumentException("La zona no existe");
+            }
+        }else{
+            throw new IllegalArgumentException("La persona no existe");
         }
-        if(per.habilitado(listadoZonas.get(idZonaDestino)) || conjuntoZonas.get(idZonaDestino).) {
-            nuevo.setEstado(true);
-            per.setIdZonaActual(idZonaDestino);
-
-        }
-        listadoPersonas.get(idPersona).getAccesos().add(nuevo);
-
-
-
     }
-
-
-
 }
