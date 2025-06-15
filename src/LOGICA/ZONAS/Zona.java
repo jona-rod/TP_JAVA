@@ -76,6 +76,9 @@ public abstract class Zona {
     public void eliminaPersona(String idPersona) {
         conjuntoPersona.remove(idPersona);
     }
+    public int cantidadDePersonas (){
+        return conjuntoPersona.size();
+    }
 }
 
 
