@@ -68,7 +68,7 @@ public class Gestion {
             if(! conjuntoZonas.get(idZona).zonaLlena()){
                 if (persona.habilitado(conjuntoZonas.get(idZona))) {
                     conjuntoZonas.get(idZona).agregaPersona(persona);
-                    listadoPersonas.put(persona.getId(), persona);
+                    listadoPersonas.put(persona.getId(), persona);// agregar que si es comerciante lo agregue a stand
                 }
                 else {
                     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje);
