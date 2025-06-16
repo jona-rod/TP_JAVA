@@ -7,6 +7,9 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 
 public class LecturaDeArchivosTXT {
     informeDeDatos informe;
@@ -50,7 +53,7 @@ public class LecturaDeArchivosTXT {
         char cat = bloque[0].charAt(0);
         if(cat == 'S'){
         if(bloque.length != 4){
-            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
+            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
         }
             String desc = bloque[3];
             if (bloque[3].length() > 25) {
@@ -58,7 +61,7 @@ public class LecturaDeArchivosTXT {
             }
         }else if(bloque.length != 3){
         throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
-    }
+        }
 
         if (cat != 'C' && cat != 'E' && cat != 'R') {
             throw new IllegalArgumentException("Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)");
@@ -74,7 +77,69 @@ public class LecturaDeArchivosTXT {
         if (!NombresZonas.pertenece(TipoZ)) {
             throw new IllegalArgumentException("Error: Zona no incluida dentro del festival");
         }
+    }
+    public void leeEventos(Gestion conjuntoZonas){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        try {
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            String linea = "";
+            while ((linea = lector.readLine()) != null) {
+                String[] bloque = linea.split(";");
+                try {
+                    validaDatosEventos(bloque);
+                    // Parseo de datos
+                    LocalDateTime fechaHora = LocalDateTime.parse(bloque[0], formatter);
+                    String artista = bloque[1];
+                    String idEscenario = bloque[2];
 
+                    // Buscar escenario y agregar evento
+                    Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
+                    if (escenario != null) {
+                        Evento nuevoEvento = new Evento(fechaHora, artista);
+                        escenario.agregarEvento(nuevoEvento);
+                    }
+                } catch (StringIndexOutOfBoundsException e) {
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
+                } catch (IllegalArgumentException e) {
+                    informe.agregaError("Error de datos en la linea: " + linea + "-" + e.getMessage());
+                }
+            }
 
+            lector.close();
+        } catch (IOException e) {
+            informe.agregaError("Error al leer el archivo " + e.getMessage());
         }
+
+    }
+    private void validaDatosEventos(String[] bloque) throws IllegalArgumentException {
+        // Validación 1: Estructura básica del array
+        if (bloque == null || bloque.length != 3) {
+            throw new IllegalArgumentException("Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'");
+        }
+
+        // Validación 2: Campos no vacíos
+        for (int i = 0; i < bloque.length; i++) {
+            if (bloque[i] == null || bloque[i].trim().isEmpty()) {
+                throw new IllegalArgumentException("Campo en posición " + (i+1) + " está vacío o es nulo");
+            }
+            bloque[i] = bloque[i].trim(); // Limpiar espacios
+        }
+
+        // Validación 3: Formato de fecha (dd/MM/yyyy HH:mm:ss)
+        try {
+            LocalDateTime.parse(bloque[0], DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"));
+        } catch (DateTimeParseException e) {
+            throw new IllegalArgumentException("Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: " + e.getMessage());
+        }
+
+        // Validación 4: Artista (solo letras, espacios y caracteres básicos)
+        if (bloque[1].length() < 25) {
+            throw new IllegalArgumentException("Nombre de artista inválido. Solo se permiten 25 caracteres");
+        }
+
+        // Validación 5: Formato de ID de escenario (E|C|R seguido de 2 dígitos)
+        if (!bloque[2].matches("^[E]S\\d{2}$")) {
+            throw new IllegalArgumentException("ID de escenario inválido. Formato esperado: ES##, (Ej: ES01)");
+        }
+    }
 }

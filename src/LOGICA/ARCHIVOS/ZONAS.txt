@@ -1,32 +1,34 @@
-C;CO01;Plaza Central
-C;CO02;Patio de comidas
-C;CO03;Zona de descanso
-C;CO04;Zona de compras
-S;ST01;
-
-
+C;CO01;Plaza_central
+C;CO02;Patio_de_comidas
+C;CO03;Zona_de_descanso
+C;CO04;Zona_de_compras
+S;ST01;Bar_de_jugos;Plaza_central
+S;ST02;Puesto_de_postres;Plaza_central
+S;ST03;Info_turistica;Plaza_central
+S;ST04;Foto_instantanea;Plaza_central
+S;ST05;Mapas_interactivos;Plaza_central
+S;ST06;Hamburguesas_art;Patio_de_comidas
+S;ST07;Comida_mexicana;Patio_de_comidas
+S;ST08;Parrilla_rapida;Patio_de_comidas
+S;ST09;Vegetariano;Patio_de_comidas
+S;ST10;Cafeteria;Patio_de_comidas
+S;ST11;Masajes_5min;Zona_de_descanso
+S;ST12;Sillas_masaje;Zona_de_descanso
+S;ST13;Fuente_agua;Zona_de_descanso
+S;ST14;Carritos_bebidas;Zona_de_descanso
+S;ST15;Merch_oficial;Zona_de_compras
+S;ST16;Artesanias_loc;Zona_de_compras
+S;ST17;Discos_vinilos;Zona_de_compras
+S;ST18;Ropa_artista;Zona_de_compras
+S;ST19;Accesorios_luz;Zona_de_compras
 E;[ES01];Rock
 E;[ES02];Hip-Hop
 E;[ES03];Pop
 E;[ES04];Folcklore
-E;[ES05];Reggae
-E;[ES06];Electrónica
-E;[ES07];Jazz
-E;[ES08];Indie
-E;[ES09];Metal
-E;[ES10];Alternativo
 R;[RE01];Camarines
-R;[RE02];Backstage Rock
-R;[RE03];Backstage HipHop
-R;[RE04];Backstage Pop
-R;[RE05];Backstage Folk
-R;[RE06];Backstage Reggae
-R;[RE07];Técnica
-R;[RE08];Depósito
-R;[RE09];Organización
-R;[RE10];Prensa
-R;[RE11];Seguridad
-R;[RE12];Cocina staff
-R;[RE13];Almacén
-R;[RE14];Parking artistas
-R;[RE15];Reuniones
+R;[RE02];Depósito
+R;[RE03];Organización
+R;[RE04];Prensa
+R;[RE05];Seguridad
+R;[RE06];Cocina staff
+R;[RE07];Parking artistas
