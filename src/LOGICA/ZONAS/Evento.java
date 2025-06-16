@@ -4,15 +4,17 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Evento {
-    LocalDateTime fechaYhora;
+
+    LocalDateTime fechaHora;
     String artista;
 
-    public Evento(LocalDateTime fecha, String artista) {
-        this.fechaYhora = fecha;
+    public Evento(LocalDateTime fechaHora, String artista) {
+        this.fechaHora = fechaHora;
         this.artista = artista;
     }
-    public LocalDateTime getFechaYhora() {
-        return fechaYhora;
+
+    public LocalDateTime getFechaHora() {
+        return fechaHora;
     }
 
     public String getArtista() {
@@ -21,6 +23,6 @@ public class Evento {
 
     @Override
     public String toString() {
-        return artista + " - " + fechaYhora;
+        return artista + " - " + fechaHora.toString();
     }
 }
