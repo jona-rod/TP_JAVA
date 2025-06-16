@@ -1,10 +1,14 @@
 package LOGICA.ARCHIVOS;
 
 import LOGICA.GESTION.Gestion;
+import LOGICA.PERSONAS.Artista;
+import LOGICA.PERSONAS.Asistente;
+import LOGICA.PERSONAS.Comerciante;
+import LOGICA.PERSONAS.Staff;
+import LOGICA.REPORTES.ReporteDeDatos;
 import LOGICA.ZONAS.*;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -12,7 +16,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 public class LecturaDeArchivosTXT {
-    informeDeDatos informe;
+    ReporteDeDatos informe;
+
     public void leeZonas(Gestion ConjuntoZonas) {
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
@@ -29,10 +34,10 @@ public class LecturaDeArchivosTXT {
                         ConjuntoZonas.agregarZona(new Comun(id, descripcion));
                     } else if (cat == 'E') {
                         ConjuntoZonas.agregarZona(new Escenario(id, descripcion));
-                    } else if(cat == 'R'){
+                    } else if (cat == 'R') {
                         ConjuntoZonas.agregarZona(new Restringida(id, descripcion));
-                    }else{
-                        ConjuntoZonas.agregarZona(new Stand(id,descripcion,ubicacion));
+                    } else {
+                        ConjuntoZonas.agregarZona(new Stand(id, descripcion, ubicacion));
 
                     }
                 } catch (StringIndexOutOfBoundsException e) {
@@ -51,24 +56,22 @@ public class LecturaDeArchivosTXT {
 
     public void validaDatosZona(String[] bloque) throws IllegalArgumentException, StringIndexOutOfBoundsException, NumberFormatException {
         char cat = bloque[0].charAt(0);
-        if(cat == 'S'){
-        if(bloque.length != 4){
-            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
-        }
-            String desc = bloque[3];
+        if (cat == 'S') {
+            if (bloque.length != 4) {
+                throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
+            }
             if (bloque[3].length() > 25) {
                 throw new IllegalArgumentException("Error: Ubicacion excede 25 caracteres");
             }
-        }else if(bloque.length != 3){
-        throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
+        } else if (bloque.length != 3) {
+            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
         }
 
         if (cat != 'C' && cat != 'E' && cat != 'R') {
             throw new IllegalArgumentException("Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)");
         }
-        String id = bloque[1];
         if (bloque[1].length() != 4) {
-            throw new IllegalArgumentException("Error: ID debe tener 6 caracteres");
+            throw new IllegalArgumentException("Error: ID debe tener 4 caracteres");
         }
         String TipoZ = bloque[2];
         if (bloque[2].length() > 25) {
@@ -78,7 +81,8 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("Error: Zona no incluida dentro del festival");
         }
     }
-    public void leeEventos(Gestion conjuntoZonas){
+
+    public void leeEventos(Gestion conjuntoZonas) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
@@ -94,10 +98,9 @@ public class LecturaDeArchivosTXT {
 
                     // Buscar escenario y agregar evento
                     Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
-                    if (escenario != null) {
-                        Evento nuevoEvento = new Evento(fechaHora, artista);
-                        escenario.cargaEvento(nuevoEvento);
-                    }
+                    Evento nuevoEvento = new Evento(fechaHora, artista);
+                    escenario.cargaEvento(nuevoEvento);
+
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
                 } catch (IllegalArgumentException e) {
@@ -111,6 +114,7 @@ public class LecturaDeArchivosTXT {
         }
 
     }
+
     private void validaDatosEventos(String[] bloque) throws IllegalArgumentException {
         // Validación 1: Estructura básica del array
         if (bloque == null || bloque.length != 3) {
@@ -120,7 +124,7 @@ public class LecturaDeArchivosTXT {
         // Validación 2: Campos no vacíos
         for (int i = 0; i < bloque.length; i++) {
             if (bloque[i] == null || bloque[i].trim().isEmpty()) {
-                throw new IllegalArgumentException("Campo en posición " + (i+1) + " está vacío o es nulo");
+                throw new IllegalArgumentException("Campo en posición " + (i + 1) + " está vacío o es nulo");
             }
             bloque[i] = bloque[i].trim(); // Limpiar espacios
         }
@@ -142,4 +146,64 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("ID de escenario inválido. Formato esperado: ES##, (Ej: ES01)");
         }
     }
+
+    public void leePersonas(Gestion listadoPersonas) {
+        try {
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            String linea = "";
+            while ((linea = lector.readLine()) != null) {
+                String[] bloque = linea.split(";");
+                try {
+                    validaDatosPersonas(bloque);
+                    char per = bloque[0].charAt(0);
+                    String idPersona = bloque[1];
+                    String nombre = bloque[2];
+                    String idZona = bloque[3];
+                    String idStand = bloque[4];
+                    if (per == 'C')
+                        listadoPersonas.cargaPersona(new Comerciante(idPersona, nombre, idStand), idZona);
+                    else if (per == 'A')
+                        listadoPersonas.cargaPersona(new Artista(idPersona, nombre), idZona);
+                    else if(per == 'H')//por helper que es ayudante en ingles
+                        listadoPersonas.cargaPersona(new Asistente(idPersona, nombre), idZona);
+                    else
+                        listadoPersonas.cargaPersona(new Staff(idPersona, nombre), idZona);
+                } catch (StringIndexOutOfBoundsException e) {
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
+                } catch (IllegalArgumentException e) {
+                    informe.agregaError("Error de datos en la linea: " + linea + "-" + e.getMessage());
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            lector.close();
+        } catch (IOException e) {
+            informe.agregaError("Error al leer el archivo " + e.getMessage());
+        }
+    }
+    public void validaDatosPersonas(String[] bloque) {
+        char per = bloque[0].charAt(0);
+        if (per == 'C') {
+            if (bloque.length != 5)
+                throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
+            if (bloque[4].length() != 4) {
+                throw new IllegalArgumentException("Error: El id de stand no tiene la cantidad de caracteres correctos");
+            }
+        } else if (bloque.length != 4) {
+            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
+        }
+        if (per != 'C' && per != 'A' && per != 'H' && per != 'S') {
+            throw new IllegalArgumentException("Error: la persona debe ser: 'C' (Comerciante), 'A' (Artista), 'H' (Asistente) o 'S' (Staff) ");
+        }
+        if (bloque[1].length() != 6) {
+            throw new IllegalArgumentException("Error: ID debe tener 6 caracteres");
+        }
+        if (bloque[2].length() > 25) {
+            throw new IllegalArgumentException("Error: Nombre excede 25 caracteres");
+        }
+        if(bloque[3].length() != 4){
+            throw new IllegalArgumentException("Error: idZona debe tener 4 caracteres");
+        }
+    }
 }
+

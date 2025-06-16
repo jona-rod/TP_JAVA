@@ -86,6 +86,8 @@ public class Gestion {
         if (codigo == null || codigo.trim().isEmpty()) {
             throw new IllegalArgumentException("El código de zona no puede ser nulo o vacío");
         }
+        if(conjuntoZonas.get(codigo.trim()) == null)
+            throw new IllegalArgumentException("La zona marcada no existe.");
         return conjuntoZonas.get(codigo.trim());
     }
 

@@ -1,12 +1,12 @@
-package LOGICA.ARCHIVOS;
+package LOGICA.REPORTES;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class informeDeDatos {
+public class ReporteDeDatos {
     private StringBuilder informe;
-    public informeDeDatos(){
+    public ReporteDeDatos(){
         informe = new StringBuilder("\tInforme de errores de datos cargados desde archivos");
     }
     public void agregaError(String error){
