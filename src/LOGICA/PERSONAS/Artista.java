@@ -14,6 +14,19 @@ public class Artista extends Persona {
     public void agregaEvento(){
     }
 
+    public String muestraEventosDeArtista(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Lista de eventos del artista\n");
+        for (Evento evento : eventosDelArtista) {
+            sb.append("\t").append(evento.toString()).append("\n");
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + muestraEventosDeArtista();
+    }
 
     @Override
     public char tipoPersona() {

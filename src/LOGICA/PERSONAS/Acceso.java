@@ -34,4 +34,9 @@ public class Acceso{
         return cantidadMinutosPermanencia;
     }
 
+    @Override
+    public String toString() {
+        return "Id: " + zona.getCodigo() + " - "+ "Descripcion: " + zona.getDescripcion() + " - "+"Fecha y hora: "+ fechaHora.toString()+ " - " + "Permanencia: "+ cantidadMinutosPermanencia + " - " +"Estado: " + estado;
+    }
+
 }

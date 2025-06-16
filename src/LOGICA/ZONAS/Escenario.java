@@ -15,9 +15,20 @@ public class Escenario extends Zona {
     public List<Evento> getEventos() {
         return new ArrayList<>(eventos); // Devuelve copia para evitar modificaciones externas
     }
+
+    public String muestraEventos(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("LISTA DE EVENTOS DE LA ZONA\n");
+        for (Evento evento : eventos){
+            sb.append("\t").append(evento.toString() + "\n");
+        }
+        return sb.toString();
+    }
+
+
     @Override
     public String toString() {
-        return "Escenario [" + codigo + "] " + descripcion + " (Capacidad: " + capacidadMaxima + ")";
+        return super.toString() + muestraEventos();
     }
     @Override
     public char tipoZona(){return 'E';}

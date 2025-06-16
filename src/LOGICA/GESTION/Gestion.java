@@ -36,6 +36,14 @@ public class Gestion {
 
     }
 
+    public ArrayList<Zona> getListadoZonas(){
+        return listadoZonas;
+    }
+
+    public ArrayList<Stand> getListadoStands(){
+        return listadoStands;
+    }
+
     public void agregarZona(Zona zona) {
         conjuntoZonas.put(zona.getCodigo(), zona);
         if(zona.tipoZona() != 'S')//zona

@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ReporteAcceso {
 
     StringBuilder reporte;
-    private static final String rutaArchivo = "src/Archivos/INFORME_Consistencia_de_Datos.txt";
+    private static final String rutaArchivo = "src/LOGICA/ARCHIVOS/reporteDeAccesos.txt";
 
     public ReporteAcceso() {
         reporte = new StringBuilder();

@@ -11,6 +11,11 @@ public class Restringida extends Zona {
 
 
     @Override
+    public String toString() {
+        return super.toString() + "\nCapacidad máxima: " + capacidadMaxima;
+    }
+
+    @Override
     public char tipoZona(){return 'R';}
 
     @Override

@@ -12,6 +12,11 @@ public class Comerciante extends Persona {
         }
 
     @Override
+    public String toString() {
+            return super.toString()  + "\nStand a cargo: " + suStand;
+    }
+
+    @Override
     public char tipoPersona() {
         return 'C';
     }

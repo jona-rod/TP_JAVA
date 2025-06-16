@@ -69,4 +69,27 @@ public abstract class Persona {
 
     public void agregaEventoArtista(Evento evento){};
 
+    public String muestraListaAccesosPersona(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Lista de accesos\n");
+        for(Acceso acceso : listaAccesos){
+            sb.append("\t").append(acceso.toString()).append("\n");
+        }
+        return sb.toString();
+    }
+
+    public String muestraListaZonasAutorizadasPersona(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("Lista de zonas autorizadas\n");
+        for(Zona zona : zonasAutorizadas){
+            sb.append("\t").append("Id: ").append(zona.getCodigo()).append(" - ").append("Descripción: ").append(zona.getDescripcion()).append("\n");
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Id : " + id + " \nNombre : " + nombre + "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona() ;
+    }
+
 }

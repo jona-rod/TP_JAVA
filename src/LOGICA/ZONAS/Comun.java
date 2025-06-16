@@ -8,11 +8,6 @@ public class Comun extends Zona {
 
 
     @Override
-    public String toString() {
-        return "Zona Común [" + codigo + "] " + descripcion;
-    }
-
-    @Override
     public char tipoZona(){return 'C';}
 
     @Override
