@@ -1,5 +1,7 @@
 package LOGICA.PERSONAS;
 
+import LOGICA.ZONAS.Zona;
+
 public class Asistente extends Persona {
 
     public Asistente(String id, String nombre) {
@@ -10,6 +12,11 @@ public class Asistente extends Persona {
     @Override
     public char tipoPersona() {
         return 'S';
+    }
+
+    @Override
+    public boolean habilitado(Zona zona) {
+        return zona.tipoZona() == 'C' || zona.tipoZona() == 'E';
     }
 
 

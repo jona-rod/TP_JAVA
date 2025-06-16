@@ -21,6 +21,7 @@ public class Gestion {
     ArrayList<Zona> listadoZonas;   //lista auxiliar para generar listado ordenado de zonas
 
     ArrayList<Stand> listadoStands; //lista auxiliar para generar listado ordenado de stands
+
     ReporteAcceso reporte;
 
 
@@ -51,9 +52,27 @@ public class Gestion {
             listadoStands.remove(zona);
     }
 
+    public void cargaPersona(Persona persona,String idZona) throws Exception {
 
-
-    public void cargaPersona(Persona persona,String zona) {}
+        String mensaje = "La persona con id:  " + persona.getId() + ", Nombre : " + persona.getNombre() + " no pudo registrarse";
+        if(conjuntoZonas.get(idZona) != null) {
+            if(! conjuntoZonas.get(idZona).zonaLlena()){
+                if (persona.habilitado(conjuntoZonas.get(idZona))) {
+                    conjuntoZonas.get(idZona).agregaPersona(persona);
+                    listadoPersonas.put(persona.getId(), persona);
+                }
+                else {
+                    throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje);
+                }
+            }
+            else {
+                throw new Exception("Zona con capacidad completa - " + mensaje);
+            }
+        }
+        else {
+            throw new Exception("Zona no existe - " + mensaje);
+        }
+    }
 
     public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException{
 
@@ -65,24 +84,15 @@ public class Gestion {
                 StringBuilder mensaje = new StringBuilder();
 
                 if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
-                    char tipoPersona = per.tipoPersona();
-                    char tipoZona = conjuntoZonas.get(idZonaDestino).tipoZona();
-                    boolean habilitado = per.habilitado(conjuntoZonas.get(idZonaDestino));
-
-                    boolean condicion1 = (tipoZona == 'C');
-                    boolean condicion2 = (tipoPersona == 'P' && tipoZona == 'E'); // publico general
-                    boolean condicion3 = ((tipoPersona == 'A' || tipoPersona == 'S' || tipoPersona == 'C') && habilitado);
-                    if (condicion1 || condicion2 || condicion3) {
+                    if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
                         nuevo.setEstado(true);
                         conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per));
                         conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
                         mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                     } else {
                         mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-                        // agregar lanzamiento excepcion
                     }
                 } else {
-                    //capacidad llena y agregar excepcion
                     mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
 
                 }

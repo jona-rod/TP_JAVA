@@ -36,7 +36,7 @@ public abstract class Persona {
     }
 
     public ArrayList<Acceso> getAccesos() {
-        return accesos;
+        return listaAccesos;
     }
 
     public ArrayList<Zona> getZonasAutorizadas() {
@@ -62,7 +62,11 @@ public abstract class Persona {
 
     public abstract char tipoPersona();
 
-    public boolean habilitado(Zona zona){ return false ;} //busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
+    public abstract boolean habilitado(Zona zona);//busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
+
+    protected boolean zonaHabilitada(Zona zona){
+        return zonasAutorizadas.contains(zona);
+    };
 
     public String zonaActual(){
         for(Acceso acceso : listaAccesos){
@@ -70,6 +74,7 @@ public abstract class Persona {
                 return acceso.getZona().getCodigo();
             }
         }
+
     }
 
     public void muestraAccesos(){

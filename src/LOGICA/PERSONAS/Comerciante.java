@@ -1,5 +1,7 @@
 package LOGICA.PERSONAS;
 
+import LOGICA.ZONAS.Zona;
+
 public class Comerciante extends Persona {
 
         String suStand;
@@ -12,5 +14,10 @@ public class Comerciante extends Persona {
     @Override
     public char tipoPersona() {
         return 'C';
+    }
+
+    @Override
+    public boolean habilitado(Zona zona) {
+            return zona.tipoZona() == 'C' || zonaHabilitada(zona);
     }
 }
