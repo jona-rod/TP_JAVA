@@ -33,7 +33,4 @@ public class Acceso{
         return cantidadMinutosPermanencia;
     }
 
-    public boolean isEstado() {
-        return estado;
-    }
 }

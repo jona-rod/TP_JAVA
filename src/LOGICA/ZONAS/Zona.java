@@ -54,6 +54,8 @@ public abstract class Zona {
         conjuntoPersona.remove(idPersona);
     }
 
+    public abstract void cargaEvento(Evento evento);
+
 
 
 

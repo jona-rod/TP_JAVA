@@ -97,7 +97,7 @@ public class Gestion {
 
                 }
                 reporte.agregaAcceso(mensaje.toString());
-                listadoPersonas.get(idPersona).getAccesos().add(nuevo);
+                listadoPersonas.get(idPersona).cargaAcceso(nuevo);
 
             }else{
                 throw new IllegalArgumentException("La zona no existe");

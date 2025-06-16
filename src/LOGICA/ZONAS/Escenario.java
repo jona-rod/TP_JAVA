@@ -30,4 +30,9 @@ public class Escenario extends Zona {
     public boolean zonaLlena(){
         return !(conjuntoPersona.size() < capacidadMaxima);
     }
+
+    @Override
+    public void cargaEvento(Evento evento) {
+        eventos.add(evento);
+    }
 }

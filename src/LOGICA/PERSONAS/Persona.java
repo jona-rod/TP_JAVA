@@ -12,7 +12,6 @@ public abstract class Persona {
         String nombre;
         ArrayList<Acceso> listaAccesos;
         ArrayList<Zona> zonasAutorizadas;
-//        String idZonaActual;  lo reemplazo por metodo devuelve zona actual
 
     public Persona(String id, String nombre) {
         this.id = id;
