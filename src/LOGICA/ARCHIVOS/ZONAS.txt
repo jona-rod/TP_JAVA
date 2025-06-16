@@ -21,14 +21,14 @@ S;ST16;Artesanias_loc;Zona_de_compras
 S;ST17;Discos_vinilos;Zona_de_compras
 S;ST18;Ropa_artista;Zona_de_compras
 S;ST19;Accesorios_luz;Zona_de_compras
-E;[ES01];Rock
-E;[ES02];Hip-Hop
-E;[ES03];Pop
-E;[ES04];Folcklore
-R;[RE01];Camarines
-R;[RE02];Depósito
-R;[RE03];Organización
-R;[RE04];Prensa
-R;[RE05];Seguridad
-R;[RE06];Cocina staff
-R;[RE07];Parking artistas
+E;ES01;Rock
+E;ES02;Hip-Hop
+E;ES03;Pop
+E;ES04;Folcklore
+R;RE01;Camarines
+R;RE02;Depósito
+R;RE03;Organización
+R;RE04;Prensa
+R;RE05;Seguridad
+R;RE06;Cocina staff
+R;RE07;Parking artistas

@@ -67,7 +67,7 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)");
         }
         String id = bloque[1];
-        if (bloque[1].length() != 6) {
+        if (bloque[1].length() != 4) {
             throw new IllegalArgumentException("Error: ID debe tener 6 caracteres");
         }
         String TipoZ = bloque[2];
@@ -96,7 +96,7 @@ public class LecturaDeArchivosTXT {
                     Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
                     if (escenario != null) {
                         Evento nuevoEvento = new Evento(fechaHora, artista);
-                        escenario.agregarEvento(nuevoEvento);
+                        escenario.cargaEvento(nuevoEvento);
                     }
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
@@ -137,7 +137,7 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("Nombre de artista inválido. Solo se permiten 25 caracteres");
         }
 
-        // Validación 5: Formato de ID de escenario (E|C|R seguido de 2 dígitos)
+        // Validación 5: Formato de ID de escenario (ES seguido de 2 dígitos)
         if (!bloque[2].matches("^[E]S\\d{2}$")) {
             throw new IllegalArgumentException("ID de escenario inválido. Formato esperado: ES##, (Ej: ES01)");
         }
