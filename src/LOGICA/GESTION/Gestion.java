@@ -8,6 +8,7 @@ import LOGICA.ZONAS.Stand;
 import LOGICA.ZONAS.Zona;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.TreeMap;
 import java.util.TreeSet;
@@ -78,7 +79,7 @@ public class Gestion {
 
         if(listadoPersonas.containsKey(idPersona)){
             if(conjuntoZonas.containsKey(idZonaDestino)) {
-                Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDate.now(), 30, false);
+                Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 30, false);
                 Persona per = listadoPersonas.get(idPersona);
                 String zonaOrigen = per.zonaActual();
                 StringBuilder mensaje = new StringBuilder();

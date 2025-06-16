@@ -8,7 +8,7 @@ public abstract class Zona {
 
     String codigo;
     String descripcion;
-    TreeMap<String, Persona> conjuntoPersona;//String es el id de persona
+    TreeMap<String, Persona> conjuntoPersona;   //String es el id de persona
 
 
     public Zona(String codigo, String descripcion) {
@@ -40,6 +40,10 @@ public abstract class Zona {
 
     public abstract boolean zonaLlena();
 
+    public int concurrencia(){
+        return conjuntoPersona.size();
+    }
+
 
     public void muestra() {
         System.out.println(codigo);
@@ -54,15 +58,7 @@ public abstract class Zona {
         conjuntoPersona.remove(idPersona);
     }
 
-    public abstract void cargaEvento(Evento evento);
-
-
-
-
-    // no hace falta este metodo, se verifica en clase gestion
-
-//    public boolean confirmacionAgregaPersona(String idPersona) {return conjuntoPersona.containsKey(idPersona);}
-
+    public void cargaEvento(Evento evento){};
 
 }
 

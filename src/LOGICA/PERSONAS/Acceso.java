@@ -5,14 +5,15 @@ import LOGICA.ZONAS.Zona;
 import LOGICA.ZONAS.Zona;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Acceso{
     Zona zona;
-    LocalDate fechaHora;
+    LocalDateTime fechaHora;
     int cantidadMinutosPermanencia;
     boolean estado;
 
-    public Acceso(Zona zona, LocalDate fechaHora, int cantidadMinutosPermanencia, boolean estado) {
+    public Acceso(Zona zona, LocalDateTime fechaHora, int cantidadMinutosPermanencia, boolean estado) {
         this.zona = zona;
         this.fechaHora = fechaHora;
         this.cantidadMinutosPermanencia = cantidadMinutosPermanencia;
@@ -22,7 +23,7 @@ public class Acceso{
 
     public boolean getEstado() { return estado; }
     public Zona getZona() { return zona; }
-    public LocalDate getFecha() {
+    public LocalDateTime getFecha() {
         return fechaHora;
     }
     public void setEstado(boolean estado){

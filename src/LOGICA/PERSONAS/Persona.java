@@ -2,6 +2,7 @@ package LOGICA.PERSONAS;
 
 import LOGICA.PERSONAS.Acceso;
 import LOGICA.ZONAS.Comun;
+import LOGICA.ZONAS.Evento;
 import LOGICA.ZONAS.Zona;
 
 import java.time.LocalDate;
@@ -42,16 +43,6 @@ public abstract class Persona {
         return zonasAutorizadas;
     }
 
-
-
-    public void muestraDatos(){         //no es necesario, redefinir toString()
-        System.out.println(id);
-        System.out.println(nombre);
-        muestraAccesos();
-    }
-
-
-
     public void cargaAcceso(Acceso ac) {
         listaAccesos.add(ac);
     }
@@ -73,18 +64,9 @@ public abstract class Persona {
                 return acceso.getZona().getCodigo();
             }
         }
-
+        return null;
     }
 
-    public void muestraAccesos(){
-        zonasAutorizadas.forEach(zona->{
-            zona.muestra();
-        });
-    }
+    public void agregaEventoArtista(Evento evento){};
 
-
-
-// no hacen falta, zona actual se obtiene a partir de ultimo acceso habilitado
-//    public String getIdZonaActual() {return idZonaActual;}
-//    public void setIdZonaActual(String idZonaActual) {this.idZonaActual = idZonaActual;}
 }

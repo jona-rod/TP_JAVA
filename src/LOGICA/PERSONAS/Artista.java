@@ -5,15 +5,11 @@ import LOGICA.ZONAS.Zona;
 import java.util.ArrayList;
 
 public class Artista extends Persona {
-    ArrayList<Evento> evenAsis=new ArrayList<>();
-
-
+    ArrayList<Evento> eventosDelArtista = new ArrayList<>();
 
     public Artista(String identificador, String nom) {
         super(identificador, nom);
     }
-
-
 
     public void agregaEvento(){
     }
@@ -28,4 +24,10 @@ public class Artista extends Persona {
     public boolean habilitado(Zona zona) {
         return zona.tipoZona() == 'C' || zonaHabilitada(zona);
     }
+
+    @Override
+    public void agregaEventoArtista(Evento evento){
+        eventosDelArtista.add(evento);
+    }
+
 }

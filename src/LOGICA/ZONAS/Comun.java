@@ -6,7 +6,7 @@ public class Comun extends Zona {
         super(codigo, descripcion);
     }
 
-    int CapacidadMax;
+
     @Override
     public String toString() {
         return "Zona Común [" + codigo + "] " + descripcion;
