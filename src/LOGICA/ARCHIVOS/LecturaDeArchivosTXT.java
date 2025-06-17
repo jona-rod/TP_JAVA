@@ -18,6 +18,11 @@ import java.time.format.DateTimeParseException;
 public class LecturaDeArchivosTXT {
     ReporteDeDatos informe;
 
+    //agrego el constructor
+    public LecturaDeArchivosTXT() {
+        informe = new ReporteDeDatos();
+    }
+
     public void leeZonas(Gestion ConjuntoZonas) {
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
@@ -29,7 +34,10 @@ public class LecturaDeArchivosTXT {
                     char cat = bloque[0].charAt(0);
                     String id = bloque[1];
                     String descripcion = bloque[2];
-                    String ubicacion = bloque[3];
+                    String ubicacion= "";//agrego la variable nula porque sino da error de resolucion
+                    if(cat == 'S'){ //agrego el la condicion si es stand
+                        ubicacion = bloque[3];
+                    }
                     if (cat == 'C') {
                         ConjuntoZonas.agregarZona(new Comun(id, descripcion));
                     } else if (cat == 'E') {
@@ -38,7 +46,6 @@ public class LecturaDeArchivosTXT {
                         ConjuntoZonas.agregarZona(new Restringida(id, descripcion));
                     } else {
                         ConjuntoZonas.agregarZona(new Stand(id, descripcion, ubicacion));
-
                     }
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
@@ -62,12 +69,12 @@ public class LecturaDeArchivosTXT {
             }
             if (bloque[3].length() > 25) {
                 throw new IllegalArgumentException("Error: Ubicacion excede 25 caracteres");
-            }
+            }// que valide si es una zona valida y si existe la ubicacion del stand
         } else if (bloque.length != 3) {
             throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
         }
 
-        if (cat != 'C' && cat != 'E' && cat != 'R') {
+        if (cat != 'C' && cat != 'E' && cat != 'R' && cat != 'S') {
             throw new IllegalArgumentException("Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)");
         }
         if (bloque[1].length() != 4) {
@@ -77,9 +84,9 @@ public class LecturaDeArchivosTXT {
         if (bloque[2].length() > 25) {
             throw new IllegalArgumentException("Error: Descripcion excede 25 caracteres");
         }
-        if (!NombresZonas.pertenece(TipoZ)) {
+    /*    if (!NombresZonas.pertenece(TipoZ)) {
             throw new IllegalArgumentException("Error: Zona no incluida dentro del festival");
-        }
+        }*/
     }
 
     public void leeEventos(Gestion conjuntoZonas) {
@@ -149,7 +156,7 @@ public class LecturaDeArchivosTXT {
 
     public void leePersonas(Gestion listadoPersonas) {
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/PERSONAS.txt"));
             String linea = "";
             while ((linea = lector.readLine()) != null) {
                 String[] bloque = linea.split(";");
@@ -159,7 +166,10 @@ public class LecturaDeArchivosTXT {
                     String idPersona = bloque[1];
                     String nombre = bloque[2];
                     String idZona = bloque[3];
-                    String idStand = bloque[4];
+                    String idStand ="";
+                    if(per == 'C'){
+                        idStand = bloque[4];
+                    }
                     if (per == 'C')
                         listadoPersonas.cargaPersona(new Comerciante(idPersona, nombre, idStand), idZona);
                     else if (per == 'A')
@@ -169,11 +179,11 @@ public class LecturaDeArchivosTXT {
                     else
                         listadoPersonas.cargaPersona(new Staff(idPersona, nombre), idZona);
                 } catch (StringIndexOutOfBoundsException e) {
-                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage()); //le agregue cont como prueba temporal
                 } catch (IllegalArgumentException e) {
                     informe.agregaError("Error de datos en la linea: " + linea + "-" + e.getMessage());
                 } catch (Exception e) {
-                    throw new RuntimeException(e);
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
                 }
             }
             lector.close();
@@ -181,7 +191,7 @@ public class LecturaDeArchivosTXT {
             informe.agregaError("Error al leer el archivo " + e.getMessage());
         }
     }
-    public void validaDatosPersonas(String[] bloque) {
+    public void validaDatosPersonas(String[] bloque) throws IllegalArgumentException,StringIndexOutOfBoundsException {
         char per = bloque[0].charAt(0);
         if (per == 'C') {
             if (bloque.length != 5)
@@ -204,6 +214,11 @@ public class LecturaDeArchivosTXT {
         if(bloque[3].length() != 4){
             throw new IllegalArgumentException("Error: idZona debe tener 4 caracteres");
         }
+    }
+
+
+    public void generaInformeDatos(){
+        informe.generaInforme();
     }
 }
 

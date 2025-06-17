@@ -89,7 +89,7 @@ public abstract class Persona {
 
     @Override
     public String toString() {
-        return "Id : " + id + " \nNombre : " + nombre + "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona() ;
+        return "\n\tId : " + id + " \n\tNombre : " + nombre; /*+ "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona()*comento temporalmente para prueba*/
     }
 
 }

@@ -1,4 +1,4 @@
-C;VEN001;Ana_Lopez;CO01;ST01
+C;VEN001;Ana_Lopez;ST01;ST01
 C;VEN002;Carlos_Mendez;CO01;ST01
 C;VEN003;Luisa_Fernandez;CO01;ST02
 C;VEN004;Pedro_Gomez;CO01;ST02

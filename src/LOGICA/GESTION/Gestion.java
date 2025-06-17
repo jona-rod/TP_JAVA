@@ -1,12 +1,14 @@
 package LOGICA.GESTION;
 
 import LOGICA.PERSONAS.Acceso;
+import LOGICA.PERSONAS.Comerciante;
 import LOGICA.PERSONAS.Persona;
 import LOGICA.REPORTES.ReporteAcceso;
 import LOGICA.ZONAS.Restringida;
 import LOGICA.ZONAS.Stand;
 import LOGICA.ZONAS.Zona;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -39,6 +41,9 @@ public class Gestion {
     public ArrayList<Zona> getListadoZonas(){
         return listadoZonas;
     }
+    public TreeMap<String, Zona> getConjuntoZonas(){
+        return conjuntoZonas;
+    }
 
     public ArrayList<Stand> getListadoStands(){
         return listadoStands;
@@ -62,17 +67,21 @@ public class Gestion {
     }
 
     public void cargaPersona(Persona persona,String idZona) throws Exception {
-
         String mensaje = "La persona con id:  " + persona.getId() + ", Nombre : " + persona.getNombre() + " no pudo registrarse";
+
         if(conjuntoZonas.get(idZona) != null) {
             if(! conjuntoZonas.get(idZona).zonaLlena()){
-                if (persona.habilitado(conjuntoZonas.get(idZona))) {
+           //     if (persona.habilitado(conjuntoZonas.get(idZona))) {
                     conjuntoZonas.get(idZona).agregaPersona(persona);
-                    listadoPersonas.put(persona.getId(), persona);// agregar que si es comerciante lo agregue a stand
-                }
-                else {
-                    throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje);
-                }
+                    listadoPersonas.put(persona.getId(), persona);
+                    if(persona.tipoPersona() == 'C'){
+                        Comerciante cm = (Comerciante) persona;
+                        Stand st = (Stand) conjuntoZonas.get(cm.getSuStand());
+                        st.setResponsable("hola");
+                     }
+              //  else {
+               //     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje); //comento porque al realizar la carga metodo habilitaod() no tiene referencia a lista
+               // }
             }
             else {
                 throw new Exception("Zona con capacidad completa - " + mensaje);

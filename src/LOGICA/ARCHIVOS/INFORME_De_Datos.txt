@@ -1,0 +1,44 @@
+	Informe de errores de datos cargados desde archivos
+Error de datos en la linea: M;CO01;Plaza_central-Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)
+Error en linea C;VEN002;Carlos_Mendez;CO01;ST01 - Zona no existe - La persona con id:  VEN002, Nombre : Carlos_Mendez no pudo registrarse
+Error en linea C;VEN003;Luisa_Fernandez;CO01;ST02 - Zona no existe - La persona con id:  VEN003, Nombre : Luisa_Fernandez no pudo registrarse
+Error en linea C;VEN004;Pedro_Gomez;CO01;ST02 - Zona no existe - La persona con id:  VEN004, Nombre : Pedro_Gomez no pudo registrarse
+Error en linea C;VEN005;Elena_Ruiz;CO01;ST03 - Zona no existe - La persona con id:  VEN005, Nombre : Elena_Ruiz no pudo registrarse
+Error en linea C;VEN006;Diego_Torres;CO01;ST03 - Zona no existe - La persona con id:  VEN006, Nombre : Diego_Torres no pudo registrarse
+Error en linea H;PUB001;Pedro_Dominico;CO01 - Zona no existe - La persona con id:  PUB001, Nombre : Pedro_Dominico no pudo registrarse
+Error en linea H;PUB002;Geronimo_benavidez;CO01 - Zona no existe - La persona con id:  PUB002, Nombre : Geronimo_benavidez no pudo registrarse
+Error en linea H;PUB001;Marta_Sanchez;CO01 - Zona no existe - La persona con id:  PUB001, Nombre : Marta_Sanchez no pudo registrarse
+Error en linea H;PUB002;Javier_Rios;CO01 - Zona no existe - La persona con id:  PUB002, Nombre : Javier_Rios no pudo registrarse
+Error en linea S;STA001;Juan_Perez;CO01 - Zona no existe - La persona con id:  STA001, Nombre : Juan_Perez no pudo registrarse
+Error en linea H;PUB002;Maria_Garcia;CO01 - Zona no existe - La persona con id:  PUB002, Nombre : Maria_Garcia no pudo registrarse
+Error en linea H;PUB003;Laura_Diaz;CO01 - Zona no existe - La persona con id:  PUB003, Nombre : Laura_Diaz no pudo registrarse
+Error en linea S;STA004;Pablo_Martinez;CO01 - Zona no existe - La persona con id:  STA004, Nombre : Pablo_Martinez no pudo registrarse
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea H;PUB017;Camila_Rojas;CO01 - Zona no existe - La persona con id:  PUB017, Nombre : Camila_Rojas no pudo registrarse
+Error en linea H;PUB018;Daniel_Vargas;CO01 - Zona no existe - La persona con id:  PUB018, Nombre : Daniel_Vargas no pudo registrarse
+Error en linea H;PUB019;Valeria_Castro;CO01 - Zona no existe - La persona con id:  PUB019, Nombre : Valeria_Castro no pudo registrarse
+Error en linea H;PUB020;Oscar_Mendoza;CO01 - Zona no existe - La persona con id:  PUB020, Nombre : Oscar_Mendoza no pudo registrarse
+Error en linea H;PUB021;Fernanda_Silva;CO01 - Zona no existe - La persona con id:  PUB021, Nombre : Fernanda_Silva no pudo registrarse
+Error en linea H;PUB022;Roberto_Campos;CO01 - Zona no existe - La persona con id:  PUB022, Nombre : Roberto_Campos no pudo registrarse
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
+Error en linea  - Index 0 out of bounds for length 0
