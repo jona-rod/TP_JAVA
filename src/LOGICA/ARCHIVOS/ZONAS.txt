@@ -1,4 +1,4 @@
-M;CO01;Plaza_central
+C;CO01;Plaza_central
 C;CO02;Patio_de_comidas
 C;CO03;Zona_de_descanso
 C;CO04;Zona_de_compras
