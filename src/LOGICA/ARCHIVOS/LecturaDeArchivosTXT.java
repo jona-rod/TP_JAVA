@@ -92,7 +92,7 @@ public class LecturaDeArchivosTXT {
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/Eventos.txt"));
             String linea = "";
             while ((linea = lector.readLine()) != null) {
                 String[] bloque = linea.split(";");
@@ -144,7 +144,7 @@ public class LecturaDeArchivosTXT {
         }
 
         // Validación 4: Artista (solo letras, espacios y caracteres básicos)
-        if (bloque[1].length() < 25) {
+        if (bloque[1].length() > 25) {
             throw new IllegalArgumentException("Nombre de artista inválido. Solo se permiten 25 caracteres");
         }
 
