@@ -60,7 +60,7 @@ public abstract class Zona implements Comparable<Zona>{
 
     public String muestraListaPersonasEnZona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("LISTA DE PERSONAS EN ZONA\n");
+        sb.append("\nLISTA DE PERSONAS EN ZONA\n");
         for(Persona persona : conjuntoPersona.values()){
             sb.append("\t").append(persona.toString()).append("\n");
         }
@@ -69,7 +69,7 @@ public abstract class Zona implements Comparable<Zona>{
 
     @Override
     public String toString() {
-        return "ID : " + codigo + "\n Descripcion: " + descripcion + "\n Tipo Zona: " + tipoZona() + "\n" + muestraListaPersonasEnZona() + "\nCantidad de personas en la zona: " + concurrencia();
+        return "\nID : " + codigo + "\nDescripcion: " + descripcion + "\nTipo Zona: " + tipoZona() + "\n\t" + muestraListaPersonasEnZona()+ /*lo comente para prueba hasta que carga de datos este completa*/ "\nCantidad de personas en la zona: " + concurrencia();
     }
 
     @Override

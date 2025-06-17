@@ -2,8 +2,8 @@ C;CO01;Plaza_central
 C;CO02;Patio_de_comidas
 C;CO03;Zona_de_descanso
 C;CO04;Zona_de_compras
-S;ST01;Bar_de_jugos;Plaza_central
-S;ST02;Puesto_de_postres;Plaza_central
+S;ST01;Bar_de_jugos;CO01
+S;ST02;Puesto_de_postres;CO01
 S;ST03;Info_turistica;Plaza_central
 S;ST04;Hamburguesas_art;Patio_de_comidas
 S;ST05;Comida_mexicana;Patio_de_comidas

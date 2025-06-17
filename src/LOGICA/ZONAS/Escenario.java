@@ -28,7 +28,7 @@ public class Escenario extends Zona {
 
     @Override
     public String toString() {
-        return super.toString() + muestraEventos();
+        return super.toString() +"\n" +muestraEventos();
     }
     @Override
     public char tipoZona(){return 'E';}

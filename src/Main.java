@@ -1,15 +1,24 @@
+import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
+import LOGICA.GESTION.Gestion;
+
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main{
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Gestion gestion = new Gestion();
+        LecturaDeArchivosTXT lectura = new LecturaDeArchivosTXT();
+        lectura.leeZonas(gestion);
+
+       lectura.leePersonas(gestion);
+        lectura.generaInformeDatos();
+        lectura.leePersonas(gestion);
+        lectura.le
+        System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
+       System.out.println(gestion.getConjuntoZonas().get("ST01").toString());
+       System.out.println(gestion.getConjuntoZonas().get("ES04").toString());
+
     }
 }

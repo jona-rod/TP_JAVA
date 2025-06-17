@@ -1,0 +1,1 @@
+	Informe de errores de datos cargados desde archivos

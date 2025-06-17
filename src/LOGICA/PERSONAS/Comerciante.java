@@ -11,9 +11,13 @@ public class Comerciante extends Persona {
             this.suStand = suStand;
         }
 
+        public String getSuStand() {
+            return suStand;
+        }
+
     @Override
     public String toString() {
-            return super.toString()  + "\nStand a cargo: " + suStand;
+            return super.toString()  + "\n\tStand a cargo: " + suStand;
     }
 
     @Override

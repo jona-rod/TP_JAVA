@@ -9,6 +9,7 @@ public class Stand extends Restringida{
 
     public Stand(String codigo, String descripcion, String ubicacion) {
         super(codigo,descripcion);
+        this.ubicacion = ubicacion; //agrego asignacion faltante
     }
 
     public String getUbicacion(){ return ubicacion; }
@@ -23,7 +24,7 @@ public class Stand extends Restringida{
 
     @Override
     public String toString() {
-        return super.toString()+"\nUbicacion:  "+getUbicacion()+"\nResponsable: "+ getConjuntoPersona().get(responsable).toString();
+        return super.toString()+"\nUbicacion:  "+getUbicacion()+"\nResponsable: ";//+ getConjuntoPersona().get(responsable).toString(); comentado para prueba, agregarlo una vez que haya personas cargadas
     }
 
     @Override
