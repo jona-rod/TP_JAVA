@@ -64,7 +64,7 @@ public class LecturaDeArchivosTXT {
             throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
         }
 
-        if (cat != 'C' && cat != 'E' && cat != 'R') {
+        if (cat != 'C' && cat != 'E' && cat != 'R' && cat!= 'S') {
             throw new IllegalArgumentException("Error: la categoria debe ser 'C'(comun) o 'E'(escenario) o 'R'(restringida)");
         }
         if (bloque[1].length() != 4) {
