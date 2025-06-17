@@ -21,6 +21,7 @@ public class LecturaDeArchivosTXT {
     }
 
     public void leeZonas(Gestion ConjuntoZonas) {
+        informe.agregaError("\n------------- REPORTE DE ZONAS -------------\n");
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
             String linea = "";
@@ -87,6 +88,8 @@ public class LecturaDeArchivosTXT {
     }
 
     public void leeEventos(Gestion conjuntoZonas) {
+        informe.agregaError("\n------------- REPORTE DE EVENTOS -------------\n");
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
@@ -152,6 +155,8 @@ public class LecturaDeArchivosTXT {
     }
 
     public void leePersonas(Gestion listadoPersonas) {
+        informe.agregaError("\n------------- REPORTE DE PERSONAS -------------\n");
+
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/PERSONAS.txt"));
             String linea = "";
@@ -213,6 +218,8 @@ public class LecturaDeArchivosTXT {
         }
     }
     public void leeAccesos(Gestion listadoPersonas){
+        informe.agregaError("\n------------- REPORTE DE ACCESOS -------------\n");
+
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         try {
             BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/Accesos.txt"));

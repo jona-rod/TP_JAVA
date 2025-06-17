@@ -17,6 +17,8 @@ public abstract class Persona {
     public Persona(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
+        this.listaAccesos = new ArrayList<>();
+        this.zonasAutorizadas = new ArrayList<>();
     }
 
     public String getId() {

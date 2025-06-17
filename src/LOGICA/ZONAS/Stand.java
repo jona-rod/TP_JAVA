@@ -29,7 +29,7 @@ public class Stand extends Restringida{
 
     @Override
     public boolean zonaLlena(){
-        return !(conjuntoPersona.size() < 1);
+        return !(conjuntoPersona.size() < 5);
     }
 
 

@@ -1,1 +1,78 @@
 	Informe de errores de datos cargados desde archivos
+
+------------- REPORTE DE ZONAS -------------
+
+
+------------- REPORTE DE PERSONAS -------------
+
+
+------------- REPORTE DE PERSONAS -------------
+
+
+------------- REPORTE DE EVENTOS -------------
+
+Error de datos en la linea: C;CO01;Plaza_central-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'C' could not be parsed at index 0
+Error de datos en la linea: C;CO02;Patio_de_comidas-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'C' could not be parsed at index 0
+Error de datos en la linea: C;CO03;Zona_de_descanso-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'C' could not be parsed at index 0
+Error de datos en la linea: C;CO04;Zona_de_compras-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'C' could not be parsed at index 0
+Error de datos en la linea: S;ST01;Bar_de_jugos;CO01-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST02;Puesto_de_postres;CO01-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST03;Info_turistica;CO01-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST04;Hamburguesas_art;CO02-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST05;Comida_mexicana;CO02-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST06;Parrilla_rapida;CO02-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST07;Vegetariano;CO02-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST08;Cafeteria;CO02-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST09;Masajes_5min;CO03-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST10;Sillas_masaje;CO03-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST11;Fuente_agua;CO03-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST12;Carritos_bebidas;CO03-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST13;Merch_oficial;CO04-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST14;Artesanias_loc;CO04-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: S;ST15;Discos_vinilos;CO04-Formato de línea inválido. Se esperaban exactamente 3 campos separados por ';'
+Error de datos en la linea: E;ES01;Rock-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'E' could not be parsed at index 0
+Error de datos en la linea: E;ES02;Hip-Hop-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'E' could not be parsed at index 0
+Error de datos en la linea: E;ES03;Pop-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'E' could not be parsed at index 0
+Error de datos en la linea: E;ES04;Folcklore-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'E' could not be parsed at index 0
+Error de datos en la linea: R;RE01;Camarines-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE02;Depósito-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE03;Organización-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE04;Prensa-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE05;Seguridad-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE06;Cocina staff-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+Error de datos en la linea: R;RE07;Parking artistas-Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: Text 'R' could not be parsed at index 0
+
+------------- REPORTE DE ACCESOS -------------
+
+Error de datos en la linea: VEN016;ST08;15/06/2024 15:15:20;10;true-La persona marcada no existe.
+Error de datos en la linea: VEN019;ST09;15/06/2024 14:20:00;5;true-La persona marcada no existe.
+Error de datos en la linea: PUB009;CO03;15/06/2024 14:00:45;150;true-La persona marcada no existe.
+Error de datos en la linea: PUB010;CO03;15/06/2024 15:30:20;120;true-La persona marcada no existe.
+Error de datos en la linea: PUB011;ES01;15/06/2024 16:15:10;90;true-La persona marcada no existe.
+Error de datos en la linea: PUB012;ES01;15/06/2024 17:45:35;75;true-La persona marcada no existe.
+Error de datos en la linea: PUB013;ES02;15/06/2024 18:30:50;60;true-La persona marcada no existe.
+Error de datos en la linea: PUB014;ES02;15/06/2024 19:15:25;45;true-La persona marcada no existe.
+Error de datos en la linea: PUB015;ES03;15/06/2024 20:00:40;90;true-La persona marcada no existe.
+Error de datos en la linea: STA002;CO02;15/06/2024 08:00:00;540;true-La persona marcada no existe.
+Error de datos en la linea: STA003;CO03;15/06/2024 09:00:00;480;true-La persona marcada no existe.
+Error de datos en la linea: STA005;ES01;15/06/2024 15:00:00;300;true-La persona marcada no existe.
+Error de datos en la linea: STA006;ES02;15/06/2024 17:00:00;240;true-La persona marcada no existe.
+Error de datos en la linea: VEN043;ST01;15/06/2024 10:05:10;18;true-La persona marcada no existe.
+Error de datos en la linea: VEN044;ST01;15/06/2024 12:30:00;0;false-La persona marcada no existe.
+Error de datos en la linea: VEN045;ST02;15/06/2024 13:15:45;15;true-La persona marcada no existe.
+Error de datos en la linea: VEN046;ST03;15/06/2024 15:20:30;8;true-La persona marcada no existe.
+Error de datos en la linea: VEN047;ST04;15/06/2024 14:45:00;25;false-La persona marcada no existe.
+Error de datos en la linea: VEN048;ST05;15/06/2024 16:10:15;22;true-La persona marcada no existe.
+Error de datos en la linea: VEN049;ST06;15/06/2024 17:25:40;15;true-La persona marcada no existe.
+Error de datos en la linea: VEN050;ST07;15/06/2024 15:30:00;25;false-La persona marcada no existe.
+Error de datos en la linea: ART030;ES01;15/06/2024 18:30:00;90;true-La persona marcada no existe.
+Error de datos en la linea: ART031;ES01;15/06/2024 19:45:00;0;false-La persona marcada no existe.
+Error de datos en la linea: ART032;ES02;15/06/2024 21:00:00;45;true-La persona marcada no existe.
+Error de datos en la linea: ART033;ES03;15/06/2024 22:15:00;60;false-La persona marcada no existe.
+Error de datos en la linea: ART034;ES04;15/06/2024 23:30:00;30;true-La persona marcada no existe.
+Error de datos en la linea: STA035;CO01;15/06/2024 09:30:00;480;true-La persona marcada no existe.
+Error de datos en la linea: STA036;CO02;15/06/2024 10:45:00;0;false-La persona marcada no existe.
+Error de datos en la linea: STA037;CO03;15/06/2024 12:00:00;360;true-La persona marcada no existe.
+Error de datos en la linea: STA038;CO04;15/06/2024 13:15:00;300;false-La persona marcada no existe.
+Error de datos en la linea: STA039;ES01;15/06/2024 17:45:00;180;true-La persona marcada no existe.
+Error de datos en la linea: STA040;ES02;15/06/2024 19:30:00;120;true-La persona marcada no existe.
