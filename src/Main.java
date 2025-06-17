@@ -15,7 +15,7 @@ public class Main{
        lectura.leePersonas(gestion);
         lectura.generaInformeDatos();
         lectura.leePersonas(gestion);
-        lectura.le
+        lectura.leeEventos(gestion);
         System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
        System.out.println(gestion.getConjuntoZonas().get("ST01").toString());
        System.out.println(gestion.getConjuntoZonas().get("ES04").toString());
