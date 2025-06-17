@@ -1,10 +1,7 @@
 package LOGICA.ARCHIVOS;
 
 import LOGICA.GESTION.Gestion;
-import LOGICA.PERSONAS.Artista;
-import LOGICA.PERSONAS.Asistente;
-import LOGICA.PERSONAS.Comerciante;
-import LOGICA.PERSONAS.Staff;
+import LOGICA.PERSONAS.*;
 import LOGICA.REPORTES.ReporteDeDatos;
 import LOGICA.ZONAS.*;
 
@@ -85,7 +82,7 @@ public class LecturaDeArchivosTXT {
     public void leeEventos(Gestion conjuntoZonas) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/Eventos.txt"));
             String linea = "";
             while ((linea = lector.readLine()) != null) {
                 String[] bloque = linea.split(";");
@@ -149,7 +146,7 @@ public class LecturaDeArchivosTXT {
 
     public void leePersonas(Gestion listadoPersonas) {
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/PERSONAS.txt"));
             String linea = "";
             while ((linea = lector.readLine()) != null) {
                 String[] bloque = linea.split(";");
@@ -203,6 +200,73 @@ public class LecturaDeArchivosTXT {
         }
         if(bloque[3].length() != 4){
             throw new IllegalArgumentException("Error: idZona debe tener 4 caracteres");
+        }
+    }
+    public void leeAccesos(Gestion listadoPersonas){
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        try {
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/Accesos.txt"));
+            String linea = "";
+            while ((linea = lector.readLine()) != null) {
+                String[] bloque = linea.split(";");
+                try {
+                    validaDatosAccesos(bloque);
+                    // Parseo de datos
+                    String idPersona = bloque[0];
+                    Zona zona = listadoPersonas.buscarZonaPorCodigo(bloque[1]);
+                    LocalDateTime fechaHora = LocalDateTime.parse(bloque[2], formatter);
+                    int  minPer = Integer.parseInt(bloque[3]);
+                    boolean estado = Boolean.parseBoolean(bloque[4]);
+
+                    // Buscar persona y agregar listado de acceso
+                    Persona persona = (Persona) listadoPersonas.buscaPersonaPorId(idPersona);
+                    Acceso nuevoAcceso = new Acceso(zona,fechaHora,minPer,estado);
+                    persona.cargaAcceso(nuevoAcceso);
+                } catch (StringIndexOutOfBoundsException e) {
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
+                } catch (IllegalArgumentException e) {
+                    informe.agregaError("Error de datos en la linea: " + linea + "-" + e.getMessage());
+                }
+            }
+            lector.close();
+        } catch (IOException e) {
+            informe.agregaError("Error al leer el archivo " + e.getMessage());
+        }
+    }
+    public void validaDatosAccesos(String[] bloque) throws IllegalArgumentException {
+        // Verificar que el bloque tenga exactamente 5 elementos
+        if (bloque.length != 5) {
+            throw new IllegalArgumentException("La línea debe contener exactamente 5 campos separados por ';'");
+        }
+
+        // Validar ID Persona (no vacío)
+        if (bloque[0] == null || bloque[0].trim().isEmpty()) {
+            throw new IllegalArgumentException("El ID de persona no puede estar vacío");
+        }
+
+        // Validar código de zona (no vacío)
+        if (bloque[1] == null || bloque[1].trim().isEmpty()) {
+            throw new IllegalArgumentException("El código de zona no puede estar vacío");
+        }
+
+        // Validar fecha/hora (formato correcto se validará al parsear)
+        if (bloque[2] == null || bloque[2].trim().isEmpty()) {
+            throw new IllegalArgumentException("La fecha/hora no puede estar vacía");
+        }
+
+        // Validar minutos permanencia (número entero positivo)
+        try {
+            int minutos = Integer.parseInt(bloque[3]);
+            if (minutos < 0) {
+                throw new IllegalArgumentException("Los minutos de permanencia deben ser un número positivo");
+            }
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Los minutos de permanencia deben ser un número entero válido");
+        }
+
+        // Validar estado (true/false)
+        if (!bloque[4].equalsIgnoreCase("true") && !bloque[4].equalsIgnoreCase("false")) {
+            throw new IllegalArgumentException("El estado debe ser 'true' o 'false'");
         }
     }
 }

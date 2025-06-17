@@ -90,7 +90,15 @@ public class Gestion {
             throw new IllegalArgumentException("La zona marcada no existe.");
         return conjuntoZonas.get(codigo.trim());
     }
-
+    public Persona buscaPersonaPorId(String idPersona){
+        if(idPersona == null || idPersona.trim().isEmpty()){
+            throw new IllegalArgumentException("El código de persona no puede ser nulo o vacío");
+        }
+        if(listadoPersonas.get(idPersona.trim()) == null){
+            throw new IllegalArgumentException("La persona marcada no existe.");
+        }
+        return listadoPersonas.get(idPersona.trim());
+    }
     public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException{
 
         if(listadoPersonas.containsKey(idPersona)){
