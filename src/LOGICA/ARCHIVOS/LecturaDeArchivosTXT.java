@@ -87,9 +87,9 @@ public class LecturaDeArchivosTXT {
     }
 
     public void leeEventos(Gestion conjuntoZonas) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/mm/yyyy hh:mm:ss");
         try {
-            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZONAS.txt"));
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/Eventos.txt"));
             String linea = "";
             while ((linea = lector.readLine()) != null) {
                 String[] bloque = linea.split(";");
