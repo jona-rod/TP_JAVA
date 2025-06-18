@@ -12,7 +12,6 @@ import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -45,7 +44,7 @@ public class Gestion {
     public TreeMap<String, Zona> getConjuntoZonas(){
         return conjuntoZonas;
     }
-    public TreeMap<String,Persona> getListadoPersonas(){return listadoPersonas;}
+
     public ArrayList<Stand> getListadoStands(){
         return listadoStands;
     }
@@ -71,19 +70,20 @@ public class Gestion {
         String mensaje = "La persona con id:  " + persona.getId() + ", Nombre : " + persona.getNombre() + " no pudo registrarse";
 
         if(conjuntoZonas.get(idZona) != null) {
-            if(! conjuntoZonas.get(idZona).zonaLlena()) {
-                //if (persona.habilitado(conjuntoZonas.get(idZona))) {
+            if(! conjuntoZonas.get(idZona).zonaLlena()){
+           //     if (persona.habilitado(conjuntoZonas.get(idZona))) {
                     conjuntoZonas.get(idZona).agregaPersona(persona);
                     listadoPersonas.put(persona.getId(), persona);
-                    if (persona.tipoPersona() == 'C') {
+                    if(persona.tipoPersona() == 'C'){
                         Comerciante cm = (Comerciante) persona;
                         Stand st = (Stand) conjuntoZonas.get(cm.getSuStand());
                         st.setResponsable("hola");
-                    }
-                //}else{
-                  //  throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje);
-                //}
-            }else {
+                     }
+              //  else {
+               //     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje); //comento porque al realizar la carga metodo habilitaod() no tiene referencia a lista
+               // }
+            }
+            else {
                 throw new Exception("Zona con capacidad completa - " + mensaje);
             }
         }

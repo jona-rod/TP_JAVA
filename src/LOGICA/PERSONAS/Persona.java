@@ -9,10 +9,10 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 
 public abstract class Persona {
-    String id;
-    String nombre;
-    ArrayList<Acceso> listaAccesos;
-    ArrayList<Zona> zonasAutorizadas;
+        String id;
+        String nombre;
+        ArrayList<Acceso> listaAccesos;
+        ArrayList<Zona> zonasAutorizadas;
 
     public Persona(String id, String nombre) {
         this.id = id;
@@ -49,48 +49,44 @@ public abstract class Persona {
         listaAccesos.add(ac);
     }
 
-    public void cargaZonaAutorizada(Zona zona) {
-        zonasAutorizadas.add(zona);
-    }
+    public void cargaZonaAutorizada(Zona zona) {zonasAutorizadas.add(zona);}
 
 
     public abstract char tipoPersona();
 
     public abstract boolean habilitado(Zona zona);//busca en el atributo "zonasHabilitadas" y devuelve si está habilitado (reedefine en cada subclase)
 
-    protected boolean zonaHabilitada(Zona zona) {
+    protected boolean zonaHabilitada(Zona zona){
         return zonasAutorizadas.contains(zona);
-    }
+    };
 
-    public String zonaActual() {
-        String zonaAct = null;
-        for (Acceso acceso : listaAccesos) {
-            if (acceso.getEstado()) {
-                zonaAct = acceso.getZona().getCodigo();
+    public String zonaActual(){
+        for(Acceso acceso : listaAccesos){
+            if(acceso.getEstado()){
+                return acceso.getZona().getCodigo();
             }
         }
-        System.out.println(zonaAct);
-        return zonaAct;
+        return null;
     }
 
     public void agregaEventoArtista(Evento evento) {
     }
 
-    ;
+    public void agregaEventoArtista(Evento evento){};
 
-    public String muestraListaAccesosPersona() {
+    public String muestraListaAccesosPersona(){
         StringBuilder sb = new StringBuilder();
         sb.append("Lista de accesos\n");
-        for (Acceso acceso : listaAccesos) {
+        for(Acceso acceso : listaAccesos){
             sb.append("\t").append(acceso.toString()).append("\n");
         }
         return sb.toString();
     }
 
-    public String muestraListaZonasAutorizadasPersona() {
+    public String muestraListaZonasAutorizadasPersona(){
         StringBuilder sb = new StringBuilder();
         sb.append("Lista de zonas autorizadas\n");
-        for (Zona zona : zonasAutorizadas) {
+        for(Zona zona : zonasAutorizadas){
             sb.append("\t").append("Id: ").append(zona.getCodigo()).append(" - ").append("Descripción: ").append(zona.getDescripcion()).append("\n");
         }
         return sb.toString();
