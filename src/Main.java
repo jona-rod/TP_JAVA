@@ -11,15 +11,17 @@ public class Main{
         Gestion gestion = new Gestion();
         LecturaDeArchivosTXT lectura = new LecturaDeArchivosTXT();
         lectura.leeZonas(gestion);
-
-       lectura.leePersonas(gestion);
         lectura.leePersonas(gestion);
-        lectura.leeEventos(gestion);
+        lectura.leeHabilitadas(gestion);
         lectura.leeAccesos(gestion);
+        lectura.leeEventos(gestion);
         lectura.generaInformeDatos();
+        gestion.muevePersona("PUB001","CO03");
+        System.out.println(gestion.getListadoPersonas().get("PUB001").toString());
        System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
-       System.out.println(gestion.getConjuntoZonas().get("ST01").toString());
-       System.out.println(gestion.getConjuntoZonas().get("ES04").toString());
+        System.out.println(gestion.getConjuntoZonas().get("CO02").toString());
+       //System.out.println(gestion.getConjuntoZonas().get("ST01").toString());
+       //System.out.println(gestion.getConjuntoZonas().get("ES04").toString());
 
     }
 }

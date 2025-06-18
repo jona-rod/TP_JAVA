@@ -286,6 +286,45 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("El estado debe ser 'true' o 'false'");
         }
     }
+    public void leeHabilitadas(Gestion listadoPersonas){
+        informe.agregaError("\n------------- REPORTE DE ZONAS HABILITADAS -------------\n");
+        try {
+            BufferedReader lector = new BufferedReader(new FileReader("src/LOGICA/ARCHIVOS/ZonasHabilitadas.txt"));
+            String linea = "";
+            while ((linea = lector.readLine()) != null) {
+                String[] bloque = linea.split(";");
+                try {
+                    validaDatosHabilitadas(bloque);
+                    // Parseo de datos
+                    String idPersona = bloque[0];
+                    String idZona = bloque[1];
+
+                    // Buscar persona y agregar listado de acceso
+                    Persona persona = (Persona) listadoPersonas.buscaPersonaPorId(idPersona);
+                    Zona zona = (Zona) listadoPersonas.buscarZonaPorCodigo(idZona);
+                    persona.cargaZonaAutorizada(zona);
+                } catch (StringIndexOutOfBoundsException e) {
+                    informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
+                } catch (IllegalArgumentException e) {
+                    informe.agregaError("Error de datos en la linea: " + linea + "-" + e.getMessage());
+                }
+            }
+            lector.close();
+        } catch (IOException e) {
+            informe.agregaError("Error al leer el archivo " + e.getMessage());
+        }
+    }
+    public void validaDatosHabilitadas(String[] bloque) throws IllegalArgumentException,StringIndexOutOfBoundsException {
+        if (bloque.length != 2) {
+            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
+        }
+        if (bloque[0].length() != 6) {
+            throw new IllegalArgumentException("Error: ID Persona debe tener 6 caracteres");
+        }
+        if (bloque[1].length() != 4) {
+            throw new IllegalArgumentException("Error: ID Zona debe tener 4 caracteres");
+        }
+    }
 
     public void generaInformeDatos(){
         informe.generaInforme();

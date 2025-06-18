@@ -35,7 +35,7 @@ public class Artista extends Persona {
 
     @Override
     public boolean habilitado(Zona zona) {
-        return zona.tipoZona() == 'C' || zonaHabilitada(zona);
+        return zonaHabilitada(zona);
     }
 
     @Override

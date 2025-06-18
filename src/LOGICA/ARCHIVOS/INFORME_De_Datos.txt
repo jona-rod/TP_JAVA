@@ -6,10 +6,10 @@
 ------------- REPORTE DE PERSONAS -------------
 
 
-------------- REPORTE DE PERSONAS -------------
-
-
-------------- REPORTE DE EVENTOS -------------
+------------- REPORTE DE ZONAS HABILITADAS -------------
 
 
 ------------- REPORTE DE ACCESOS -------------
+
+
+------------- REPORTE DE EVENTOS -------------

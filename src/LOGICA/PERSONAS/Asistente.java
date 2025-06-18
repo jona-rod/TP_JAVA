@@ -16,7 +16,7 @@ public class Asistente extends Persona {
 
     @Override
     public boolean habilitado(Zona zona) {
-        return zona.tipoZona() == 'C' || zona.tipoZona() == 'E';
+        return zonaHabilitada(zona);
     }
 
 

@@ -1,4 +1,4 @@
-C;VEN001;Ana_Lopez;ST01;ST01
+C;VEN001;Ana_Lopez;CO01;ST01
 C;VEN002;Carlos_Mendez;CO01;ST01
 C;VEN003;Luisa_Fernandez;CO01;ST02
 C;VEN004;Pedro_Gomez;CO01;ST02
@@ -6,10 +6,7 @@ C;VEN005;Elena_Ruiz;CO01;ST03
 C;VEN006;Diego_Torres;CO01;ST03
 H;PUB001;Pedro_Dominico;CO01
 H;PUB002;Geronimo_benavidez;CO01
-H;PUB001;Marta_Sanchez;CO01
-H;PUB002;Javier_Rios;CO01
 S;STA001;Juan_Perez;CO01
-H;PUB002;Maria_Garcia;CO01
 H;PUB003;Laura_Diaz;CO01
 S;STA004;Pablo_Martinez;CO01
 C;VEN007;Sofia_Castro;CO02;ST04
@@ -19,9 +16,6 @@ C;VEN010;Julia_Navarro;CO02;ST05
 C;VEN011;Alvaro_Morales;CO02;ST06
 C;VEN012;Claudia_Pardo;CO02;ST06
 C;VEN013;Sergio_Miranda;CO02;ST06
-H;PUB003;Martin_Disalvo;CO02
-H;PUB004;Delfina_Gomez;CO02
-H;PUB003;Andrea_Molina;CO02
 H;PUB004;Ricardo_Vega;CO02
 H;PUB005;Carmen_Ortega;CO02
 H;PUB006;Alberto_Campos;CO02
@@ -33,8 +27,6 @@ C;VEN018;Raul_Hernandez;CO03;ST08
 H;PUB019;Nuria_Vidal;CO03
 H;PUB005;Norah_Jones;CO03
 H;PUB006;Jack_Johnson;CO03
-H;PUB005;Lucas_Ferrer;CO03
-H;PUB006;Silvia_Costa;CO03
 S;STA007;Patricia_Nunez;CO03
 S;STA008;Fernando_Lopez;CO03
 C;VEN020;Hector_Gimenez;CO04;ST09
@@ -48,8 +40,6 @@ C;VEN027;Lucia_Montero;CO04;ST15
 C;VEN028;Diego_Medina;CO04;ST15
 H;PUB007;Pedro_Perez;CO04
 H;PUB008;Pablo_esse;CO04
-H;PUB007;Andrea_Molina;CO04
-H;PUB008;Ricardo_Vega;CO04
 S;STA009;Hugo_Rodriguez;CO04
 S;STA010;Sandra_Castro;CO04
 A;ART009;Ozzy_Osbourne;ES01
