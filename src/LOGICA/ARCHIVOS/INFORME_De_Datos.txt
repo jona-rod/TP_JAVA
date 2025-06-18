@@ -5,11 +5,73 @@
 
 ------------- REPORTE DE PERSONAS -------------
 
+Error en linea C;VEN002;Carlos_Mendez;ST02;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN003;Luisa_Fernandez;ST03;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN004;Pedro_Gomez;ST04;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN005;Elena_Ruiz;ST05;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN006;Diego_Torres;ST06;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN007;Sofia_Castro;ST07;CO02; - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN008;Miguel_Angel;ST08;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN009;Isabel_Romero;ST09;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN010;Julia_Navarro;ST10;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN011;Alvaro_Morales;ST11;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN012;Claudia_Pardo;ST12;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN013;Sergio_Miranda;ST13;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN014;Roberto_Jimenez;ST14;CO03 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN015;Teresa_Gil;ST15;CO03 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN017;Eva_Santos;ST17;CO03 - Zona no existe - La persona con id:  VEN017, Nombre : Eva_Santos no pudo registrarse
+Error en linea C;VEN018;Raul_Hernandez;ST18;CO03 - Zona no existe - La persona con id:  VEN018, Nombre : Raul_Hernandez no pudo registrarse
+Error en linea C;VEN020;Hector_Gimenez;ST20;CO04 - Zona no existe - La persona con id:  VEN020, Nombre : Hector_Gimenez no pudo registrarse
+Error en linea C;VEN021;Rosa_Alonso;ST21;CO04 - Zona no existe - La persona con id:  VEN021, Nombre : Rosa_Alonso no pudo registrarse
+Error en linea C;VEN022;Victor_Pons;ST22;CO04 - Zona no existe - La persona con id:  VEN022, Nombre : Victor_Pons no pudo registrarse
+Error en linea C;VEN023;Diana_Montes;ST23;CO04 - Zona no existe - La persona con id:  VEN023, Nombre : Diana_Montes no pudo registrarse
+Error en linea C;VEN024;Mario_Benitez;ST24;CO04 - Zona no existe - La persona con id:  VEN024, Nombre : Mario_Benitez no pudo registrarse
+Error en linea C;VEN025;Jorge_Silva;ST25;CO04 - Zona no existe - La persona con id:  VEN025, Nombre : Jorge_Silva no pudo registrarse
+Error en linea C;VEN026;Felipe_Rios;ST26;CO04 - Zona no existe - La persona con id:  VEN026, Nombre : Felipe_Rios no pudo registrarse
+Error en linea C;VEN027;Lucia_Montero;ST27;CO04 - Zona no existe - La persona con id:  VEN027, Nombre : Lucia_Montero no pudo registrarse
+Error en linea C;VEN028;Diego_Medina;ST28;CO04 - Zona no existe - La persona con id:  VEN028, Nombre : Diego_Medina no pudo registrarse
 
 ------------- REPORTE DE PERSONAS -------------
 
+Error en linea C;VEN002;Carlos_Mendez;ST02;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN003;Luisa_Fernandez;ST03;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN004;Pedro_Gomez;ST04;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN005;Elena_Ruiz;ST05;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN006;Diego_Torres;ST06;CO01 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN007;Sofia_Castro;ST07;CO02; - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN008;Miguel_Angel;ST08;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN009;Isabel_Romero;ST09;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN010;Julia_Navarro;ST10;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN011;Alvaro_Morales;ST11;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN012;Claudia_Pardo;ST12;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN013;Sergio_Miranda;ST13;CO02 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN014;Roberto_Jimenez;ST14;CO03 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN015;Teresa_Gil;ST15;CO03 - class LOGICA.ZONAS.Comun cannot be cast to class LOGICA.ZONAS.Stand (LOGICA.ZONAS.Comun and LOGICA.ZONAS.Stand are in unnamed module of loader 'app')
+Error en linea C;VEN017;Eva_Santos;ST17;CO03 - Zona no existe - La persona con id:  VEN017, Nombre : Eva_Santos no pudo registrarse
+Error en linea C;VEN018;Raul_Hernandez;ST18;CO03 - Zona no existe - La persona con id:  VEN018, Nombre : Raul_Hernandez no pudo registrarse
+Error en linea C;VEN020;Hector_Gimenez;ST20;CO04 - Zona no existe - La persona con id:  VEN020, Nombre : Hector_Gimenez no pudo registrarse
+Error en linea C;VEN021;Rosa_Alonso;ST21;CO04 - Zona no existe - La persona con id:  VEN021, Nombre : Rosa_Alonso no pudo registrarse
+Error en linea C;VEN022;Victor_Pons;ST22;CO04 - Zona no existe - La persona con id:  VEN022, Nombre : Victor_Pons no pudo registrarse
+Error en linea C;VEN023;Diana_Montes;ST23;CO04 - Zona no existe - La persona con id:  VEN023, Nombre : Diana_Montes no pudo registrarse
+Error en linea C;VEN024;Mario_Benitez;ST24;CO04 - Zona no existe - La persona con id:  VEN024, Nombre : Mario_Benitez no pudo registrarse
+Error en linea C;VEN025;Jorge_Silva;ST25;CO04 - Zona no existe - La persona con id:  VEN025, Nombre : Jorge_Silva no pudo registrarse
+Error en linea C;VEN026;Felipe_Rios;ST26;CO04 - Zona no existe - La persona con id:  VEN026, Nombre : Felipe_Rios no pudo registrarse
+Error en linea C;VEN027;Lucia_Montero;ST27;CO04 - Zona no existe - La persona con id:  VEN027, Nombre : Lucia_Montero no pudo registrarse
+Error en linea C;VEN028;Diego_Medina;ST28;CO04 - Zona no existe - La persona con id:  VEN028, Nombre : Diego_Medina no pudo registrarse
 
 ------------- REPORTE DE EVENTOS -------------
 
 
 ------------- REPORTE DE ACCESOS -------------
+
+Error de datos en la linea: VEN017;ST08;15/06/2024 16:40:05;15;true-La persona marcada no existe.
+Error de datos en la linea: VEN018;ST08;15/06/2024 17:25:10;12;true-La persona marcada no existe.
+Error de datos en la linea: VEN020;ST10;15/06/2024 14:25:00;15;true-La persona marcada no existe.
+Error de datos en la linea: VEN021;ST11;15/06/2024 15:10:30;8;true-La persona marcada no existe.
+Error de datos en la linea: VEN022;ST12;15/06/2024 16:30:45;10;true-La persona marcada no existe.
+Error de datos en la linea: VEN023;ST13;15/06/2024 17:15:20;25;true-La persona marcada no existe.
+Error de datos en la linea: VEN024;ST14;15/06/2024 18:00:05;20;true-La persona marcada no existe.
+Error de datos en la linea: VEN025;ST15;15/06/2024 16:15:00;30;true-La persona marcada no existe.
+Error de datos en la linea: VEN026;ST15;15/06/2024 19:30:10;35;true-La persona marcada no existe.
+Error de datos en la linea: VEN027;ST15;15/06/2024 20:15:25;40;true-La persona marcada no existe.
+Error de datos en la linea: VEN028;ST15;15/06/2024 21:00:00;30;true-La persona marcada no existe.

@@ -75,9 +75,11 @@ public class Gestion {
                     conjuntoZonas.get(idZona).agregaPersona(persona);
                     listadoPersonas.put(persona.getId(), persona);
                     if(persona.tipoPersona() == 'C'){
+                        System.out.println("INGRESO IF C");
                         Comerciante cm = (Comerciante) persona;
                         Stand st = (Stand) conjuntoZonas.get(cm.getSuStand());
-                        st.setResponsable("hola");
+                        System.out.println("imprime"+persona.getId() + cm.getId());
+                        st.setResponsable(persona.getId());                        System.out.println("IMPRIME" + st.getResponsable());
                      }
               //  else {
                //     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje); //comento porque al realizar la carga metodo habilitaod() no tiene referencia a lista

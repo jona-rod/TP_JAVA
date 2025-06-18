@@ -73,25 +73,25 @@ public abstract class Persona {
 
     public String muestraListaAccesosPersona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Lista de accesos\n");
+        sb.append("\tLista de accesos\n");
         for(Acceso acceso : listaAccesos){
-            sb.append("\t").append(acceso.toString()).append("\n");
+            sb.append("\t\t").append(acceso.toString()).append("\n");
         }
         return sb.toString();
     }
 
     public String muestraListaZonasAutorizadasPersona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Lista de zonas autorizadas\n");
+        sb.append("\tLista de zonas autorizadas\n");
         for(Zona zona : zonasAutorizadas){
-            sb.append("\t").append("Id: ").append(zona.getCodigo()).append(" - ").append("Descripción: ").append(zona.getDescripcion()).append("\n");
+            sb.append("\t\t").append("Id: ").append(zona.getCodigo()).append(" - ").append("Descripción: ").append(zona.getDescripcion()).append("\n");
         }
         return sb.toString();
     }
 
     @Override
     public String toString() {
-        return "\n\tId : " + id + " \n\tNombre : " + nombre; /*+ "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona()*comento temporalmente para prueba*/
+        return "\n\tId : " + id + " \n\tNombre : " + nombre + "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona();
     }
 
 }

@@ -1,5 +1,6 @@
 import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
 import LOGICA.GESTION.Gestion;
+import LOGICA.ZONAS.Zona;
 
 import java.sql.SQLOutput;
 
@@ -20,6 +21,10 @@ public class Main{
        System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
        System.out.println(gestion.getConjuntoZonas().get("ST01").toString());
        System.out.println(gestion.getConjuntoZonas().get("ES04").toString());
+
+       for(Zona zona: gestion.getConjuntoZonas().values() ){
+           System.out.println(zona);
+       }
 
     }
 }

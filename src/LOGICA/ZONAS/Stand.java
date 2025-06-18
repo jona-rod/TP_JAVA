@@ -24,7 +24,7 @@ public class Stand extends Restringida{
 
     @Override
     public String toString() {
-        return super.toString()+"\nUbicacion:  "+getUbicacion()+"\nResponsable: ";//+ getConjuntoPersona().get(responsable).toString(); comentado para prueba, agregarlo una vez que haya personas cargadas
+        return super.toString()+"\nUbicacion:  "+getUbicacion()+"\nResponsable: "+ (responsable!=null?responsable.toString():"no tiene responsable");
     }
 
     @Override
