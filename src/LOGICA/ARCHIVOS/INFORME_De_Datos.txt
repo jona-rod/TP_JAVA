@@ -5,6 +5,17 @@
 
 ------------- REPORTE DE PERSONAS -------------
 
+Error en linea C;VEN017;Eva_Santos;CO03;ST17 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN018;Raul_Hernandez;CO03;ST18 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN020;Hector_Gimenez;CO04;ST20 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN021;Rosa_Alonso;CO04;ST21 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN022;Victor_Pons;CO04;ST22 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN023;Diana_Montes;CO04;ST23 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN024;Mario_Benitez;CO04;ST24 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN025;Jorge_Silva;CO04;ST25 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN026;Felipe_Rios;CO04;ST26 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN027;Lucia_Montero;CO04;ST27 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
+Error en linea C;VEN028;Diego_Medina;CO04;ST28 - Cannot invoke "LOGICA.ZONAS.Stand.setResponsable(String)" because "st" is null
 
 ------------- REPORTE DE ZONAS HABILITADAS -------------
 

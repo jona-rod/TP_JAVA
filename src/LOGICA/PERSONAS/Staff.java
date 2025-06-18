@@ -15,6 +15,6 @@ public class Staff extends Persona {
 
     @Override
     public boolean habilitado(Zona zona) {
-        return  zonaHabilitada(zona);
+        return  zonaHabilitada(zona)|| zona.tipoZona() == 'C' || zona.tipoZona() == 'E' || zona.tipoZona() == 'S' || zona.tipoZona() == 'R';
     }
 }

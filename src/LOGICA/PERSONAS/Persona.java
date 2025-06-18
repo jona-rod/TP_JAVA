@@ -69,10 +69,8 @@ public abstract class Persona {
         return null;
     }
 
-    public void agregaEventoArtista(Evento evento) {
+    public  void agregaEventoArtista(Evento evento) {
     }
-
-    public void agregaEventoArtista(Evento evento){};
 
     public String muestraListaAccesosPersona(){
         StringBuilder sb = new StringBuilder();

@@ -87,7 +87,7 @@ public class LecturaDeArchivosTXT {
         }*/
     }
 
-    public void leeEventos(Gestion conjuntoZonas) {
+    public void leeEventos(Gestion conjuntoZonas /*Gestion listadoPersonas*/) {
         informe.agregaError("\n------------- REPORTE DE EVENTOS -------------\n");
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
@@ -105,8 +105,10 @@ public class LecturaDeArchivosTXT {
 
                     // Buscar escenario y agregar evento
                     Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
+                    //Persona persona = (Persona) listadoPersonas.buscaPersonaPorId(artista);
                     Evento nuevoEvento = new Evento(fechaHora, artista);
                     escenario.cargaEvento(nuevoEvento);
+                    //persona.agregaEventoArtista(nuevoEvento);
 
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());

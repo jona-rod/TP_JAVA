@@ -44,7 +44,9 @@ public class Gestion {
     public TreeMap<String, Zona> getConjuntoZonas(){
         return conjuntoZonas;
     }
-
+    public TreeMap<String,Persona> getListadoPersonas(){
+        return listadoPersonas;
+    }
     public ArrayList<Stand> getListadoStands(){
         return listadoStands;
     }
@@ -120,7 +122,7 @@ public class Gestion {
                 if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
                     if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
                         nuevo.setEstado(true);
-                        conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per));
+                        conjuntoZonas.get(idZonaDestino).agregaPersona(per);
                         conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
                         mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                     } else {

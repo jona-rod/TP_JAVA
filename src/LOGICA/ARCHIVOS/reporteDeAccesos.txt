@@ -1,1 +1,7 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO ACEPTADO
+Nombre: Marta_Sanchez
+Id: PUB001
+Cambio de zona de CO01 - Plaza_central hacia CO03 - Zona_de_descanso
+
+
