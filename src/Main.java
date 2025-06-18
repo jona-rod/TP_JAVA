@@ -17,21 +17,21 @@ public class Main{
         lectura.leeAccesos(gestion);
         lectura.leeEventos(gestion);
         lectura.generaInformeDatos();
-        System.out.println("\nMUESTRA ZONA CO01.................................");
+        System.out.println("\nMUESTRA ZONA CO01...............................................................");
         System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
-        System.out.println("\nMUESTRA ZONA CO03.................................");
+        System.out.println("\nMUESTRA ZONA CO03...............................................................");
         System.out.println(gestion.getConjuntoZonas().get("CO03").toString());
 
-        gestion.muevePersona("PUB001","CO04"); //no tiene autorizacion
+        gestion.muevePersona("PUB001","RE05"); //no tiene autorizacion
 
         gestion.muevePersona("PUB001","CO03"); // tiene autorizacion
 
-        System.out.println("\nDATOS DE PERSONA...................................");
+        System.out.println("\nDATOS DE PERSONA.............................................");
         System.out.println(gestion.getListadoPersonas().get("PUB001").toString());
 
-        System.out.println("\nMUESTRA ZONA CO01 MODIFICADA.................................");
+        System.out.println("\nMUESTRA ZONA CO01 MODIFICADA...................................................");
         System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
-        System.out.println("\nMUESTRA ZONA CO03 MODIFICADA.................................");
+        System.out.println("\nMUESTRA ZONA CO03 MODIFICADA...................................................");
         System.out.println(gestion.getConjuntoZonas().get("CO03").toString() + "\n");
 
         System.out.println("\nMUESTRA DATOS PERSONA .................................");

@@ -1,4 +1,10 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO DENEGADO
+Nombre: Marta_Sanchez
+Id: PUB001
+No tiene habilitación de acceso a la zona: RE05 - Seguridad
+
+
 ACCESO ACEPTADO
 Nombre: Marta_Sanchez
 Id: PUB001
