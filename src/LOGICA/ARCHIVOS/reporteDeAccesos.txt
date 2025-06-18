@@ -1,1 +1,13 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO DENEGADO
+Nombre: Marta_Sanchez
+Id: PUB001
+No tiene habilitación de acceso a la zona: CO04 - Zona_de_compras
+
+
+ACCESO ACEPTADO
+Nombre: Marta_Sanchez
+Id: PUB001
+Cambio de zona de CO01 - Plaza_central hacia CO03 - Zona_de_descanso
+
+

@@ -48,6 +48,10 @@ public class Gestion {
     public ArrayList<Stand> getListadoStands(){
         return listadoStands;
     }
+//2 agrego
+    public TreeMap<String, Persona> getListadoPersonas(){
+        return listadoPersonas;
+    }
 
     public void agregarZona(Zona zona) {
         conjuntoZonas.put(zona.getCodigo(), zona);
@@ -120,7 +124,7 @@ public class Gestion {
                 if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
                     if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
                         nuevo.setEstado(true);
-                        conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per));
+                        conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));//3agrego .getId
                         conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
                         mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                     } else {

@@ -69,8 +69,8 @@ public abstract class Persona {
         return null;
     }
 
-    public void agregaEventoArtista(Evento evento) {
-    }
+   //1 public void agregaEventoArtista(Evento evento) {
+    //}
 
     public void agregaEventoArtista(Evento evento){};
 
@@ -94,7 +94,7 @@ public abstract class Persona {
 
     @Override
     public String toString() {
-        return "\n\tId : " + id + " \n\tNombre : " + nombre; /*+ "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona()*comento temporalmente para prueba*/
+        return "\n\tId : " + id + " \n\tNombre : " + nombre + "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona();
     }
 
 }
