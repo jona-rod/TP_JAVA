@@ -957,8 +957,8 @@ LISTA DE PERSONAS EN ZONA
 	Nombre : Pedro_Dominico
 Lista de accesos
 	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T08:45:12 - Permanencia: 180 - Estado: true
-	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-18T22:56:08.570159 - Permanencia: 30 - Estado: false
-	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-18T22:56:08.570370 - Permanencia: 30 - Estado: true
+	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-19T15:20:39.717097 - Permanencia: 30 - Estado: false
+	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-19T15:20:39.717293 - Permanencia: 30 - Estado: true
 
 Lista de zonas autorizadas
 	Id: CO01 - Descripción: Plaza_central
