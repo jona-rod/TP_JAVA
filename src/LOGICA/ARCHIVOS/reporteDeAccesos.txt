@@ -11,3 +11,9 @@ Id: PUB001
 Cambio de zona de CO01 - Plaza_central hacia CO03 - Zona_de_descanso
 
 
+ACCESO ACEPTADO
+Nombre: Diego_Medina
+Id: VEN028
+Cambio de zona de ST15 - Discos_vinilos hacia CO01 - Plaza_central
+
+
