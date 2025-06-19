@@ -27,6 +27,6 @@ public class Comerciante extends Persona {
 
     @Override
     public boolean habilitado(Zona zona) {
-            return zonaHabilitada(zona);
+            return zonaHabilitada(zona) ||zona.tipoZona() == 'C';
     }
 }
