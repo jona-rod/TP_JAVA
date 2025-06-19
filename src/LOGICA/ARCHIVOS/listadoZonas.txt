@@ -171,6 +171,7 @@ Lista de zonas autorizadas
 	Id : VEN028 
 	Nombre : Diego_Medina
 Lista de accesos
+	Id: ST14 - Descripcion: Artesanias_loc - Fecha y hora: 2025-06-19T19:52:46.168202 - Permanencia: 30 - Estado: false
 	Id: ST15 - Descripcion: Discos_vinilos - Fecha y hora: 2024-06-15T21:00 - Permanencia: 30 - Estado: true
 
 Lista de zonas autorizadas
@@ -484,6 +485,16 @@ Tipo Zona: C
 	
 LISTA DE PERSONAS EN ZONA
 	
+	Id : PUB001 
+	Nombre : Pedro_Dominico
+Lista de accesos
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T08:45:12 - Permanencia: 180 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+	Id: CO03 - Descripción: Zona_de_descanso
+
+	
 	Id : PUB002 
 	Nombre : Geronimo_benavidez
 Lista de accesos
@@ -592,7 +603,7 @@ Lista de zonas autorizadas
 
 	Stand a cargo: ST06
 
-Cantidad de personas en la zona: 12
+Cantidad de personas en la zona: 13
 
 ID : ES01
 Descripcion: Rock
@@ -953,18 +964,6 @@ Tipo Zona: C
 	
 LISTA DE PERSONAS EN ZONA
 	
-	Id : PUB001 
-	Nombre : Pedro_Dominico
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T08:45:12 - Permanencia: 180 - Estado: true
-	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-19T15:20:39.717097 - Permanencia: 30 - Estado: false
-	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-19T15:20:39.717293 - Permanencia: 30 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-	Id: CO03 - Descripción: Zona_de_descanso
-
-	
 	Id : PUB019 
 	Nombre : Nuria_Vidal
 Lista de accesos
@@ -1056,7 +1055,7 @@ Lista de zonas autorizadas
 
 	Stand a cargo: ST11
 
-Cantidad de personas en la zona: 10
+Cantidad de personas en la zona: 9
 
 ID : RE01
 Descripcion: Camarines

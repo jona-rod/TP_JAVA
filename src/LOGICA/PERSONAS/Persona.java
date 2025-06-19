@@ -7,17 +7,18 @@ import LOGICA.ZONAS.Zona;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 
 public abstract class Persona {
         String id;
         String nombre;
-        ArrayList<Acceso> listaAccesos;
+        LinkedHashSet<Acceso> listaAccesos;
         ArrayList<Zona> zonasAutorizadas;
 
     public Persona(String id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-        this.listaAccesos = new ArrayList<>();
+        this.listaAccesos = new LinkedHashSet<>();
         this.zonasAutorizadas = new ArrayList<>();
     }
 
@@ -37,7 +38,7 @@ public abstract class Persona {
         this.nombre = nombre;
     }
 
-    public ArrayList<Acceso> getAccesos() {
+    public LinkedHashSet<Acceso> getListaAccesos() {
         return listaAccesos;
     }
 
@@ -61,7 +62,7 @@ public abstract class Persona {
     };
 
     public String zonaActual(){
-        for(Acceso acceso : listaAccesos){
+        for(Acceso acceso : listaAccesos.reversed()){
             if(acceso.getEstado()){
                 return acceso.getZona().getCodigo();
             }
@@ -77,7 +78,7 @@ public abstract class Persona {
     public String muestraListaAccesosPersona(){
         StringBuilder sb = new StringBuilder();
         sb.append("Lista de accesos\n");
-        for(Acceso acceso : listaAccesos){
+        for(Acceso acceso : listaAccesos.reversed()){
             sb.append("\t").append(acceso.toString()).append("\n");
         }
         return sb.toString();

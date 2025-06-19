@@ -112,7 +112,7 @@ public class Gestion {
         }
         return listadoPersonas.get(idPersona.trim());
     }
-    public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException{
+    public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
 
         if(listadoPersonas.containsKey(idPersona)){
             if(conjuntoZonas.containsKey(idZonaDestino)) {
@@ -130,14 +130,16 @@ public class Gestion {
                         mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                     } else {
                         mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        reporte.agregaAcceso(mensaje.toString());
+                        listadoPersonas.get(idPersona).cargaAcceso(nuevo);
+                        throw new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
+
                     }
                 } else {
                     mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-
                 }
-                reporte.agregaAcceso(mensaje.toString());
-                listadoPersonas.get(idPersona).cargaAcceso(nuevo);
-
+                    reporte.agregaAcceso(mensaje.toString());
+                    listadoPersonas.get(idPersona).cargaAcceso(nuevo);
             }else{
                 throw new IllegalArgumentException("La zona no existe");
             }
@@ -153,7 +155,7 @@ public class Gestion {
             String tipoPersona;
             if(tp == 'A')
                 tipoPersona = "Artista";
-            else if (tp == 'P') {
+            else if (tp == 'H') {
                 tipoPersona = "Asistente";
             } else if (tp == 'C') {
                 tipoPersona = "Comerciante";

@@ -1,19 +1,7 @@
 -------- REPORTE DE ACCESOS --------
 ACCESO DENEGADO
-Nombre: Pedro_Dominico
-Id: PUB001
-No tiene habilitación de acceso a la zona: RE05 - Seguridad
-
-
-ACCESO ACEPTADO
-Nombre: Pedro_Dominico
-Id: PUB001
-Cambio de zona de CO01 - Plaza_central hacia CO03 - Zona_de_descanso
-
-
-ACCESO ACEPTADO
 Nombre: Diego_Medina
 Id: VEN028
-Cambio de zona de ST15 - Discos_vinilos hacia CO01 - Plaza_central
+No tiene habilitación de acceso a la zona: ST14 - Artesanias_loc
 
 
