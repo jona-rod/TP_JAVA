@@ -144,4 +144,24 @@ public class Gestion {
             throw new IllegalArgumentException("La persona no existe");
         }
     }
+
+    public String muestraListadoPersonas(){
+        StringBuilder sb = new StringBuilder();
+        for (Persona persona : listadoPersonas.values()) {
+            char tp = persona.tipoPersona();
+            String tipoPersona;
+            if(tp == 'A')
+                tipoPersona = "Artista";
+            else if (tp == 'P') {
+                tipoPersona = "Asistente";
+            } else if (tp == 'C') {
+                tipoPersona = "Comerciante";
+            }else
+                tipoPersona = "Staff";
+
+            sb.append("ID: ").append(persona.getId()).append("\t").append("\t Nombre: ").append(persona.getNombre()).append("\t").append("\t Tipo Persona: ").append(tipoPersona).append("\t").append("\t Zona Actual: ").append(persona.zonaActual()).append("\n");
+        }
+        return sb.toString();
+    }
+
 }

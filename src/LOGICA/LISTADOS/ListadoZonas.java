@@ -10,6 +10,7 @@ import java.util.Collections;
 
 public class ListadoZonas {
 
+
     public String generaListado(Gestion gestion) {
         int cantPersonas = 0;
 

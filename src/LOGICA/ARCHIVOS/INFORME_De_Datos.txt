@@ -19,6 +19,7 @@ Error en linea C;VEN028;Diego_Medina;CO04;ST28 - Cannot invoke "LOGICA.ZONAS.Sta
 
 ------------- REPORTE DE ZONAS HABILITADAS -------------
 
+Error de datos en la linea: PUB016;CO03-La persona marcada no existe.
 
 ------------- REPORTE DE ACCESOS -------------
 

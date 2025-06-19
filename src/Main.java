@@ -1,8 +1,8 @@
+import IGU.VentanaPrincipal;
 import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
 import LOGICA.GESTION.Gestion;
-import LOGICA.ZONAS.Zona;
 
-import java.sql.SQLOutput;
+import javax.swing.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -39,5 +39,13 @@ public class Main{
         System.out.println("\nMUESTRA LISTA ZONAS AUTORIZADAS .................................");
         System.out.println(gestion.getListadoPersonas().get("PUB001").muestraListaZonasAutorizadasPersona());
 
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                VentanaPrincipal pantalla = new VentanaPrincipal(gestion);
+                pantalla.setVisible(true);
+                pantalla.setLocationRelativeTo(null);
+            }
+        });
     }
 }
