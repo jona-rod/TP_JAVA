@@ -32,6 +32,6 @@ public class Stand extends Restringida{
         return !(conjuntoPersona.size() < 5);
     }
 
-
-
+    @Override
+    public char tipoZona(){return 'S';} //faltaba redefinir el metodo
 }

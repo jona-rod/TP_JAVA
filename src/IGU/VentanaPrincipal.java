@@ -57,6 +57,16 @@ public class VentanaPrincipal extends JFrame {
         btn_mostrarStands.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        VentanaStands ventanaStands = new VentanaStands(gestion);
+                        ventanaStands.setVisible(true);
+                        ventanaStands.setLocationRelativeTo(null);
+                    }
+                });
+
+
 
             }
         });

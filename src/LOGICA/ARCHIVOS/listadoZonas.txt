@@ -89,7 +89,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST09 - Descripción: Masajes_5min
 
-	Stand a cargo: ST20
+	Stand a cargo: ST09
 	
 	Id : VEN021 
 	Nombre : Rosa_Alonso
@@ -100,7 +100,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST10 - Descripción: Sillas_masaje
 
-	Stand a cargo: ST21
+	Stand a cargo: ST08
 	
 	Id : VEN022 
 	Nombre : Victor_Pons
@@ -111,7 +111,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST11 - Descripción: Fuente_agua
 
-	Stand a cargo: ST22
+	Stand a cargo: ST07
 	
 	Id : VEN023 
 	Nombre : Diana_Montes
@@ -122,7 +122,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST12 - Descripción: Carritos_bebidas
 
-	Stand a cargo: ST23
+	Stand a cargo: ST06
 	
 	Id : VEN024 
 	Nombre : Mario_Benitez
@@ -133,7 +133,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST12 - Descripción: Carritos_bebidas
 
-	Stand a cargo: ST24
+	Stand a cargo: ST05
 	
 	Id : VEN025 
 	Nombre : Jorge_Silva
@@ -144,7 +144,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST13 - Descripción: Merch_oficial
 
-	Stand a cargo: ST25
+	Stand a cargo: ST04
 	
 	Id : VEN026 
 	Nombre : Felipe_Rios
@@ -155,7 +155,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST14 - Descripción: Artesanias_loc
 
-	Stand a cargo: ST26
+	Stand a cargo: ST03
 	
 	Id : VEN027 
 	Nombre : Lucia_Montero
@@ -166,7 +166,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST15 - Descripción: Discos_vinilos
 
-	Stand a cargo: ST27
+	Stand a cargo: ST02
 	
 	Id : VEN028 
 	Nombre : Diego_Medina
@@ -177,7 +177,7 @@ Lista de zonas autorizadas
 	Id: CO04 - Descripción: Zona_de_compras
 	Id: ST15 - Descripción: Discos_vinilos
 
-	Stand a cargo: ST28
+	Stand a cargo: ST01
 
 Cantidad de personas en la zona: 17
 
@@ -957,8 +957,8 @@ LISTA DE PERSONAS EN ZONA
 	Nombre : Pedro_Dominico
 Lista de accesos
 	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T08:45:12 - Permanencia: 180 - Estado: true
-	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-18T22:18:21.745459 - Permanencia: 30 - Estado: false
-	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-18T22:18:21.745751 - Permanencia: 30 - Estado: true
+	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-18T22:56:08.570159 - Permanencia: 30 - Estado: false
+	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-18T22:56:08.570370 - Permanencia: 30 - Estado: true
 
 Lista de zonas autorizadas
 	Id: CO01 - Descripción: Plaza_central
@@ -1043,7 +1043,7 @@ Lista de zonas autorizadas
 	Id: CO03 - Descripción: Zona_de_descanso
 	Id: ST08 - Descripción: Cafeteria
 
-	Stand a cargo: ST17
+	Stand a cargo: ST12
 	
 	Id : VEN018 
 	Nombre : Raul_Hernandez
@@ -1054,7 +1054,7 @@ Lista de zonas autorizadas
 	Id: CO03 - Descripción: Zona_de_descanso
 	Id: ST08 - Descripción: Cafeteria
 
-	Stand a cargo: ST18
+	Stand a cargo: ST11
 
 Cantidad de personas en la zona: 10
 
@@ -1136,26 +1136,6 @@ Lista de zonas autorizadas
 Cantidad de personas en la zona: 2
 Capacidad máxima: 1000
 
-ID : ST01
-Descripcion: Bar_de_jugos
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-	
-	Id : VEN001 
-	Nombre : Ana_Lopez
-Lista de accesos
-	Id: ST01 - Descripcion: Bar_de_jugos - Fecha y hora: 2024-06-15T09:30:45 - Permanencia: 15 - Estado: true
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST01
-
-Cantidad de personas en la zona: 1
-Capacidad máxima: 1000
-Ubicacion:  CO01
-Responsable: hola
-
 ID : RE02
 Descripcion: Depósito
 Tipo Zona: R
@@ -1226,158 +1206,4 @@ Lista de zonas autorizadas
 
 Cantidad de personas en la zona: 1
 Capacidad máxima: 1000
-
-ID : ST02
-Descripcion: Puesto_de_postres
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO01
-Responsable: hola
-
-ID : ST03
-Descripcion: Info_turistica
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO01
-Responsable: hola
-
-ID : ST04
-Descripcion: Hamburguesas_art
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO02
-Responsable: hola
-
-ID : ST05
-Descripcion: Comida_mexicana
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO02
-Responsable: hola
-
-ID : ST06
-Descripcion: Parrilla_rapida
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO02
-Responsable: hola
-
-ID : ST07
-Descripcion: Vegetariano
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO02
-Responsable: hola
-
-ID : ST08
-Descripcion: Cafeteria
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO02
-Responsable: hola
-
-ID : ST09
-Descripcion: Masajes_5min
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO03
-Responsable: hola
-
-ID : ST10
-Descripcion: Sillas_masaje
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO03
-Responsable: hola
-
-ID : ST11
-Descripcion: Fuente_agua
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO03
-Responsable: hola
-
-ID : ST12
-Descripcion: Carritos_bebidas
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO03
-Responsable: hola
-
-ID : ST13
-Descripcion: Merch_oficial
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO04
-Responsable: hola
-
-ID : ST14
-Descripcion: Artesanias_loc
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO04
-Responsable: hola
-
-ID : ST15
-Descripcion: Discos_vinilos
-Tipo Zona: R
-	
-LISTA DE PERSONAS EN ZONA
-
-Cantidad de personas en la zona: 0
-Capacidad máxima: 1000
-Ubicacion:  CO04
-Responsable: hola
-La cantidad de personas en el predio es: 115
+La cantidad de personas en el predio es: 114

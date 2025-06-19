@@ -1,0 +1,175 @@
+LISTADO DE STANDS:
+
+ID : ST06
+Descripcion: Parrilla_rapida
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO02
+Responsable: Diana_Montes
+
+ID : ST01
+Descripcion: Bar_de_jugos
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+	
+	Id : VEN001 
+	Nombre : Ana_Lopez
+Lista de accesos
+	Id: ST01 - Descripcion: Bar_de_jugos - Fecha y hora: 2024-06-15T09:30:45 - Permanencia: 15 - Estado: true
+
+Lista de zonas autorizadas
+
+	Stand a cargo: ST01
+
+Cantidad de personas en la zona: 1
+Capacidad máxima: 1000
+Ubicacion:  CO01
+Responsable: Diego_Medina
+
+ID : ST12
+Descripcion: Carritos_bebidas
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO03
+Responsable: Eva_Santos
+
+ID : ST03
+Descripcion: Info_turistica
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO01
+Responsable: Felipe_Rios
+
+ID : ST09
+Descripcion: Masajes_5min
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO03
+Responsable: Hector_Gimenez
+
+ID : ST04
+Descripcion: Hamburguesas_art
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO02
+Responsable: Jorge_Silva
+
+ID : ST10
+Descripcion: Sillas_masaje
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO03
+Responsable: Julia_Navarro
+
+ID : ST02
+Descripcion: Puesto_de_postres
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO01
+Responsable: Lucia_Montero
+
+ID : ST05
+Descripcion: Comida_mexicana
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO02
+Responsable: Mario_Benitez
+
+ID : ST11
+Descripcion: Fuente_agua
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO03
+Responsable: Raul_Hernandez
+
+ID : ST14
+Descripcion: Artesanias_loc
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO04
+Responsable: Roberto_Jimenez
+
+ID : ST08
+Descripcion: Cafeteria
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO02
+Responsable: Rosa_Alonso
+
+ID : ST13
+Descripcion: Merch_oficial
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO04
+Responsable: Sergio_Miranda
+
+ID : ST15
+Descripcion: Discos_vinilos
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO04
+Responsable: Teresa_Gil
+
+ID : ST07
+Descripcion: Vegetariano
+Tipo Zona: S
+	
+LISTA DE PERSONAS EN ZONA
+
+Cantidad de personas en la zona: 0
+Capacidad máxima: 1000
+Ubicacion:  CO02
+Responsable: Victor_Pons

@@ -81,7 +81,7 @@ public class Gestion {
                     if(persona.tipoPersona() == 'C'){
                         Comerciante cm = (Comerciante) persona;
                         Stand st = (Stand) conjuntoZonas.get(cm.getSuStand());
-                        st.setResponsable("hola");
+                        st.setResponsable(persona.getNombre());
                      }
               //  else {
                //     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje); //comento porque al realizar la carga metodo habilitaod() no tiene referencia a lista

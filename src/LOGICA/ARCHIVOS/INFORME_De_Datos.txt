@@ -8,7 +8,6 @@
 
 ------------- REPORTE DE ZONAS HABILITADAS -------------
 
-Error de datos en la linea: PUB016;CO03-La persona marcada no existe.
 
 ------------- REPORTE DE ACCESOS -------------
 
