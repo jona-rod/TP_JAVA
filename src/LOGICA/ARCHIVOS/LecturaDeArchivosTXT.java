@@ -170,18 +170,14 @@ public class LecturaDeArchivosTXT {
                     String idPersona = bloque[1];
                     String nombre = bloque[2];
                     String idZona = bloque[3];
-                    String idStand ="";
-                    if(per == 'C'){
-                        idStand = bloque[4];
-                    }
-                    if (per == 'C')
-                        listadoPersonas.cargaPersona(new Comerciante(idPersona, nombre, idStand), idZona);
+                    if (per == 'C' || per == 'R'){
+                        listadoPersonas.cargaPersona(new Comerciante(idPersona, nombre), idZona,per);}
                     else if (per == 'A')
-                        listadoPersonas.cargaPersona(new Artista(idPersona, nombre), idZona);
+                        listadoPersonas.cargaPersona(new Artista(idPersona, nombre), idZona,per);
                     else if(per == 'H')//por helper que es ayudante en ingles
-                        listadoPersonas.cargaPersona(new Asistente(idPersona, nombre), idZona);
+                        listadoPersonas.cargaPersona(new Asistente(idPersona, nombre), idZona,per);
                     else
-                        listadoPersonas.cargaPersona(new Staff(idPersona, nombre), idZona);
+                        listadoPersonas.cargaPersona(new Staff(idPersona, nombre), idZona,per);
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage()); //le agregue cont como prueba temporal
                 } catch (IllegalArgumentException e) {
@@ -197,17 +193,11 @@ public class LecturaDeArchivosTXT {
     }
     public void validaDatosPersonas(String[] bloque) throws IllegalArgumentException,StringIndexOutOfBoundsException {
         char per = bloque[0].charAt(0);
-        if (per == 'C') {
-            if (bloque.length != 5)
-                throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
-            if (bloque[4].length() != 4) {
-                throw new IllegalArgumentException("Error: El id de stand no tiene la cantidad de caracteres correctos");
-            }
-        } else if (bloque.length != 4) {
+         if (bloque.length != 4) {
             throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
         }
-        if (per != 'C' && per != 'A' && per != 'H' && per != 'S') {
-            throw new IllegalArgumentException("Error: la persona debe ser: 'C' (Comerciante), 'A' (Artista), 'H' (Asistente) o 'S' (Staff) ");
+        if (per != 'C' && per != 'A' && per != 'H' && per != 'S' && per != 'R' ) {
+            throw new IllegalArgumentException("Error: la persona debe ser: 'C' (Comerciante), 'A' (Artista), 'H' (Asistente) o 'S' (Staff) o 'R' (Responsable)");
         }
         if (bloque[1].length() != 6) {
             throw new IllegalArgumentException("Error: ID debe tener 6 caracteres");

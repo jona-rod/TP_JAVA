@@ -6,18 +6,15 @@ public class Comerciante extends Persona {
 
         String suStand;
 
-        public Comerciante(String identificador,String nombre, String suStand) {
+        public Comerciante(String identificador,String nombre) {
             super(identificador,nombre);
-            this.suStand = suStand;
+
         }
 
-        public String getSuStand() {
-            return suStand;
-        }
 
     @Override
     public String toString() {
-            return super.toString()  + "\n\tStand a cargo: " + suStand;
+            return super.toString();
     }
 
     @Override

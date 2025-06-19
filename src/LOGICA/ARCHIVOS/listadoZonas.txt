@@ -1,186 +1,5 @@
 LISTADO DE ZONAS:
 
-ID : CO04
-Descripcion: Zona_de_compras
-Tipo Zona: C
-	
-LISTA DE PERSONAS EN ZONA
-	
-	Id : PUB007 
-	Nombre : Pedro_Perez
-Lista de accesos
-	Id: CO04 - Descripcion: Zona_de_compras - Fecha y hora: 2024-06-15T10:30 - Permanencia: 180 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-
-	
-	Id : PUB008 
-	Nombre : Pablo_esse
-Lista de accesos
-	Id: CO04 - Descripcion: Zona_de_compras - Fecha y hora: 2024-06-15T11:45:30 - Permanencia: 165 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-
-	
-	Id : PUB032 
-	Nombre : Santiago_Marin
-Lista de accesos
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ES01 - Descripción: Rock
-
-	
-	Id : PUB034 
-	Nombre : Raul_Cordero
-Lista de accesos
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ES02 - Descripción: Hip-Hop
-
-	
-	Id : PUB035 
-	Nombre : Isabel_Fernandez
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T11:45 - Permanencia: 180 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ES02 - Descripción: Hip-Hop
-
-	
-	Id : PUB037 
-	Nombre : Ana_Sosa
-Lista de accesos
-	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T14:45 - Permanencia: 210 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ES02 - Descripción: Hip-Hop
-
-	
-	Id : STA009 
-	Nombre : Hugo_Rodriguez
-Lista de accesos
-	Id: RE01 - Descripcion: Camarines - Fecha y hora: 2024-06-15T06:00 - Permanencia: 720 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-
-	
-	Id : STA010 
-	Nombre : Sandra_Castro
-Lista de accesos
-	Id: RE02 - Descripcion: Depósito - Fecha y hora: 2024-06-15T07:00 - Permanencia: 660 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-
-	
-	Id : VEN020 
-	Nombre : Hector_Gimenez
-Lista de accesos
-	Id: ST10 - Descripcion: Sillas_masaje - Fecha y hora: 2024-06-15T14:25 - Permanencia: 15 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST09 - Descripción: Masajes_5min
-
-	Stand a cargo: ST09
-	
-	Id : VEN021 
-	Nombre : Rosa_Alonso
-Lista de accesos
-	Id: ST11 - Descripcion: Fuente_agua - Fecha y hora: 2024-06-15T15:10:30 - Permanencia: 8 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST10 - Descripción: Sillas_masaje
-
-	Stand a cargo: ST08
-	
-	Id : VEN022 
-	Nombre : Victor_Pons
-Lista de accesos
-	Id: ST12 - Descripcion: Carritos_bebidas - Fecha y hora: 2024-06-15T16:30:45 - Permanencia: 10 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST11 - Descripción: Fuente_agua
-
-	Stand a cargo: ST07
-	
-	Id : VEN023 
-	Nombre : Diana_Montes
-Lista de accesos
-	Id: ST13 - Descripcion: Merch_oficial - Fecha y hora: 2024-06-15T17:15:20 - Permanencia: 25 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST12 - Descripción: Carritos_bebidas
-
-	Stand a cargo: ST06
-	
-	Id : VEN024 
-	Nombre : Mario_Benitez
-Lista de accesos
-	Id: ST14 - Descripcion: Artesanias_loc - Fecha y hora: 2024-06-15T18:00:05 - Permanencia: 20 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST12 - Descripción: Carritos_bebidas
-
-	Stand a cargo: ST05
-	
-	Id : VEN025 
-	Nombre : Jorge_Silva
-Lista de accesos
-	Id: ST15 - Descripcion: Discos_vinilos - Fecha y hora: 2024-06-15T16:15 - Permanencia: 30 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST13 - Descripción: Merch_oficial
-
-	Stand a cargo: ST04
-	
-	Id : VEN026 
-	Nombre : Felipe_Rios
-Lista de accesos
-	Id: ST15 - Descripcion: Discos_vinilos - Fecha y hora: 2024-06-15T19:30:10 - Permanencia: 35 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST14 - Descripción: Artesanias_loc
-
-	Stand a cargo: ST03
-	
-	Id : VEN027 
-	Nombre : Lucia_Montero
-Lista de accesos
-	Id: ST15 - Descripcion: Discos_vinilos - Fecha y hora: 2024-06-15T20:15:25 - Permanencia: 40 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST15 - Descripción: Discos_vinilos
-
-	Stand a cargo: ST02
-	
-	Id : VEN028 
-	Nombre : Diego_Medina
-Lista de accesos
-	Id: ST15 - Descripcion: Discos_vinilos - Fecha y hora: 2024-06-15T21:00 - Permanencia: 30 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO04 - Descripción: Zona_de_compras
-	Id: ST15 - Descripción: Discos_vinilos
-
-	Stand a cargo: ST01
-
-Cantidad de personas en la zona: 17
-
 ID : ES02
 Descripcion: Hip-Hop
 Tipo Zona: E
@@ -478,122 +297,6 @@ LISTA DE EVENTOS DE LA ZONA
 	ART015 - 2025-03-24T21:15
 
 
-ID : CO01
-Descripcion: Plaza_central
-Tipo Zona: C
-	
-LISTA DE PERSONAS EN ZONA
-	
-	Id : PUB002 
-	Nombre : Geronimo_benavidez
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T09:00 - Permanencia: 240 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-
-	
-	Id : PUB003 
-	Nombre : Laura_Diaz
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T10:30:45 - Permanencia: 210 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-	Id: CO02 - Descripción: Patio_de_comidas
-
-	
-	Id : PUB017 
-	Nombre : Camila_Rojas
-Lista de accesos
-	Id: ES04 - Descripcion: Folcklore - Fecha y hora: 2024-06-15T22:00:30 - Permanencia: 45 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-
-	
-	Id : PUB018 
-	Nombre : Daniel_Vargas
-Lista de accesos
-	Id: ES04 - Descripcion: Folcklore - Fecha y hora: 2024-06-15T22:45:55 - Permanencia: 30 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-
-	
-	Id : PUB021 
-	Nombre : Fernanda_Silva
-Lista de accesos
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-	Id: ES01 - Descripción: Rock
-
-	
-	Id : STA001 
-	Nombre : Juan_Perez
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T07:30 - Permanencia: 600 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-
-	
-	Id : STA004 
-	Nombre : Pablo_Martinez
-Lista de accesos
-
-Lista de zonas autorizadas
-	Id: CO01 - Descripción: Plaza_central
-
-	
-	Id : VEN002 
-	Nombre : Carlos_Mendez
-Lista de accesos
-	Id: ST01 - Descripcion: Bar_de_jugos - Fecha y hora: 2024-06-15T10:15:22 - Permanencia: 20 - Estado: true
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST02
-	
-	Id : VEN003 
-	Nombre : Luisa_Fernandez
-Lista de accesos
-	Id: ST02 - Descripcion: Puesto_de_postres - Fecha y hora: 2024-06-15T11:05:33 - Permanencia: 10 - Estado: true
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST03
-	
-	Id : VEN004 
-	Nombre : Pedro_Gomez
-Lista de accesos
-	Id: ST02 - Descripcion: Puesto_de_postres - Fecha y hora: 2024-06-15T12:30:18 - Permanencia: 12 - Estado: true
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST04
-	
-	Id : VEN005 
-	Nombre : Elena_Ruiz
-Lista de accesos
-	Id: ST03 - Descripcion: Info_turistica - Fecha y hora: 2024-06-15T11:45 - Permanencia: 8 - Estado: false
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST05
-	
-	Id : VEN006 
-	Nombre : Diego_Torres
-Lista de accesos
-	Id: ST03 - Descripcion: Info_turistica - Fecha y hora: 2024-06-15T13:20:05 - Permanencia: 10 - Estado: true
-
-Lista de zonas autorizadas
-
-	Stand a cargo: ST06
-
-Cantidad de personas en la zona: 12
-
 ID : ES01
 Descripcion: Rock
 Tipo Zona: E
@@ -719,127 +422,6 @@ LISTA DE EVENTOS DE LA ZONA
 	ART010 - 2025-03-22T21:00
 
 
-ID : CO02
-Descripcion: Patio_de_comidas
-Tipo Zona: C
-	
-LISTA DE PERSONAS EN ZONA
-	
-	Id : PUB004 
-	Nombre : Delfina_Gomez
-Lista de accesos
-	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T11:15:30 - Permanencia: 195 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-
-	
-	Id : PUB005 
-	Nombre : Carmen_Ortega
-Lista de accesos
-	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T12:00:15 - Permanencia: 225 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-
-	
-	Id : PUB006 
-	Nombre : Alberto_Campos
-Lista de accesos
-	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T13:20 - Permanencia: 180 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-
-	
-	Id : PUB026 
-	Nombre : Diego_Sanchez
-Lista de accesos
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ES01 - Descripción: Rock
-
-	
-	Id : VEN007 
-	Nombre : Sofia_Castro
-Lista de accesos
-	Id: ST04 - Descripcion: Hamburguesas_art - Fecha y hora: 2024-06-15T12:30:15 - Permanencia: 25 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST04 - Descripción: Hamburguesas_art
-
-	Stand a cargo: ST07
-	
-	Id : VEN008 
-	Nombre : Miguel_Angel
-Lista de accesos
-	Id: ST04 - Descripcion: Hamburguesas_art - Fecha y hora: 2024-06-15T13:45:30 - Permanencia: 30 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST04 - Descripción: Hamburguesas_art
-
-	Stand a cargo: ST08
-	
-	Id : VEN009 
-	Nombre : Isabel_Romero
-Lista de accesos
-	Id: ST05 - Descripcion: Comida_mexicana - Fecha y hora: 2024-06-15T14:10:42 - Permanencia: 22 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST05 - Descripción: Comida_mexicana
-
-	Stand a cargo: ST09
-	
-	Id : VEN010 
-	Nombre : Julia_Navarro
-Lista de accesos
-	Id: ST05 - Descripcion: Comida_mexicana - Fecha y hora: 2024-06-15T15:30:10 - Permanencia: 18 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST05 - Descripción: Comida_mexicana
-
-	Stand a cargo: ST10
-	
-	Id : VEN011 
-	Nombre : Alvaro_Morales
-Lista de accesos
-	Id: ST06 - Descripcion: Parrilla_rapida - Fecha y hora: 2024-06-15T16:05:25 - Permanencia: 15 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST06 - Descripción: Parrilla_rapida
-
-	Stand a cargo: ST11
-	
-	Id : VEN012 
-	Nombre : Claudia_Pardo
-Lista de accesos
-	Id: ST06 - Descripcion: Parrilla_rapida - Fecha y hora: 2024-06-15T13:00 - Permanencia: 0 - Estado: false
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST06 - Descripción: Parrilla_rapida
-
-	Stand a cargo: ST12
-	
-	Id : VEN013 
-	Nombre : Sergio_Miranda
-Lista de accesos
-	Id: ST06 - Descripcion: Parrilla_rapida - Fecha y hora: 2024-06-15T17:20:33 - Permanencia: 20 - Estado: true
-
-Lista de zonas autorizadas
-	Id: CO02 - Descripción: Patio_de_comidas
-	Id: ST06 - Descripción: Parrilla_rapida
-
-	Stand a cargo: ST13
-
-Cantidad de personas en la zona: 11
-
 ID : ES04
 Descripcion: Folcklore
 Tipo Zona: E
@@ -947,6 +529,159 @@ LISTA DE EVENTOS DE LA ZONA
 	ART017 - 2025-03-25T20:45
 
 
+ID : CO04
+Descripcion: Zona_de_compras
+Tipo Zona: C
+	
+LISTA DE PERSONAS EN ZONA
+	
+	Id : PUB007 
+	Nombre : Pedro_Perez
+Lista de accesos
+	Id: CO04 - Descripcion: Zona_de_compras - Fecha y hora: 2024-06-15T10:30 - Permanencia: 180 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+
+	
+	Id : PUB008 
+	Nombre : Pablo_esse
+Lista de accesos
+	Id: CO04 - Descripcion: Zona_de_compras - Fecha y hora: 2024-06-15T11:45:30 - Permanencia: 165 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+
+	
+	Id : PUB032 
+	Nombre : Santiago_Marin
+Lista de accesos
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+	Id: ES01 - Descripción: Rock
+
+	
+	Id : PUB034 
+	Nombre : Raul_Cordero
+Lista de accesos
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+	Id: ES02 - Descripción: Hip-Hop
+
+	
+	Id : PUB035 
+	Nombre : Isabel_Fernandez
+Lista de accesos
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T11:45 - Permanencia: 180 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+	Id: ES02 - Descripción: Hip-Hop
+
+	
+	Id : PUB037 
+	Nombre : Ana_Sosa
+Lista de accesos
+	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T14:45 - Permanencia: 210 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+	Id: ES02 - Descripción: Hip-Hop
+
+	
+	Id : STA009 
+	Nombre : Hugo_Rodriguez
+Lista de accesos
+	Id: RE01 - Descripcion: Camarines - Fecha y hora: 2024-06-15T06:00 - Permanencia: 720 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+
+	
+	Id : STA010 
+	Nombre : Sandra_Castro
+Lista de accesos
+	Id: RE02 - Descripcion: Depósito - Fecha y hora: 2024-06-15T07:00 - Permanencia: 660 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO04 - Descripción: Zona_de_compras
+
+
+Cantidad de personas en la zona: 8
+
+ID : CO01
+Descripcion: Plaza_central
+Tipo Zona: C
+	
+LISTA DE PERSONAS EN ZONA
+	
+	Id : PUB002 
+	Nombre : Geronimo_benavidez
+Lista de accesos
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T09:00 - Permanencia: 240 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+
+	
+	Id : PUB003 
+	Nombre : Laura_Diaz
+Lista de accesos
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T10:30:45 - Permanencia: 210 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+	Id: CO02 - Descripción: Patio_de_comidas
+
+	
+	Id : PUB017 
+	Nombre : Camila_Rojas
+Lista de accesos
+	Id: ES04 - Descripcion: Folcklore - Fecha y hora: 2024-06-15T22:00:30 - Permanencia: 45 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+
+	
+	Id : PUB018 
+	Nombre : Daniel_Vargas
+Lista de accesos
+	Id: ES04 - Descripcion: Folcklore - Fecha y hora: 2024-06-15T22:45:55 - Permanencia: 30 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+
+	
+	Id : PUB021 
+	Nombre : Fernanda_Silva
+Lista de accesos
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+	Id: ES01 - Descripción: Rock
+
+	
+	Id : STA001 
+	Nombre : Juan_Perez
+Lista de accesos
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T07:30 - Permanencia: 600 - Estado: true
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+
+	
+	Id : STA004 
+	Nombre : Pablo_Martinez
+Lista de accesos
+
+Lista de zonas autorizadas
+	Id: CO01 - Descripción: Plaza_central
+
+
+Cantidad de personas en la zona: 7
+
 ID : CO03
 Descripcion: Zona_de_descanso
 Tipo Zona: C
@@ -957,8 +692,8 @@ LISTA DE PERSONAS EN ZONA
 	Nombre : Pedro_Dominico
 Lista de accesos
 	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T08:45:12 - Permanencia: 180 - Estado: true
-	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-18T22:56:08.570159 - Permanencia: 30 - Estado: false
-	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-18T22:56:08.570370 - Permanencia: 30 - Estado: true
+	Id: RE05 - Descripcion: Seguridad - Fecha y hora: 2025-06-19T18:01:22.087140100 - Permanencia: 30 - Estado: false
+	Id: CO03 - Descripcion: Zona_de_descanso - Fecha y hora: 2025-06-19T18:01:22.091462900 - Permanencia: 30 - Estado: true
 
 Lista de zonas autorizadas
 	Id: CO01 - Descripción: Plaza_central
@@ -1011,52 +746,52 @@ Lista de accesos
 Lista de zonas autorizadas
 	Id: CO03 - Descripción: Zona_de_descanso
 
+
+Cantidad de personas en la zona: 6
+
+ID : CO02
+Descripcion: Patio_de_comidas
+Tipo Zona: C
 	
-	Id : VEN014 
-	Nombre : Roberto_Jimenez
+LISTA DE PERSONAS EN ZONA
+	
+	Id : PUB004 
+	Nombre : Delfina_Gomez
 Lista de accesos
-	Id: ST07 - Descripcion: Vegetariano - Fecha y hora: 2024-06-15T12:45:50 - Permanencia: 25 - Estado: true
+	Id: CO01 - Descripcion: Plaza_central - Fecha y hora: 2024-06-15T11:15:30 - Permanencia: 195 - Estado: true
 
 Lista de zonas autorizadas
-	Id: CO03 - Descripción: Zona_de_descanso
-	Id: ST07 - Descripción: Vegetariano
+	Id: CO02 - Descripción: Patio_de_comidas
 
-	Stand a cargo: ST14
 	
-	Id : VEN015 
-	Nombre : Teresa_Gil
+	Id : PUB005 
+	Nombre : Carmen_Ortega
 Lista de accesos
-	Id: ST07 - Descripcion: Vegetariano - Fecha y hora: 2024-06-15T14:30:15 - Permanencia: 30 - Estado: true
+	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T12:00:15 - Permanencia: 225 - Estado: true
 
 Lista de zonas autorizadas
-	Id: CO03 - Descripción: Zona_de_descanso
-	Id: ST07 - Descripción: Vegetariano
+	Id: CO02 - Descripción: Patio_de_comidas
 
-	Stand a cargo: ST15
 	
-	Id : VEN017 
-	Nombre : Eva_Santos
+	Id : PUB006 
+	Nombre : Alberto_Campos
 Lista de accesos
-	Id: ST08 - Descripcion: Cafeteria - Fecha y hora: 2024-06-15T16:40:05 - Permanencia: 15 - Estado: true
+	Id: CO02 - Descripcion: Patio_de_comidas - Fecha y hora: 2024-06-15T13:20 - Permanencia: 180 - Estado: true
 
 Lista de zonas autorizadas
-	Id: CO03 - Descripción: Zona_de_descanso
-	Id: ST08 - Descripción: Cafeteria
+	Id: CO02 - Descripción: Patio_de_comidas
 
-	Stand a cargo: ST12
 	
-	Id : VEN018 
-	Nombre : Raul_Hernandez
+	Id : PUB026 
+	Nombre : Diego_Sanchez
 Lista de accesos
-	Id: ST08 - Descripcion: Cafeteria - Fecha y hora: 2024-06-15T17:25:10 - Permanencia: 12 - Estado: true
 
 Lista de zonas autorizadas
-	Id: CO03 - Descripción: Zona_de_descanso
-	Id: ST08 - Descripción: Cafeteria
+	Id: CO02 - Descripción: Patio_de_comidas
+	Id: ES01 - Descripción: Rock
 
-	Stand a cargo: ST11
 
-Cantidad de personas en la zona: 10
+Cantidad de personas en la zona: 4
 
 ID : RE01
 Descripcion: Camarines
@@ -1206,4 +941,4 @@ Lista de zonas autorizadas
 
 Cantidad de personas en la zona: 1
 Capacidad máxima: 1000
-La cantidad de personas en el predio es: 114
+La cantidad de personas en el predio es: 89
