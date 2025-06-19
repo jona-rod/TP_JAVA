@@ -5,7 +5,7 @@ import java.util.Comparator;
 public class Stand extends Restringida{
 
     String ubicacion;
-    String responsable;
+    String responsable="";
 
     public Stand(String codigo, String descripcion, String ubicacion) {
         super(codigo,descripcion);
