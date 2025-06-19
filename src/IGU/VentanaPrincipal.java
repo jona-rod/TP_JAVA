@@ -38,6 +38,15 @@ public class VentanaPrincipal extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
+                SwingUtilities.invokeLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        VentanaMuevePersona ventanaMuevePersona = new VentanaMuevePersona(gestion);
+                        ventanaMuevePersona.setVisible(true);
+                        ventanaMuevePersona.setLocationRelativeTo(null);
+                    }
+                });
+
             }
         });
         btn_mostrarZonas.addActionListener(new ActionListener() {
