@@ -149,8 +149,17 @@ public abstract class Persona implements Serializable {
         return null;
     }
 
-   //1 public void agregaEventoArtista(Evento evento) {
-    //}
+    public Acceso ultimoAcceso(){
+        for(Acceso acceso : listaAccesos.reversed()){
+            if(acceso.getEstado()){
+                return acceso;
+            }
+        }return null;
+    }
+
+    public int calculaMinutosPermanencia(){
+
+    }
 
     public void agregaEventoArtista(Evento evento){};
 

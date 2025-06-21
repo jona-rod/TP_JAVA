@@ -1,1 +1,25 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO DENEGADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+No puede acceder debido a capacidad completa de la zona: ES02 - Hip-Hop                  
+
+
+ACCESO DENEGADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+No puede acceder debido a capacidad completa de la zona: ES03 - Pop                      
+
+
+ACCESO ACEPTADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+Cambio de zona de ES01 - Rock                      hacia CO02 - Patio_de_comidas         
+
+
+ACCESO ACEPTADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+Cambio de zona de CO02 - Patio_de_comidas          hacia CO01 - Plaza_central            
+
+

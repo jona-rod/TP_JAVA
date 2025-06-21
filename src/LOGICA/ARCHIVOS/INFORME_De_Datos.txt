@@ -5,6 +5,7 @@
 
 ------------- REPORTE DE PERSONAS -------------
 
+Error en linea H;PUB024;Elena_Miranda         ;ES01 - Zona con capacidad completa - La persona con id:  PUB024, Nombre : Elena_Miranda          no pudo registrarse
 Error en linea H;PUB025;Jorge_Paredes         ;ES01 - Zona con capacidad completa - La persona con id:  PUB025, Nombre : Jorge_Paredes          no pudo registrarse
 Error en linea H;PUB027;Raúl_Fernández        ;ES01 - Zona con capacidad completa - La persona con id:  PUB027, Nombre : Raúl_Fernández         no pudo registrarse
 Error en linea H;PUB029;Mario_Robles          ;ES01 - Zona con capacidad completa - La persona con id:  PUB029, Nombre : Mario_Robles           no pudo registrarse
@@ -41,6 +42,8 @@ Error en linea S;STA014;Pedro_Garcia_Tecnico  ;ES04 - Zona con capacidad complet
 
 ------------- REPORTE DE ZONAS HABILITADAS -------------
 
+Error de datos en la linea: PUB024;CO02-La persona marcada no existe.
+Error de datos en la linea: PUB024;ES01-La persona marcada no existe.
 Error de datos en la linea: PUB025;CO02-La persona marcada no existe.
 Error de datos en la linea: PUB025;ES01-La persona marcada no existe.
 Error de datos en la linea: PUB027;CO02-La persona marcada no existe.

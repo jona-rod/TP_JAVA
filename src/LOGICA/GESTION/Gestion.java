@@ -196,48 +196,70 @@ public class Gestion implements Serializable {
      * @param idZonaDestino
      * @throws IllegalArgumentException
      */
-    public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
+        public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
 
-        if(listadoPersonas.containsKey(idPersona)){
-            if(conjuntoZonas.containsKey(idZonaDestino)) {
-                Persona per = listadoPersonas.get(idPersona);
-                String zonaOrigen = per.zonaActual();
-                if(idZonaDestino.equals(zonaOrigen)){
-                    throw new Exception("La persona ya se encuentra en la zona indicada");
-                }else {
-                    Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 30, false);
-                    StringBuilder mensaje = new StringBuilder();
-                    if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
-                        if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
-                            System.out.printf("ingresa al habilitado en mueve personas");
-                            nuevo.setEstado(true);
-
-                            conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));//3agrego .getId
-                            conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
-                            mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-                        } else {
-                            mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-                            reporte.agregaAcceso(mensaje.toString());
-                            listadoPersonas.get(idPersona).cargaAcceso(nuevo);
-                            throw new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
-
-                        }
-                    } else {
-                        mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-                        reporte.agregaAcceso(mensaje.toString());
-                        listadoPersonas.get(idPersona).cargaAcceso(nuevo);
-                        throw new Exception("La persona no puede ingresar a la zona debido a que la capacidad está completa");
-                    }
-                    reporte.agregaAcceso(mensaje.toString());
-                    listadoPersonas.get(idPersona).cargaAcceso(nuevo);
-                }
-            }else{
+            if (!listadoPersonas.containsKey(idPersona)) {            // verifica que la persona exista
+                throw new IllegalArgumentException("La persona no existe");
+            }
+            if (!conjuntoZonas.containsKey(idZonaDestino)) {        // verifica que la persona exista
                 throw new IllegalArgumentException("La zona no existe");
             }
-        }else{
-            throw new IllegalArgumentException("La persona no existe");
+
+            Persona per = listadoPersonas.get(idPersona);
+            String zonaOrigen = per.zonaActual();
+
+            if (idZonaDestino.equals(zonaOrigen)) {         // verifica que la persona no se encuentra actualmente en la zona
+                throw new Exception("La persona ya se encuentra en la zona indicada");
+            }
+
+            Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 0, false);
+            StringBuilder mensaje = new StringBuilder();
+            Exception excepcion = null;
+
+            try {
+                if (conjuntoZonas.get(idZonaDestino).zonaLlena()) {         // verifica la capacidad máxima
+                    mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n")
+                            .append("Id: ").append(idPersona).append("\n")
+                            .append("No puede acceder debido a capacidad completa de la zona: ")
+                            .append(idZonaDestino).append(" - ")
+                            .append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                    excepcion = new Exception("La persona no puede ingresar a la zona debido a que la capacidad está completa");
+                    throw excepcion;
+                }
+
+                if (!per.habilitado(conjuntoZonas.get(idZonaDestino))) {        //verifica que la persona este habilitadad. Verifica las zonas permitidas y la lista de zonas habilitadas
+                    mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n")
+                            .append("Id: ").append(idPersona).append("\n")
+                            .append("No tiene habilitación de acceso a la zona: ")
+                            .append(idZonaDestino).append(" - ")
+                            .append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                    excepcion = new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
+                    throw excepcion;
+                }
+
+                // el acceso es aceptado
+                nuevo.setEstado(true);
+                conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));
+                conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
+                mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n")
+                        .append("Id: ").append(idPersona).append("\n")
+                        .append("Cambio de zona de ").append(zonaOrigen).append(" - ")
+                        .append(conjuntoZonas.get(zonaOrigen).getDescripcion())
+                        .append(" hacia ").append(idZonaDestino).append(" - ")
+                        .append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        nuevo.setEstado(true);
+                nuevo.setFecha();
+            } finally {
+                // Siempre registramos el acceso, sea aceptado o denegado
+                reporte.agregaAcceso(mensaje.toString());
+                listadoPersonas.get(idPersona).cargaAcceso(nuevo);
+
+                // Si hubo una excepción, la lanzamos después de registrar el acceso
+                if (excepcion != null) {
+                    throw excepcion;
+                }
+            }
         }
-    }
 
     /**
      * muestra un texto con un listado de todas las personas del festival, con los datos de cada uno de ellos

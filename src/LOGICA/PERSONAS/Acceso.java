@@ -67,6 +67,10 @@ public class Acceso implements Serializable{
         return fechaHora;
     }
 
+    public void setFecha(LocalDateTime fechaHora) {
+        this.fechaHora = fechaHora;
+    }
+
     /**
      * carga el estado del acceso
      * @param estado
