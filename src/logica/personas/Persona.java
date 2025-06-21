@@ -153,9 +153,9 @@ public abstract class Persona implements Serializable {
         }return null;
     }
 
-    public int calculaMinutosPermanencia(){
+  //  public int calculaMinutosPermanencia(){
 
-    }
+   // }
 
     public void agregaEventoArtista(Evento evento){};
 

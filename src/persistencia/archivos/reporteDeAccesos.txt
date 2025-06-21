@@ -1,7 +1,1 @@
 -------- REPORTE DE ACCESOS --------
-ACCESO ACEPTADO
-Nombre: Ozzy_Osbourne         
-Id: ART009
-Cambio de zona de ES01 - Rock                      hacia CO02 - Patio_de_comidas         
-
-

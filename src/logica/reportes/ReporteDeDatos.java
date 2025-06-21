@@ -34,7 +34,7 @@ public class ReporteDeDatos {
      */
     public void generaInforme(){
         try{
-            FileWriter file = new FileWriter("src//LOGICA/ARCHIVOS/INFORME_De_Datos.txt");
+            FileWriter file = new FileWriter("src//persistencia/archivos/INFORME_De_Datos.txt");
             BufferedWriter writer = new BufferedWriter(file);
             writer.write(informe.toString());
             writer.close();

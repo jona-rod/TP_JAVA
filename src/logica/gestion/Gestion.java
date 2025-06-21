@@ -243,7 +243,6 @@ public class Gestion implements Serializable {
                         .append(" hacia ").append(idZonaDestino).append(" - ")
                         .append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                         nuevo.setEstado(true);
-                nuevo.setFecha();
             } finally {
                 // Siempre registramos el acceso, sea aceptado o denegado
                 reporte.agregaAcceso(mensaje.toString());
