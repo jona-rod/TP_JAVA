@@ -207,6 +207,7 @@ public class Gestion implements Serializable {
 
                 if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
                     if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
+                        System.out.printf("ingresa al habilitado en mueve personas");
                         nuevo.setEstado(true);
 
                         conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));//3agrego .getId
@@ -241,7 +242,7 @@ public class Gestion implements Serializable {
         sb.append("\n    ID  \t \t  NOMBRE  \t \t  TIPO  \t \t  ZONA ACTUAL  \n\n");
         for (Persona persona : listadoPersonas.values()) {
             if (persona != null && persona.zonaActual() != null) {
-                String descripcion = conjuntoZonas.get(persona.zonaActual()).getDescripcion();
+                String descripcion = conjuntoZonas.get(persona.zonaActual()).getDescripcion() ;
                 char tp = persona.tipoPersona();
                 String tipoPersona;
                 if (tp == 'A')
@@ -255,7 +256,7 @@ public class Gestion implements Serializable {
 
 
                 sb.append("........................................................................................................................................................................................................................................................................................................")
-                        .append("\n\n  ID: ").append(persona.getId()).append("\t").append("\t").append(persona.getNombre()).append("\t").append(tipoPersona).append("\t\t").append(persona.zonaActual()).append("  -  ").append(descripcion).append("  ( ").append(conjuntoZonas.get(persona.zonaActual()).tipoZona()).append(" )") .append("\n\n");
+                        .append("\n\n  ID: ").append(persona.getId()).append("\t").append("\t").append(persona.getNombre()).append("\t").append(tipoPersona).append("\t\t").append(persona.zonaActual()).append("  -  ").append(descripcion).append("\t  ( ").append(conjuntoZonas.get(persona.zonaActual()).tipoZona()).append(" )") .append("\n\n");
             }
         }
         return sb.toString();

@@ -1,5 +1,6 @@
 package IGU;
 
+import CONTROLADORA.Controladora;
 import LOGICA.GESTION.Gestion;
 
 import javax.swing.*;
@@ -14,13 +15,13 @@ public class VentanaMuevePersona extends JFrame{
     private JButton btn_mover;
     private JTextArea area_texto_zonas;
 
-    public VentanaMuevePersona(Gestion gestion) {
+    public VentanaMuevePersona(Controladora controladora) {
         add(ventana_mueve_personas);
         this.setSize(1600, 900);
 
-        area_texto_zonas.setText(gestion.muestraListadoZonasConPersonas());
+        area_texto_zonas.setText(controladora.muestraListadoZonasConPersonas()); // 4 muestraListadoZonasSoloPersonas
         area_texto_zonas.setCaretPosition(0);
-        area_texto_personas.setText(gestion.muestraListadoPersonas());
+        area_texto_personas.setText(controladora.muestraListadoPersonas()); // 1
         area_texto_personas.setCaretPosition(0);
 
 
@@ -29,18 +30,16 @@ public class VentanaMuevePersona extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    gestion.muevePersona(campoi_id_persona.getText().toUpperCase().replaceAll("\\s+", ""), campor_id_zona.getText().toUpperCase().replaceAll("\\s+", ""));
+                    controladora.muevePersona(campoi_id_persona.getText().toUpperCase().replaceAll("\\s+", ""), campor_id_zona.getText().toUpperCase().replaceAll("\\s+", ""));  // 5 muevePersona
                     JOptionPane.showMessageDialog(null, "Se realiza cambio de zona con exito");
-                    area_texto_zonas.setText(gestion.muestraListadoZonasConPersonas());
+                    area_texto_zonas.setText(controladora.muestraListadoZonasConPersonas()); //4
                     area_texto_zonas.setCaretPosition(0);
-                    area_texto_personas.setText(gestion.muestraListadoPersonas());
+                    area_texto_personas.setText(controladora.muestraListadoPersonas()); //1
                     area_texto_personas.setCaretPosition(0);
-                    gestion.guardarDatos();
-
                     }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage());
                     }finally {
-                        gestion.guardarDatos();
+                        controladora.guardaDatos(); //6 guardaDatos
                     }
                 }
         });

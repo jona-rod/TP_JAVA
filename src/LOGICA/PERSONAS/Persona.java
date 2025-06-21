@@ -6,6 +6,7 @@ import LOGICA.ZONAS.Evento;
 import LOGICA.ZONAS.Zona;
 
 import java.io.Serializable;
+import java.security.spec.RSAOtherPrimeInfo;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -127,7 +128,12 @@ public abstract class Persona implements Serializable {
      * @return true si la zona esta dentro de la zonas autorizadas, false si no lo esta
      */
     protected boolean zonaHabilitada(Zona zona){
-        return zonasAutorizadas.contains(zona);
+        for(Zona z : zonasAutorizadas){
+            if(z.getCodigo().equalsIgnoreCase( zona.getCodigo())){
+                return true;
+            }
+        }
+        return false;
     };
 
     /**

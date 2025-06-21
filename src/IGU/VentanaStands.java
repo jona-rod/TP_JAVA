@@ -1,5 +1,6 @@
 package IGU;
 
+import CONTROLADORA.Controladora;
 import LOGICA.GESTION.Gestion;
 import LOGICA.LISTADOS.ListadoStands;
 
@@ -14,13 +15,13 @@ public class VentanaStands extends JFrame {
     private JButton btn_stands;
     private JTextArea area_texto_stands;
 
-    public VentanaStands(Gestion gestion) {
+    public VentanaStands(Controladora controladora) {
         add(ventana_stands);
         this.setSize(1400, 900);
 
-        ListadoStands listado = new ListadoStands();
-        String list = listado.generarListado(gestion);
-        area_texto_stands.setText(list);
+        //10 generaListadoStands
+        String list = controladora.generaListadoStands();
+        area_texto_stands.setText(list); // var obtierne de 10
         area_texto_stands.setCaretPosition(0);
 
 
@@ -28,8 +29,8 @@ public class VentanaStands extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String id = campos_id.getText().toUpperCase().replaceAll("\\s+", "");
-                if(gestion.getConjuntoZonas().containsKey(id)){
-                    area_texto_stands.setText(gestion.getConjuntoZonas().get(id).toString());
+                if(controladora.verificarZona(id)){  //8
+                    area_texto_stands.setText(controladora.muestraZona(id)); //9
                 }else
                     JOptionPane.showMessageDialog(VentanaStands.this, "ID INCORRECTO\nel stand seleccionada no existe");
             }
@@ -37,7 +38,7 @@ public class VentanaStands extends JFrame {
         btn_stands.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                area_texto_stands.setText(list);
+                area_texto_stands.setText(list); // var obtiene de 10
             }
         });
     }

@@ -1,3 +1,4 @@
+import CONTROLADORA.Controladora;
 import IGU.VentanaPrincipal;
 import LOGICA.ARCHIVOS.ArchivosSerializados;
 import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
@@ -31,11 +32,12 @@ public class Main{
             gestion.guardarDatos();
         }
 
+        Controladora controladora = new Controladora(gestion);
 
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
-                VentanaPrincipal pantalla = new VentanaPrincipal(gestion);
+                VentanaPrincipal pantalla = new VentanaPrincipal(controladora);
                 pantalla.setVisible(true);
                 pantalla.setLocationRelativeTo(null);
             }

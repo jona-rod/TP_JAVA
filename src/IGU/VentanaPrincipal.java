@@ -1,7 +1,6 @@
 package IGU;
 
-import LOGICA.GESTION.Gestion;
-
+import CONTROLADORA.Controladora;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,7 +16,7 @@ public class VentanaPrincipal extends JFrame {
     private JPanel principalWest;
     private JPanel principalEast;
 
-    public VentanaPrincipal(Gestion gestion) {
+    public VentanaPrincipal(Controladora controladora) {
 
         add(ventana_principal);
         this.setSize(1400, 900);
@@ -28,7 +27,7 @@ public class VentanaPrincipal extends JFrame {
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
-                        VentanaPersona ventanaPersona = new VentanaPersona(gestion);
+                        VentanaPersona ventanaPersona = new VentanaPersona(controladora);
                         ventanaPersona.setVisible(true);
                         ventanaPersona.setLocationRelativeTo(null);
                     }
@@ -43,7 +42,7 @@ public class VentanaPrincipal extends JFrame {
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
-                        VentanaMuevePersona ventanaMuevePersona = new VentanaMuevePersona(gestion);
+                        VentanaMuevePersona ventanaMuevePersona = new VentanaMuevePersona(controladora);
                         ventanaMuevePersona.setVisible(true);
                         ventanaMuevePersona.setLocationRelativeTo(null);
                     }
@@ -57,7 +56,7 @@ public class VentanaPrincipal extends JFrame {
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
-                        VentanaZonas ventanaZonas = new VentanaZonas(gestion);
+                        VentanaZonas ventanaZonas = new VentanaZonas(controladora);
                         ventanaZonas.setVisible(true);
                         ventanaZonas.setLocationRelativeTo(null);
                     }
@@ -71,7 +70,7 @@ public class VentanaPrincipal extends JFrame {
                 SwingUtilities.invokeLater(new Runnable() {
                     @Override
                     public void run() {
-                        VentanaStands ventanaStands = new VentanaStands(gestion);
+                        VentanaStands ventanaStands = new VentanaStands(controladora);
                         ventanaStands.setVisible(true);
                         ventanaStands.setLocationRelativeTo(null);
                     }
