@@ -5,11 +5,90 @@
 
 ------------- REPORTE DE PERSONAS -------------
 
+Error en linea H;PUB025;Jorge_Paredes         ;ES01 - Zona con capacidad completa - La persona con id:  PUB025, Nombre : Jorge_Paredes          no pudo registrarse
+Error en linea H;PUB027;Raúl_Fernández        ;ES01 - Zona con capacidad completa - La persona con id:  PUB027, Nombre : Raúl_Fernández         no pudo registrarse
+Error en linea H;PUB029;Mario_Robles          ;ES01 - Zona con capacidad completa - La persona con id:  PUB029, Nombre : Mario_Robles           no pudo registrarse
+Error en linea H;PUB031;Felipe_Mendoza        ;ES01 - Zona con capacidad completa - La persona con id:  PUB031, Nombre : Felipe_Mendoza         no pudo registrarse
+Error en linea H;PUB033;Gustavo_Ríos          ;ES01 - Zona con capacidad completa - La persona con id:  PUB033, Nombre : Gustavo_Ríos           no pudo registrarse
+Error en linea H;PUB039;Daniela_Ruiz          ;ES02 - Zona con capacidad completa - La persona con id:  PUB039, Nombre : Daniela_Ruiz           no pudo registrarse
+Error en linea H;PUB040;José_Luna             ;ES02 - Zona con capacidad completa - La persona con id:  PUB040, Nombre : José_Luna              no pudo registrarse
+Error en linea H;PUB041;Beatriz_Navarro       ;ES02 - Zona con capacidad completa - La persona con id:  PUB041, Nombre : Beatriz_Navarro        no pudo registrarse
+Error en linea H;PUB042;Alberto_Castro        ;ES02 - Zona con capacidad completa - La persona con id:  PUB042, Nombre : Alberto_Castro         no pudo registrarse
+Error en linea H;PUB043;Rocío_Delgado         ;ES02 - Zona con capacidad completa - La persona con id:  PUB043, Nombre : Rocío_Delgado          no pudo registrarse
+Error en linea H;PUB044;Sergio_Molina         ;ES02 - Zona con capacidad completa - La persona con id:  PUB044, Nombre : Sergio_Molina          no pudo registrarse
+Error en linea H;PUB045;Olivia_Ramírez        ;ES02 - Zona con capacidad completa - La persona con id:  PUB045, Nombre : Olivia_Ramírez         no pudo registrarse
+Error en linea H;PUB046;Federico_Márquez      ;ES02 - Zona con capacidad completa - La persona con id:  PUB046, Nombre : Federico_Márquez       no pudo registrarse
+Error en linea H;PUB047;Alicia_Cordero        ;ES02 - Zona con capacidad completa - La persona con id:  PUB047, Nombre : Alicia_Cordero         no pudo registrarse
+Error en linea H;PUB048;Gerardo_Tapia         ;ES02 - Zona con capacidad completa - La persona con id:  PUB048, Nombre : Gerardo_Tapia          no pudo registrarse
+Error en linea H;PUB052;Marisol_Peña          ;ES03 - Zona con capacidad completa - La persona con id:  PUB052, Nombre : Marisol_Peña           no pudo registrarse
+Error en linea H;PUB053;Emilio_Rangel         ;ES03 - Zona con capacidad completa - La persona con id:  PUB053, Nombre : Emilio_Rangel          no pudo registrarse
+Error en linea H;PUB054;Leticia_Orozco        ;ES03 - Zona con capacidad completa - La persona con id:  PUB054, Nombre : Leticia_Orozco         no pudo registrarse
+Error en linea H;PUB055;César_Domínguez       ;ES03 - Zona con capacidad completa - La persona con id:  PUB055, Nombre : César_Domínguez        no pudo registrarse
+Error en linea H;PUB056;Anaís_Valdés          ;ES03 - Zona con capacidad completa - La persona con id:  PUB056, Nombre : Anaís_Valdés           no pudo registrarse
+Error en linea H;PUB057;Guillermo_Fuentes     ;ES03 - Zona con capacidad completa - La persona con id:  PUB057, Nombre : Guillermo_Fuentes      no pudo registrarse
+Error en linea H;PUB058;Paulina_Contreras     ;ES03 - Zona con capacidad completa - La persona con id:  PUB058, Nombre : Paulina_Contreras      no pudo registrarse
+Error en linea H;PUB059;Hugo_Zamora           ;ES03 - Zona con capacidad completa - La persona con id:  PUB059, Nombre : Hugo_Zamora            no pudo registrarse
+Error en linea H;PUB060;Claudia_Zúñiga        ;ES03 - Zona con capacidad completa - La persona con id:  PUB060, Nombre : Claudia_Zúñiga         no pudo registrarse
+Error en linea H;PUB064;Pilar_Aguirre         ;ES04 - Zona con capacidad completa - La persona con id:  PUB064, Nombre : Pilar_Aguirre          no pudo registrarse
+Error en linea H;PUB065;Feliciano_Robledo     ;ES04 - Zona con capacidad completa - La persona con id:  PUB065, Nombre : Feliciano_Robledo      no pudo registrarse
+Error en linea H;PUB066;Rosario_Escamilla     ;ES04 - Zona con capacidad completa - La persona con id:  PUB066, Nombre : Rosario_Escamilla      no pudo registrarse
+Error en linea H;PUB067;Teodoro_Barrios       ;ES04 - Zona con capacidad completa - La persona con id:  PUB067, Nombre : Teodoro_Barrios        no pudo registrarse
+Error en linea H;PUB068;Concepción_Vázquez    ;ES04 - Zona con capacidad completa - La persona con id:  PUB068, Nombre : Concepción_Vázquez     no pudo registrarse
+Error en linea S;STA011;Luis_Torres_Tecnico   ;ES01 - Zona con capacidad completa - La persona con id:  STA011, Nombre : Luis_Torres_Tecnico    no pudo registrarse
+Error en linea S;STA012;Carlos_Mendez_Tecnico ;ES02 - Zona con capacidad completa - La persona con id:  STA012, Nombre : Carlos_Mendez_Tecnico  no pudo registrarse
+Error en linea S;STA013;Ana_Rojas_Tecnico     ;ES03 - Zona con capacidad completa - La persona con id:  STA013, Nombre : Ana_Rojas_Tecnico      no pudo registrarse
+Error en linea S;STA014;Pedro_Garcia_Tecnico  ;ES04 - Zona con capacidad completa - La persona con id:  STA014, Nombre : Pedro_Garcia_Tecnico   no pudo registrarse
 
 ------------- REPORTE DE ZONAS HABILITADAS -------------
 
+Error de datos en la linea: PUB025;CO02-La persona marcada no existe.
+Error de datos en la linea: PUB025;ES01-La persona marcada no existe.
+Error de datos en la linea: PUB027;CO02-La persona marcada no existe.
+Error de datos en la linea: PUB027;ES01-La persona marcada no existe.
+Error de datos en la linea: PUB029;CO03-La persona marcada no existe.
+Error de datos en la linea: PUB029;ES01-La persona marcada no existe.
+Error de datos en la linea: PUB031;CO03-La persona marcada no existe.
+Error de datos en la linea: PUB031;ES01-La persona marcada no existe.
+Error de datos en la linea: PUB033;CO04-La persona marcada no existe.
+Error de datos en la linea: PUB033;ES01-La persona marcada no existe.
+Error de datos en la linea: PUB039;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB040;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB041;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB042;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB043;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB044;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB045;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB046;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB047;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB048;ES02-La persona marcada no existe.
+Error de datos en la linea: PUB052;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB053;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB054;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB055;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB056;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB057;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB058;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB059;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB060;ES03-La persona marcada no existe.
+Error de datos en la linea: PUB064;ES04-La persona marcada no existe.
+Error de datos en la linea: PUB065;ES04-La persona marcada no existe.
+Error de datos en la linea: PUB066;ES04-La persona marcada no existe.
+Error de datos en la linea: PUB067;ES04-La persona marcada no existe.
+Error de datos en la linea: PUB068;ES04-La persona marcada no existe.
+Error de datos en la linea: STA011;ES01-La persona marcada no existe.
+Error de datos en la linea: STA012;ES02-La persona marcada no existe.
+Error de datos en la linea: STA013;ES03-La persona marcada no existe.
+Error de datos en la linea: STA014;ES04-La persona marcada no existe.
 
 ------------- REPORTE DE ACCESOS -------------
 
+Error de datos en la linea: STA011;RE03;15/06/2024 08:00:00;600;true-La persona marcada no existe.
+Error de datos en la linea: STA012;RE04;15/06/2024 09:00:00;540;true-La persona marcada no existe.
+Error de datos en la linea: STA013;RE05;15/06/2024 10:00:00;480;true-La persona marcada no existe.
+Error de datos en la linea: STA014;RE06;15/06/2024 11:00:00;420;true-La persona marcada no existe.
+Error de datos en la linea: PUB039;CO03;15/06/2024 17:30:00;120;true-La persona marcada no existe.
+Error de datos en la linea: PUB040;CO04;15/06/2024 12:30:00;150;true-La persona marcada no existe.
+Error de datos en la linea: PUB041;ES01;15/06/2024 18:45:00;60;true-La persona marcada no existe.
+Error de datos en la linea: PUB042;ES02;15/06/2024 20:15:00;45;false-La persona marcada no existe.
 
 ------------- REPORTE DE EVENTOS -------------

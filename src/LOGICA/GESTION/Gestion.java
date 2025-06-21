@@ -200,31 +200,37 @@ public class Gestion implements Serializable {
 
         if(listadoPersonas.containsKey(idPersona)){
             if(conjuntoZonas.containsKey(idZonaDestino)) {
-                Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 30, false);
                 Persona per = listadoPersonas.get(idPersona);
                 String zonaOrigen = per.zonaActual();
-                StringBuilder mensaje = new StringBuilder();
+                if(idZonaDestino.equals(zonaOrigen)){
+                    throw new Exception("La persona ya se encuentra en la zona indicada");
+                }else {
+                    Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 30, false);
+                    StringBuilder mensaje = new StringBuilder();
+                    if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
+                        if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
+                            System.out.printf("ingresa al habilitado en mueve personas");
+                            nuevo.setEstado(true);
 
-                if (!conjuntoZonas.get(idZonaDestino).zonaLlena()) {
-                    if (per.habilitado(conjuntoZonas.get(idZonaDestino))) {
-                        System.out.printf("ingresa al habilitado en mueve personas");
-                        nuevo.setEstado(true);
+                            conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));//3agrego .getId
+                            conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
+                            mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        } else {
+                            mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                            reporte.agregaAcceso(mensaje.toString());
+                            listadoPersonas.get(idPersona).cargaAcceso(nuevo);
+                            throw new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
 
-                        conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));//3agrego .getId
-                        conjuntoZonas.get(zonaOrigen).eliminaPersona(idPersona);
-                        mensaje.append("ACCESO ACEPTADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("Cambio de zona de ").append(zonaOrigen).append(" - ").append(conjuntoZonas.get(zonaOrigen).getDescripcion()).append(" hacia ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        }
                     } else {
-                        mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No tiene habilitación de acceso a la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
+                        mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                         reporte.agregaAcceso(mensaje.toString());
                         listadoPersonas.get(idPersona).cargaAcceso(nuevo);
-                        throw new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
-
+                        throw new Exception("La persona no puede ingresar a la zona debido a que la capacidad está completa");
                     }
-                } else {
-                    mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n").append("Id: ").append(idPersona).append("\n").append("No puede acceder debido a capacidad completa de la zona: ").append(idZonaDestino).append(" - ").append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
-                }
                     reporte.agregaAcceso(mensaje.toString());
                     listadoPersonas.get(idPersona).cargaAcceso(nuevo);
+                }
             }else{
                 throw new IllegalArgumentException("La zona no existe");
             }
