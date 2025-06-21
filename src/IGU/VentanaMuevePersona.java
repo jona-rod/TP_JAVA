@@ -1,12 +1,19 @@
 package IGU;
 
 import CONTROLADORA.Controladora;
-import LOGICA.GESTION.Gestion;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+ * clase de la  ventana mueve persona
+ * Utiliza la biblioteca swing para generar la interfaz
+ *   Extiende de {@link JFrame}
+ *  Esta clase otorga funciones y operaciones de clase controladora
+ *
+ *  @see JFrame
+ */
 public class VentanaMuevePersona extends JFrame{
     private JPanel ventana_mueve_personas;
     private JTextArea area_texto_personas;
@@ -15,6 +22,11 @@ public class VentanaMuevePersona extends JFrame{
     private JButton btn_mover;
     private JTextArea area_texto_zonas;
 
+    /**
+     * Constructor de la Clase, genera una ventana en la que se muestran los datos de las personas y los datos de las zonas,
+     * teniendo un boton desplegable para poner un id de persona y un id de zona para mover a esa persona
+     * @param controladora
+     */
     public VentanaMuevePersona(Controladora controladora) {
         add(ventana_mueve_personas);
         this.setSize(1600, 900);
