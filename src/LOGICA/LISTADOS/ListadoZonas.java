@@ -8,9 +8,17 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collections;
 
+/**
+ * se utiliza para generar un listado de zonas que este ordenado por la cantidad de personas que hay en cada zona, mostrando
+ *  en el listado desde la zona que mas gente tiene a la zona que menos gente tiene
+ */
 public class ListadoZonas {
 
-
+    /**
+     * genera un listado con todas las zonas y los datos de cada una
+     * @param gestion
+     * @return el texto con el listado de todas las zonas
+     */
     public String generaListado(Gestion gestion) {
         int cantPersonas = 0;
 

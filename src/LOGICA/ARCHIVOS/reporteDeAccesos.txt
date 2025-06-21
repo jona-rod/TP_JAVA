@@ -1,1 +1,13 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO DENEGADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+No tiene habilitación de acceso a la zona: ST13 - Merch_oficial
+
+
+ACCESO ACEPTADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+Cambio de zona de CO02 - Patio_de_comidas hacia CO04 - Zona_de_compras
+
+
