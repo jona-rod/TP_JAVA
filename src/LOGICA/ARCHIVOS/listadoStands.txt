@@ -78,7 +78,7 @@ LISTA DE PERSONAS EN ZONA
 	Id : VEN012 
 	Nombre : Claudia_Pardo
 Lista de accesos
-	Id: ST06 - Descripcion: Parrilla_rapida - Fecha y hora: 2024-06-15T13:00 - Permanencia: 0 - Estado: false
+	Id: ST12 - Descripcion: Carritos_bebidas - Fecha y hora: 2024-06-15T13:00 - Permanencia: 0 - Estado: false
 
 Lista de zonas autorizadas
 	Id: CO02 - Descripción: Patio_de_comidas
@@ -138,7 +138,7 @@ LISTA DE PERSONAS EN ZONA
 	Id : VEN005 
 	Nombre : Elena_Ruiz
 Lista de accesos
-	Id: ST03 - Descripcion: Info_turistica - Fecha y hora: 2024-06-15T11:45 - Permanencia: 8 - Estado: false
+	Id: ST05 - Descripcion: Comida_mexicana - Fecha y hora: 2024-06-15T11:45 - Permanencia: 8 - Estado: false
 
 Lista de zonas autorizadas
 

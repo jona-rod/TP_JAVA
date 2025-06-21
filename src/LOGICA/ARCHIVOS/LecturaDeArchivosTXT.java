@@ -12,14 +12,33 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
+/**
+ * Clase que se encarga de la carga de datos desde un archivo TXT
+ * la clase maneja la inconsistencia en datos, y tiene un atributo de tipo reporteDeDatos, para generar un informe de los errores
+ * que encuentra en los datos que se ingresan en el archivo TXT.
+ */
 public class LecturaDeArchivosTXT {
+    /**
+     * Objeto de clase reporteDeDatos, se encarga de escribir en un txt las lineas de datos en los que hay inconsistencias
+     */
     ReporteDeDatos informe;
 
-    //agrego el constructor
+    /**
+     * constructor de la clase LecturaDeArchivosTXT
+     * Inicializa el informe
+     */
     public LecturaDeArchivosTXT() {
         informe = new ReporteDeDatos();
     }
 
+     /**
+     * Lee los datos desde el archivo "ZONAS.txt", valida la consistencia de datos, generando un informe de cada linea que contiene un error,
+     * Lee cada linea el archivo, estando separada por punto y coma (;), y conteniendo informacion sobre una Zona
+     * @param ConjuntoZonas
+     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException
+      * @throws IOException
+     */
     public void leeZonas(Gestion ConjuntoZonas) {
         informe.agregaError("\n------------- REPORTE DE ZONAS -------------\n");
         try {
@@ -59,7 +78,13 @@ public class LecturaDeArchivosTXT {
 
     }
 
-    public void validaDatosZona(String[] bloque) throws IllegalArgumentException, StringIndexOutOfBoundsException, NumberFormatException {
+    /**
+     * valida los datos de las zonas
+     * @param bloque
+     * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
+     * @throws StringIndexOutOfBoundsException si contiene mas de 4 bloques separados por punto y coma (;)
+     */
+    public void validaDatosZona(String[] bloque) throws IllegalArgumentException, StringIndexOutOfBoundsException {
         char cat = bloque[0].charAt(0);
         if (cat == 'S') {
             if (bloque.length != 4) {
@@ -82,12 +107,17 @@ public class LecturaDeArchivosTXT {
         if (bloque[2].length() > 25) {
             throw new IllegalArgumentException("Error: Descripcion excede 25 caracteres");
         }
-    /*    if (!NombresZonas.pertenece(TipoZ)) {
-            throw new IllegalArgumentException("Error: Zona no incluida dentro del festival");
-        }*/
     }
 
-    public void leeEventos(Gestion conjuntoZonas /*Gestion listadoPersonas*/) {
+    /**
+     * Lee los datos desde el archivo "Eventos.txt", valida la consistencia de datos, generando un informe de cada linea que contiene un error,
+     * Lee cada linea el archivo, estando separada por punto y coma (;), y conteniendo informacion sobre un evento
+     * @param conjuntoZonas
+     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException
+     * @throws IOException
+     */
+    public void leeEventos(Gestion conjuntoZonas) {
         informe.agregaError("\n------------- REPORTE DE EVENTOS -------------\n");
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
@@ -124,6 +154,11 @@ public class LecturaDeArchivosTXT {
 
     }
 
+    /**
+     * valida los datos cargados en eventos, y verifica que no haya ningun error
+     * @param bloque
+     * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
+     */
     private void validaDatosEventos(String[] bloque) throws IllegalArgumentException {
         // Validación 1: Estructura básica del array
         if (bloque == null || bloque.length != 3) {
@@ -145,7 +180,7 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("Formato de fecha inválido. Use dd/MM/yyyy HH:mm:ss. Error: " + e.getMessage());
         }
 
-        // Validación 4: Artista (solo letras, espacios y caracteres básicos)
+        // Validación 4: Artista
         if (bloque[1].length() > 25) {
             throw new IllegalArgumentException("Nombre de artista inválido. Solo se permiten 25 caracteres");
         }
@@ -156,6 +191,16 @@ public class LecturaDeArchivosTXT {
         }
     }
 
+    /**
+     *  Lee los datos desde el archivo "PERSONAS.txt", valida la consistencia de datos, generando un informe de
+     *  cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
+     *  y conteniendo informacion sobre una persona
+     * @param listadoPersonas
+     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException
+     * @throws Exception
+     * @throws IOException
+     */
     public void leePersonas(Gestion listadoPersonas) {
         informe.agregaError("\n------------- REPORTE DE PERSONAS -------------\n");
 
@@ -191,10 +236,17 @@ public class LecturaDeArchivosTXT {
             informe.agregaError("Error al leer el archivo " + e.getMessage());
         }
     }
+
+    /**
+     * valida los datos de la persona que no haya ningun error
+     * @param bloque
+     * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
+     * @throws StringIndexOutOfBoundsException cantidad de bloques separados por punto y coma (;) distinto a 4
+     */
     public void validaDatosPersonas(String[] bloque) throws IllegalArgumentException,StringIndexOutOfBoundsException {
         char per = bloque[0].charAt(0);
          if (bloque.length != 4) {
-            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distitna a la esperada.");
+            throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
         }
         if (per != 'C' && per != 'A' && per != 'H' && per != 'S' && per != 'R' ) {
             throw new IllegalArgumentException("Error: la persona debe ser: 'C' (Comerciante), 'A' (Artista), 'H' (Asistente) o 'S' (Staff) o 'R' (Responsable)");
@@ -209,6 +261,16 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("Error: idZona debe tener 4 caracteres");
         }
     }
+
+    /**
+     * Lee los datos desde el archivo "Accesos.txt", valida la consistencia de datos, generando un informe de
+     * cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
+     * y conteniendo informacion sobre un acceso
+     * @param listadoPersonas
+     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException
+     * @throws IOException
+     */
     public void leeAccesos(Gestion listadoPersonas){
         informe.agregaError("\n------------- REPORTE DE ACCESOS -------------\n");
 
@@ -242,6 +304,12 @@ public class LecturaDeArchivosTXT {
             informe.agregaError("Error al leer el archivo " + e.getMessage());
         }
     }
+
+    /**
+     * valida los datos de los accesos que no tengan ningun error
+     * @param bloque
+     * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
+     */
     public void validaDatosAccesos(String[] bloque) throws IllegalArgumentException {
         // Verificar que el bloque tenga exactamente 5 elementos
         if (bloque.length != 5) {
@@ -278,6 +346,16 @@ public class LecturaDeArchivosTXT {
             throw new IllegalArgumentException("El estado debe ser 'true' o 'false'");
         }
     }
+
+    /**
+     * Lee los datos desde el archivo "ZonasHabilitadas.txt", valida la consistencia de datos, generando un informe de
+     * cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
+     * y conteniendo informacion sobre una zona habilitada
+     * @param listadoPersonas
+     * @throws StringIndexOutOfBoundsException
+     * @throws IllegalArgumentException
+     * @throws IOException
+     */
     public void leeHabilitadas(Gestion listadoPersonas){
         informe.agregaError("\n------------- REPORTE DE ZONAS HABILITADAS -------------\n");
         try {
@@ -306,6 +384,13 @@ public class LecturaDeArchivosTXT {
             informe.agregaError("Error al leer el archivo " + e.getMessage());
         }
     }
+
+    /**
+     * valida los datos de zonas habilitadas que no tengan ningun error
+     * @param bloque
+     * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
+     * @throws StringIndexOutOfBoundsException la cantidad de bloques separados por punto y coma (;) es distinto de 2
+     */
     public void validaDatosHabilitadas(String[] bloque) throws IllegalArgumentException,StringIndexOutOfBoundsException {
         if (bloque.length != 2) {
             throw new StringIndexOutOfBoundsException("Error: cantidad de datos distinta a la esperada.");
@@ -318,6 +403,9 @@ public class LecturaDeArchivosTXT {
         }
     }
 
+    /**
+     * Escribe el informe con los errores en el archivo correspondiente
+     */
     public void generaInformeDatos(){
         informe.generaInforme();
     }

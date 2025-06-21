@@ -4,9 +4,16 @@ import LOGICA.GESTION.Gestion;
 
 import javax.swing.*;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+/**
+ * Clase principal de la aplicación que ejecuta el programa
+ * @version 1.0
+ */
 public class Main{
+    /**
+     * Metodo principal del programa.
+     * Verifica si hay que cargar datos desde txt o del serializado, y ejecuta la ventana principal
+     * @param args Argumentos de la línea de comandos (no utilizados).
+     */
     public static void main(String[] args) {
 
         Gestion gestion = new Gestion();
@@ -17,28 +24,6 @@ public class Main{
         lectura.leeAccesos(gestion);
         lectura.leeEventos(gestion);
         lectura.generaInformeDatos();
-        /*System.out.println("\nMUESTRA ZONA CO01...............................................................");
-        System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
-        System.out.println("\nMUESTRA ZONA CO03...............................................................");
-        System.out.println(gestion.getConjuntoZonas().get("CO03").toString());
-
-        gestion.muevePersona("PUB001","RE05"); //no tiene autorizacion
-
-        gestion.muevePersona("PUB001","CO03"); // tiene autorizacion
-
-        System.out.println("\nDATOS DE PERSONA.............................................");
-        System.out.println(gestion.getListadoPersonas().get("PUB001").toString());
-
-        System.out.println("\nMUESTRA ZONA CO01 MODIFICADA...................................................");
-        System.out.println(gestion.getConjuntoZonas().get("CO01").toString());
-        System.out.println("\nMUESTRA ZONA CO03 MODIFICADA...................................................");
-        System.out.println(gestion.getConjuntoZonas().get("CO03").toString() + "\n");
-
-        System.out.println("\nMUESTRA DATOS PERSONA .................................");
-        System.out.println(gestion.getListadoPersonas().get("PUB001").toString());
-        System.out.println("\nMUESTRA LISTA ZONAS AUTORIZADAS .................................");
-        System.out.println(gestion.getListadoPersonas().get("PUB001").muestraListaZonasAutorizadasPersona());
-*/
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {

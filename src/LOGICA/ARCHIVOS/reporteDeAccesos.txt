@@ -1,7 +1,1 @@
 -------- REPORTE DE ACCESOS --------
-ACCESO ACEPTADO
-Nombre: Pablo_esse
-Id: PUB008
-Cambio de zona de CO04 - Zona_de_compras hacia CO04 - Zona_de_compras
-
-

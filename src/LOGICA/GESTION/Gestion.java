@@ -15,20 +15,45 @@ import java.util.ArrayList;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+/**
+ * clase Gestion, es la encargada de gestionar las principales funcionalidades del software, tiene como metodos: un constructor,
+ * getListadoZonas que devuelve el listado de todas las zonas que hay en el festival ordenada por cantidad de gente, getConjuntoZonas
+ * devuelve todas las zonas que hay en el festival, permitiendo tener acceso directo a cada zona, getListadoStands devuelve
+ * un listado con todos los stands del festival ordenados alfabeticamente por el nombre del responsable de cada stand, getListadoPersonas
+ * devuelve un listado de todas las personas del festival permitiendo tener acceso directo a cada una de ellas, agregarZona
+ * agrega una nueva zona al festival, eliminarZona elimina una zona del festival, cargaPersona carga una nueva persona al festival
+ * buscarZonaPorCodigo busca una zona teniendo como parametro el identificador de la misma, buscaPersonaPorId busca una persona
+ * teniendo como parametro la identificacion de la misma, muevePersona mueve una persona de una zona a otra, siempre y cuando
+ * esta este habilitada para entrar a la otra zona, muestraListadoPersona muestra un texto con un listado de todas las personas
+ * con todos sus datos
+ */
 public class Gestion {
-
+    /**
+     * contiene todas las zonas del festival
+     */
     TreeMap<String, Zona> conjuntoZonas; // < idZona , Zona >
-
+    /**
+     * contiene todas las personas del festival
+     */
     TreeMap<String,Persona> listadoPersonas; //<idPersona , Persona>
-
+    /**
+     * contiene las zonas del festival ordenadas por cantidad de gente, de mayor a menor
+     */
     ArrayList<Zona> listadoZonas;   //lista auxiliar para generar listado ordenado de zonas
-
+    /**
+     * contiene todos los stands del festival ordenados alfabeticamente por el nombre del responsable de cada stand
+     */
     ArrayList<Stand> listadoStands; //lista auxiliar para generar listado ordenado de stands
-
+    /**
+     * genera un reporte de los accesos de las personas
+     */
     ReporteAcceso reporte;
 
 
-
+    /**
+     * constructor de la clase Gestion
+     * crea e inicializa los conjuntos y listados
+     */
     public Gestion (){
         conjuntoZonas = new TreeMap<>();
         listadoPersonas = new TreeMap<>();
@@ -38,21 +63,43 @@ public class Gestion {
 
     }
 
+    /**
+     * devuelve el listado con las zonas ordenadas por cantidad de gente
+     * @return listadoZonas
+     */
     public ArrayList<Zona> getListadoZonas(){
         return listadoZonas;
     }
+
+    /**
+     * devuelve el conjunto de todas las zonas, permitiendo tener acceso directo a traves del id
+     * @return conjuntoZonas
+     */
     public TreeMap<String, Zona> getConjuntoZonas(){
         return conjuntoZonas;
     }
 
+    /**
+     * devuelve el listado de stands ordenado alfabeticamente por los nombres de los responsables de cada stand
+     * @return listadoStands
+     */
     public ArrayList<Stand> getListadoStands(){
         return listadoStands;
     }
-//2 agrego
+
+    /**
+     * devuelve el listado de todas las personas, permitiendo acceso directo a traves del id
+     * @return listadoPersonas
+     */
     public TreeMap<String, Persona> getListadoPersonas(){
         return listadoPersonas;
     }
 
+    /**
+     * agrega una nueva zona al festival, si una zona distinta a stand la agrega a conjuntoZonas si es un stand lo agrega
+     * a listadoStands
+     * @param zona
+     */
     public void agregarZona(Zona zona) {
         conjuntoZonas.put(zona.getCodigo(), zona);
         if(zona.tipoZona() != 'S')//zona
@@ -62,6 +109,10 @@ public class Gestion {
 
     }
 
+    /**
+     * elimina una zona del festival
+     * @param zona
+     */
     public void eliminarZona(Zona zona) {
         conjuntoZonas.remove(zona.getCodigo());
         if(zona.tipoZona() != 'S')
@@ -70,24 +121,25 @@ public class Gestion {
             listadoStands.remove(zona);
     }
 
+    /**
+     * añade una nueva persona al festival, cargandola con sus datos a listadoPersonas, tambien carga si debe el responsable
+     * de los stands
+     * @param persona
+     * @param idZona
+     * @param per
+     * @throws Exception
+     */
     public void cargaPersona(Persona persona,String idZona, char per) throws Exception {
         String mensaje = "La persona con id:  " + persona.getId() + ", Nombre : " + persona.getNombre() + " no pudo registrarse";
         if(conjuntoZonas.get(idZona) != null) {
-
             if(! conjuntoZonas.get(idZona).zonaLlena()){
-           //     if (persona.habilitado(conjuntoZonas.get(idZona))) {
                     conjuntoZonas.get(idZona).agregaPersona(persona);
                     listadoPersonas.put(persona.getId(), persona);
 
                     if(per == 'R'){
                         Stand st = (Stand) conjuntoZonas.get(idZona);
                         st.setResponsable(persona.getNombre());
-
-
                      }
-              //  else {
-               //     throw new Exception("Zona sin acceso habilitado para la persona - " + mensaje); //comento porque al realizar la carga metodo habilitaod() no tiene referencia a lista
-               // }
             }
             else {
                 throw new Exception("Zona con capacidad completa - " + mensaje);
@@ -97,6 +149,12 @@ public class Gestion {
             throw new Exception("Zona no existe - " + mensaje);
         }
     }
+
+    /**
+     * busca una zona a traves del id con acceso directo en conjuntoZonas
+     * @param codigo
+     * @return zona que contiene el id enviado como parametro
+     */
     public  Zona buscarZonaPorCodigo(String codigo) {
         if (codigo == null || codigo.trim().isEmpty()) {
             throw new IllegalArgumentException("El código de zona no puede ser nulo o vacío");
@@ -105,6 +163,12 @@ public class Gestion {
             throw new IllegalArgumentException("La zona marcada no existe.");
         return conjuntoZonas.get(codigo.trim());
     }
+
+    /**
+     * busca una persona a traves del id con acceso directo en listadoPersonas
+     * @param idPersona
+     * @return persona que contiene el id enviado como parametro
+     */
     public Persona buscaPersonaPorId(String idPersona){
         if(idPersona == null || idPersona.trim().isEmpty()){
             throw new IllegalArgumentException("El código de persona no puede ser nulo o vacío");
@@ -114,6 +178,15 @@ public class Gestion {
         }
         return listadoPersonas.get(idPersona.trim());
     }
+
+    /**
+     * se encarga de mover una persona de una zona a otra, sacando del listado de personas de la zona en la que estaba y agregando
+     * en el listado de personas de la nueva zona, esto lo hace si la persona esta habilitada para ingresar a la nueva zona
+     * sino lo esta tira una excepecion y queda unicamente como un acceso denegado
+     * @param idPersona
+     * @param idZonaDestino
+     * @throws IllegalArgumentException
+     */
     public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException{
 
         if(listadoPersonas.containsKey(idPersona)){
@@ -148,6 +221,10 @@ public class Gestion {
         }
     }
 
+    /**
+     * muestra un texto con un listado de todas las personas del festival, con los datos de cada uno de ellos
+     * @return el listado de las personas
+     */
     public String muestraListadoPersonas(){
         StringBuilder sb = new StringBuilder();
         for (Persona persona : listadoPersonas.values()) {
