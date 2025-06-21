@@ -1,8 +1,8 @@
-import CONTROLADORA.Controladora;
-import IGU.VentanaPrincipal;
-import LOGICA.ARCHIVOS.ArchivosSerializados;
-import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
-import LOGICA.GESTION.Gestion;
+import controladora.Controladora;
+import igu.VentanaPrincipal;
+import persistencia.ArchivosSerializados;
+import persistencia.LecturaDeArchivosTXT;
+import logica.gestion.Gestion;
 
 import javax.swing.*;
 

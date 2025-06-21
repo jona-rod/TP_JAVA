@@ -1,0 +1,492 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : CO04
+
+  DESCRIPCIÓN : Zona_de_compras
+
+  Tipo Zona: Común
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : PUB007		 Nombre : Pedro_Perez           
+
+
+	 ID : PUB008		 Nombre : Pablo_esse            
+
+
+	 ID : PUB032		 Nombre : Santiago_Marin        
+
+
+	 ID : PUB034		 Nombre : Raul_Cordero          
+
+
+	 ID : PUB035		 Nombre : Isabel_Fernandez      
+
+
+	 ID : PUB037		 Nombre : Ana_Sosa              
+
+
+	 ID : STA009		 Nombre : Hugo_Rodriguez        
+
+
+	 ID : STA010		 Nombre : Sandra_Castro         
+
+
+	 ID : VEN021		 Nombre : Rosa_Alonso           
+
+
+	 ID : VEN024		 Nombre : Mario_Benitez         
+
+
+	 ID : VEN026		 Nombre : Felipe_Rios           
+
+
+	 ID : VEN028		 Nombre : Diego_Medina          
+
+
+
+  Cantidad de personas : 12
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : CO01
+
+  DESCRIPCIÓN : Plaza_central
+
+  Tipo Zona: Común
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : PUB001		 Nombre : Pedro_Dominico        
+
+
+	 ID : PUB002		 Nombre : Geronimo_benavidez    
+
+
+	 ID : PUB003		 Nombre : Laura_Diaz            
+
+
+	 ID : PUB017		 Nombre : Camila_Rojas          
+
+
+	 ID : PUB018		 Nombre : Daniel_Vargas         
+
+
+	 ID : PUB021		 Nombre : Fernanda_Silva        
+
+
+	 ID : STA001		 Nombre : Juan_Perez            
+
+
+	 ID : STA004		 Nombre : Pablo_Martinez        
+
+
+
+  Cantidad de personas : 8
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : CO03
+
+  DESCRIPCIÓN : Zona_de_descanso
+
+  Tipo Zona: Común
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : PUB019		 Nombre : Nuria_Vidal           
+
+
+	 ID : PUB028		 Nombre : Jorge_Luna            
+
+
+	 ID : PUB030		 Nombre : Ricardo_Miranda       
+
+
+	 ID : STA007		 Nombre : Patricia_Nunez        
+
+
+	 ID : STA008		 Nombre : Fernando_Lopez        
+
+
+	 ID : VEN018		 Nombre : Raul_Hernandez        
+
+
+
+  Cantidad de personas : 6
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : CO02
+
+  DESCRIPCIÓN : Patio_de_comidas
+
+  Tipo Zona: Común
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART009		 Nombre : Ozzy_Osbourne         
+
+
+	 ID : PUB004		 Nombre : Delfina_Gomez         
+
+
+	 ID : PUB005		 Nombre : Carmen_Ortega         
+
+
+	 ID : PUB006		 Nombre : Alberto_Campos        
+
+
+	 ID : PUB026		 Nombre : Diego_Sanchez         
+
+
+
+  Cantidad de personas : 5
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ES02
+
+  DESCRIPCIÓN : Hip-Hop
+
+  Tipo Zona: Escenario
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART011		 Nombre : Kendrick_Lamar        
+
+
+	 ID : ART012		 Nombre : Drake                 
+
+
+	 ID : ART013		 Nombre : Nicki_Minaj           
+
+
+	 ID : PUB036		 Nombre : René_Guzmán           
+
+
+	 ID : PUB038		 Nombre : Arturo_Salazar        
+
+
+
+  Cantidad de personas : 5
+
+  	LISTA DE EVENTOS
+	---------------
+
+
+	ART011 - 2025-03-16 21:30:00
+
+	ART012 - 2025-03-23 20:00:00
+
+	ART013 - 2025-04-06 23:00:00
+
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ES03
+
+  DESCRIPCIÓN : Pop
+
+  Tipo Zona: Escenario
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART014		 Nombre : Taylor_Swift          
+
+
+	 ID : ART015		 Nombre : Bruno_Mars            
+
+
+	 ID : PUB049		 Nombre : Patricio_Reyes        
+
+
+	 ID : PUB050		 Nombre : Jimena_Sosa           
+
+
+	 ID : PUB051		 Nombre : Rodrigo_Álvarez       
+
+
+
+  Cantidad de personas : 5
+
+  	LISTA DE EVENTOS
+	---------------
+
+
+	ART014 - 2025-03-17 20:00:00
+
+	ART015 - 2025-03-24 21:15:00
+
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ES04
+
+  DESCRIPCIÓN : Folcklore
+
+  Tipo Zona: Escenario
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART016		 Nombre : Soledad_Pastorutti    
+
+
+	 ID : ART017		 Nombre : Chaqueño_Palavecino   
+
+
+	 ID : PUB061		 Nombre : Agustín_Gallardo      
+
+
+	 ID : PUB062		 Nombre : Esperanza_Valencia    
+
+
+	 ID : PUB063		 Nombre : Salvador_Maldonado    
+
+
+
+  Cantidad de personas : 5
+
+  	LISTA DE EVENTOS
+	---------------
+
+
+	ART016 - 2025-03-18 19:00:00
+
+	ART017 - 2025-03-25 20:45:00
+
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ES01
+
+  DESCRIPCIÓN : Rock
+
+  Tipo Zona: Escenario
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART010		 Nombre : Slash                 
+
+
+	 ID : PUB020		 Nombre : Lucía_Medina          
+
+
+	 ID : PUB022		 Nombre : Marina_Gómez          
+
+
+	 ID : PUB023		 Nombre : Héctor_Ortega         
+
+
+
+  Cantidad de personas : 4
+
+  	LISTA DE EVENTOS
+	---------------
+
+
+	ART009 - 2025-03-15 20:30:00
+
+	ART010 - 2025-03-22 21:00:00
+
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE01
+
+  DESCRIPCIÓN : Camarines
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA015		 Nombre : Mario_Benitez_Guardia 
+
+
+	 ID : STA016		 Nombre : Jorge_Silva_Guardia   
+
+
+
+  Cantidad de personas : 2
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE05
+
+  DESCRIPCIÓN : Seguridad
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA020		 Nombre : Hugo_Rodriguez_guardia
+
+
+	 ID : STA021		 Nombre : Sandra_Castro_guardia 
+
+
+
+  Cantidad de personas : 2
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE06
+
+  DESCRIPCIÓN : Cocina staff
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA022		 Nombre : Antonio_Chef_Cocina   
+
+
+	 ID : STA023		 Nombre : Elena_Martin_Ayudante 
+
+
+
+  Cantidad de personas : 2
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE02
+
+  DESCRIPCIÓN : Depósito
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA017		 Nombre : Felipe_Rios_Almacen   
+
+
+
+  Cantidad de personas : 1
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE03
+
+  DESCRIPCIÓN : Organización
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA018		 Nombre : Lucia_Montero_Eventos 
+
+
+
+  Cantidad de personas : 1
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE04
+
+  DESCRIPCIÓN : Prensa
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA019		 Nombre : Diego_Medina_Prensa   
+
+
+
+  Cantidad de personas : 1
+
+  Capacidad máxima: 5
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : RE07
+
+  DESCRIPCIÓN : Parking artistas
+
+  Tipo Zona: Restringida
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : STA024		 Nombre : Ramon_Gomez_Parking   
+
+
+
+  Cantidad de personas : 1
+
+  Capacidad máxima: 5
+
+
+La cantidad de personas en el predio es: 60
