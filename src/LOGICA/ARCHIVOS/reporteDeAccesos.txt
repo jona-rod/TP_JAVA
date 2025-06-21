@@ -1,7 +1,1 @@
 -------- REPORTE DE ACCESOS --------
-ACCESO DENEGADO
-Nombre: Diego_Medina
-Id: VEN028
-No tiene habilitación de acceso a la zona: ST14 - Artesanias_loc
-
-

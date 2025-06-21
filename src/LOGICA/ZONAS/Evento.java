@@ -1,9 +1,11 @@
 package LOGICA.ZONAS;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-public class Evento {
+public class Evento implements Serializable {
 
     LocalDateTime fechaHora;
     String artista;
@@ -23,6 +25,7 @@ public class Evento {
 
     @Override
     public String toString() {
-        return artista + " - " + fechaHora.toString();
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return artista + " - " + fechaHora.format(formato).toString();
     }
 }

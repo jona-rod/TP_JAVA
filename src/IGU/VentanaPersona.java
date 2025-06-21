@@ -16,20 +16,20 @@ public class VentanaPersona extends JFrame {
 
     public VentanaPersona(Gestion gestion) {
         add(ventana_persona);
-        this.setSize(1300, 800);
+        this.setSize(1400, 900);
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("------- LISTADO DE PERSONAS -------\n\n").append(gestion.muestraListadoPersonas());
 
-        area_texto_persona.setText(sb.toString());
+        area_texto_persona.setText(gestion.muestraListadoPersonas());
+        area_texto_persona.setCaretPosition(0);
 
 
         btn_mostrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String persona = campo_id.getText();
+                String persona = campo_id.getText().toUpperCase().replaceAll("\\s+", "");
                 if(gestion.getListadoPersonas().get(persona) != null) {
                     area_texto_persona.setText(gestion.getListadoPersonas().get(persona).toString());
+                    area_texto_persona.setCaretPosition(0);
                 }else{
                     JOptionPane.showMessageDialog(VentanaPersona.this, "ID INCORRECTO\nla persona seleccionada no existe");
                 }
@@ -40,7 +40,8 @@ public class VentanaPersona extends JFrame {
         btn_personas.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                area_texto_persona.setText(sb.toString());
+                area_texto_persona.setText(gestion.muestraListadoPersonas());
+                area_texto_persona.setCaretPosition(0);
             }
         });
     }

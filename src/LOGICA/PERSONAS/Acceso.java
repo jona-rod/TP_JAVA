@@ -4,10 +4,12 @@ import LOGICA.ZONAS.Zona;
 
 import LOGICA.ZONAS.Zona;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
-public class Acceso{
+public class Acceso implements Serializable {
     Zona zona;
     LocalDateTime fechaHora;
     int cantidadMinutosPermanencia;
@@ -36,7 +38,8 @@ public class Acceso{
 
     @Override
     public String toString() {
-        return "Id: " + zona.getCodigo() + " - "+ "Descripcion: " + zona.getDescripcion() + " - "+"Fecha y hora: "+ fechaHora.toString()+ " - " + "Permanencia: "+ cantidadMinutosPermanencia + " - " +"Estado: " + estado;
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return "Id: " + zona.getCodigo() + "\t "+ "Descripcion: " + zona.getDescripcion() + "\t "+"Fecha y hora: "+ fechaHora.format(formato).toString()+ "\t " + "Permanencia: "+ cantidadMinutosPermanencia + " minutos\t " +"Estado: " + (estado?"HABILITADO":"DENEGADO");
     }
 
 }

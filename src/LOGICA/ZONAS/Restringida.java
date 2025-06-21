@@ -1,6 +1,8 @@
 package LOGICA.ZONAS;
 
-public class Restringida extends Zona {
+import java.io.Serializable;
+
+public class Restringida extends Zona implements Serializable {
 
 
     private final int capacidadMaxima = 1000;
@@ -12,7 +14,7 @@ public class Restringida extends Zona {
 
     @Override
     public String toString() {
-        return super.toString() + "\nCapacidad máxima: " + capacidadMaxima;
+        return super.toString() +( tipoZona() == 'R'? ("\n  Capacidad máxima: " + capacidadMaxima+"\n\n" ):"\n\n");
     }
 
     @Override

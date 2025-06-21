@@ -5,11 +5,12 @@ import LOGICA.ZONAS.Comun;
 import LOGICA.ZONAS.Evento;
 import LOGICA.ZONAS.Zona;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
-public abstract class Persona {
+public abstract class Persona implements Serializable {
         String id;
         String nombre;
         LinkedHashSet<Acceso> listaAccesos;
@@ -77,25 +78,36 @@ public abstract class Persona {
 
     public String muestraListaAccesosPersona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Lista de accesos\n");
+        sb.append("\t Lista de accesos\n\t -------------\n\n");
         for(Acceso acceso : listaAccesos.reversed()){
-            sb.append("\t").append(acceso.toString()).append("\n");
+            sb.append("\t ").append(acceso.toString()).append("\n\n");
         }
         return sb.toString();
     }
 
     public String muestraListaZonasAutorizadasPersona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Lista de zonas autorizadas\n");
+        sb.append("\t Lista de zonas autorizadas\n\t ---------------------\n\n");
         for(Zona zona : zonasAutorizadas){
-            sb.append("\t").append("Id: ").append(zona.getCodigo()).append(" - ").append("Descripción: ").append(zona.getDescripcion()).append("\n");
+            sb.append("\t ").append("Id: ").append(zona.getCodigo()).append("\t  ").append("Descripción: ").append(zona.getDescripcion()).append("\n\n");
         }
+        sb.append("\n..........................................................................................................................................................................................................................................................................\n\n");
         return sb.toString();
+    }
+
+    public String muestraPersonaListado(){
+        return  "\t ID : " + id + "\t\t Nombre : " + nombre + "\n\n";
     }
 
     @Override
     public String toString() {
-        return "\n\tId : " + id + " \n\tNombre : " + nombre + "\n" + muestraListaAccesosPersona() + "\n" + muestraListaZonasAutorizadasPersona();
+
+        return "..........................................................................................................................................................................................................................................................................\n\n" +
+                 " ID : " + id + "\n \n Nombre : " + nombre + "\n\n" +
+                "\n..........................................................................................................................................................................................................................................................................\n\n" +
+                muestraListaAccesosPersona()+
+                "\n..........................................................................................................................................................................................................................................................................\n\n" +
+                muestraListaZonasAutorizadasPersona();
     }
 
 }

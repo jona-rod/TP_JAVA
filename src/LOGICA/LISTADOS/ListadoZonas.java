@@ -16,7 +16,7 @@ public class ListadoZonas {
 
         Collections.sort(gestion.getListadoZonas()); // Usa compareTo de Zona
 
-        StringBuilder sb = new StringBuilder("LISTADO DE ZONAS:\n");
+        StringBuilder sb = new StringBuilder();
         for (Zona z : gestion.getListadoZonas()) {
             sb.append(z.toString()).append("\n");
             cantPersonas += z.concurrencia();

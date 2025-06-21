@@ -16,10 +16,12 @@ public class VentanaMuevePersona extends JFrame{
 
     public VentanaMuevePersona(Gestion gestion) {
         add(ventana_mueve_personas);
-        this.setSize(1300, 800);
+        this.setSize(1600, 900);
 
-        area_texto_zonas.setText(gestion.getConjuntoZonas().toString());
-        area_texto_personas.setText(gestion.muestraListadoPersonas().toString());
+        area_texto_zonas.setText(gestion.muestraListadoZonasConPersonas());
+        area_texto_zonas.setCaretPosition(0);
+        area_texto_personas.setText(gestion.muestraListadoPersonas());
+        area_texto_personas.setCaretPosition(0);
 
 
 
@@ -27,13 +29,18 @@ public class VentanaMuevePersona extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    gestion.muevePersona(campoi_id_persona.getText(), campor_id_zona.getText());
+                    gestion.muevePersona(campoi_id_persona.getText().toUpperCase().replaceAll("\\s+", ""), campor_id_zona.getText().toUpperCase().replaceAll("\\s+", ""));
                     JOptionPane.showMessageDialog(null, "Se realiza cambio de zona con exito");
-                    area_texto_zonas.setText(gestion.getConjuntoZonas().toString());
-                    area_texto_personas.setText(gestion.muestraListadoPersonas().toString());
+                    area_texto_zonas.setText(gestion.muestraListadoZonasConPersonas());
+                    area_texto_zonas.setCaretPosition(0);
+                    area_texto_personas.setText(gestion.muestraListadoPersonas());
+                    area_texto_personas.setCaretPosition(0);
+                    gestion.guardarDatos();
 
                     }catch (Exception ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage());
+                    }finally {
+                        gestion.guardarDatos();
                     }
                 }
         });

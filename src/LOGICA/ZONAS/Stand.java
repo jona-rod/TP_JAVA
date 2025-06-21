@@ -1,11 +1,13 @@
 package LOGICA.ZONAS;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
-public class Stand extends Restringida{
+public class Stand extends Restringida implements Serializable {
 
     String ubicacion;
     String responsable="";
+    private final int capacidadMaxima = 5;
 
     public Stand(String codigo, String descripcion, String ubicacion) {
         super(codigo,descripcion);
@@ -24,7 +26,7 @@ public class Stand extends Restringida{
 
     @Override
     public String toString() {
-        return super.toString()+"\nUbicacion:  "+getUbicacion()+"\nResponsable: "+ (responsable!=null?responsable.toString():"no tiene responsable");
+        return super.toString()+"  Ubicacion:  "+ubicacion+"\n\n  Capacidad máxima: " + capacidadMaxima +"\n\n  Responsable: "+ (responsable!=null?responsable.toString()+"\n":"no tiene responsable"+"\n");
     }
 
     @Override

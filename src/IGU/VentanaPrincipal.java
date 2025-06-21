@@ -5,6 +5,8 @@ import LOGICA.GESTION.Gestion;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class VentanaPrincipal extends JFrame {
     private JPanel ventana_principal;
@@ -18,7 +20,7 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal(Gestion gestion) {
 
         add(ventana_principal);
-        this.setSize(1300, 800);
+        this.setSize(1400, 900);
 
         btn_consultar.addActionListener(new ActionListener() {
             @Override
@@ -79,5 +81,15 @@ public class VentanaPrincipal extends JFrame {
 
             }
         });
+
+        //Termina el programa al cerrar la ventana principal
+        this.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
     }
+
+
 }

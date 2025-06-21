@@ -16,10 +16,20 @@ public class Artista extends Persona {
 
     public String muestraEventosDeArtista(){
         StringBuilder sb = new StringBuilder();
-        sb.append("Lista de eventos del artista\n");
-        for (Evento evento : eventosDelArtista) {
-            sb.append("\t").append(evento.toString()).append("\n");
+        sb.append("\t Lista de eventos del artista\n\t ----------------------\n\n");
+        if(eventosDelArtista.isEmpty()){
+            sb.append("\t El artista no tiene eventos\n\n");
+            sb.append("\n..........................................................................................................................................................................................................................................................................\n\n");
+
         }
+        else{
+            for (Evento evento : eventosDelArtista) {
+                sb.append("\t").append(evento.toString()).append("\n");
+                sb.append("\n..........................................................................................................................................................................................................................................................................\n\n");
+
+            }
+        }
+
         return sb.toString();
     }
 

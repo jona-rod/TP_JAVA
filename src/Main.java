@@ -1,8 +1,10 @@
 import IGU.VentanaPrincipal;
+import LOGICA.ARCHIVOS.ArchivosSerializados;
 import LOGICA.ARCHIVOS.LecturaDeArchivosTXT;
 import LOGICA.GESTION.Gestion;
 
 import javax.swing.*;
+import java.sql.SQLOutput;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -10,14 +12,19 @@ public class Main{
     public static void main(String[] args) {
 
         Gestion gestion = new Gestion();
-        LecturaDeArchivosTXT lectura = new LecturaDeArchivosTXT();
-        lectura.leeZonas(gestion);
-        lectura.leePersonas(gestion);
-        lectura.leeHabilitadas(gestion);
-        lectura.leeAccesos(gestion);
-        lectura.leeEventos(gestion);
-        lectura.generaInformeDatos();
 
+        if (!ArchivosSerializados.archivosNoExisten()) {
+            ArchivosSerializados.cargarDatos(gestion);
+        }else {
+            LecturaDeArchivosTXT lectura = new LecturaDeArchivosTXT();
+            lectura.leeZonas(gestion);
+            lectura.leePersonas(gestion);
+            lectura.leeHabilitadas(gestion);
+            lectura.leeAccesos(gestion);
+            lectura.leeEventos(gestion);
+            lectura.generaInformeDatos();
+            gestion.guardarDatos();
+        }
 
 
         SwingUtilities.invokeLater(new Runnable() {

@@ -1,5 +1,6 @@
 package LOGICA.GESTION;
 
+import LOGICA.ARCHIVOS.ArchivosSerializados;
 import LOGICA.PERSONAS.Acceso;
 import LOGICA.PERSONAS.Comerciante;
 import LOGICA.PERSONAS.Persona;
@@ -8,6 +9,7 @@ import LOGICA.ZONAS.Restringida;
 import LOGICA.ZONAS.Stand;
 import LOGICA.ZONAS.Zona;
 
+import java.io.Serializable;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -15,7 +17,7 @@ import java.util.ArrayList;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-public class Gestion {
+public class Gestion implements Serializable {
 
     TreeMap<String, Zona> conjuntoZonas; // < idZona , Zona >
 
@@ -36,6 +38,12 @@ public class Gestion {
         listadoStands = new ArrayList<>();
         reporte = new ReporteAcceso();
 
+
+
+    }
+
+    public void guardarDatos() {
+        ArchivosSerializados.guardarDatos(this);
     }
 
     public ArrayList<Zona> getListadoZonas(){
@@ -152,21 +160,34 @@ public class Gestion {
 
     public String muestraListadoPersonas(){
         StringBuilder sb = new StringBuilder();
+        sb.append("\n    ID  \t \t  NOMBRE  \t \t  TIPO  \t \t  ZONA ACTUAL  \n\n");
         for (Persona persona : listadoPersonas.values()) {
-            char tp = persona.tipoPersona();
-            String tipoPersona;
-            if(tp == 'A')
-                tipoPersona = "Artista";
-            else if (tp == 'H') {
-                tipoPersona = "Asistente";
-            } else if (tp == 'C') {
-                tipoPersona = "Comerciante";
-            }else
-                tipoPersona = "Staff";
+            if (persona != null && persona.zonaActual() != null) {
+                String descripcion = conjuntoZonas.get(persona.zonaActual()).getDescripcion();
+                char tp = persona.tipoPersona();
+                String tipoPersona;
+                if (tp == 'A')
+                    tipoPersona = "Artista";
+                else if (tp == 'H') {
+                    tipoPersona = "Asistente";
+                } else if (tp == 'C') {
+                    tipoPersona = "Comerciante";
+                } else
+                    tipoPersona = "Staff";
 
-            sb.append("ID: ").append(persona.getId()).append("\t").append("\t Nombre: ").append(persona.getNombre()).append("\t").append("\t Tipo Persona: ").append(tipoPersona).append("\t").append("\t Zona Actual: ").append(persona.zonaActual()).append("\n");
+
+                sb.append("........................................................................................................................................................................................................................................................................................................")
+                        .append("\n\n  ID: ").append(persona.getId()).append("\t").append("\t").append(persona.getNombre()).append("\t").append(tipoPersona).append("\t\t").append(persona.zonaActual()).append("  -  ").append(descripcion).append("  ( ").append(conjuntoZonas.get(persona.zonaActual()).tipoZona()).append(" )") .append("\n\n");
+            }
         }
         return sb.toString();
     }
 
+    public String muestraListadoZonasConPersonas(){
+        StringBuilder sb = new StringBuilder();
+        for(Zona zona : conjuntoZonas.values()){
+            sb.append(zona.toString()).append("\n");
+        }
+        return sb.toString();
+    }
 }

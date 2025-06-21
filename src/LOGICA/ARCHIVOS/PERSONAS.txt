@@ -1,115 +1,115 @@
-A;ART009;Ozzy_Osbourne;ES01
-A;ART010;Slash;ES01
-A;ART011;Kendrick_Lamar;ES02
-A;ART012;Drake;ES02
-A;ART013;Nicki_Minaj;ES02
-A;ART014;Taylor_Swift;ES03
-A;ART015;Bruno_Mars;ES03
-A;ART016;Soledad_Pastorutti;ES04
-A;ART017;Chaqueño_Palavecino;ES04
-R;VEN001;Ana_Lopez;ST01
-R;VEN002;Carlos_Mendez;ST02
-R;VEN003;Luisa_Fernandez;ST03
-R;VEN004;Pedro_Gomez;ST04
-R;VEN005;Elena_Ruiz;ST05
-R;VEN006;Diego_Torres;ST06
-R;VEN007;Sofia_Castro;ST07
-R;VEN008;Miguel_Angel;ST08
-R;VEN009;Isabel_Romero;ST09
-R;VEN010;Julia_Navarro;ST10
-R;VEN011;Alvaro_Morales;ST11
-R;VEN012;Claudia_Pardo;ST12
-R;VEN013;Sergio_Miranda;ST13
-R;VEN014;Roberto_Jimenez;ST14
-R;VEN015;Teresa_Gil;ST15
-C;VEN017;Eva_Santos;ST12
-C;VEN018;Raul_Hernandez;CO03
-C;VEN020;Hector_Gimenez;ST09
-C;VEN021;Rosa_Alonso;CO04
-C;VEN022;Victor_Pons;ST07
-C;VEN023;Diana_Montes;ST06
-C;VEN024;Mario_Benitez;CO04
-C;VEN025;Jorge_Silva;ST04
-C;VEN026;Felipe_Rios;CO04
-C;VEN027;Lucia_Montero;ST02
-C;VEN028;Diego_Medina;CO04
-H;PUB001;Pedro_Dominico;CO01
-H;PUB002;Geronimo_benavidez;CO01
-H;PUB003;Laura_Diaz;CO01
-H;PUB004;Delfina_Gomez;CO02
-H;PUB005;Carmen_Ortega;CO02
-H;PUB006;Alberto_Campos;CO02
-H;PUB007;Pedro_Perez;CO04
-H;PUB008;Pablo_esse;CO04
-H;PUB017;Camila_Rojas;CO01
-H;PUB018;Daniel_Vargas;CO01
-H;PUB019;Nuria_Vidal;CO03
-H;PUB020;Lucía_Medina;ES01
-H;PUB021;Fernanda_Silva;CO01
-H;PUB022;Marina_Gómez;ES01
-H;PUB023;Héctor_Ortega;ES01
-H;PUB024;Elena_Miranda;ES01
-H;PUB025;Jorge_Paredes;ES01
-H;PUB026;Diego_Sanchez;CO02
-H;PUB027;Raúl_Fernández;ES01
-H;PUB028;Jorge_Luna;CO03
-H;PUB029;Mario_Robles;ES01
-H;PUB030;Ricardo_Miranda;CO03
-H;PUB031;Felipe_Mendoza;ES01
-H;PUB032;Santiago_Marin;CO04
-H;PUB033;Gustavo_Ríos;ES01
-H;PUB034;Raul_Cordero;CO04
-H;PUB035;Isabel_Fernandez;CO04
-H;PUB036;René_Guzmán;ES02
-H;PUB037;Ana_Sosa;CO04
-H;PUB038;Arturo_Salazar;ES02
-H;PUB039;Daniela_Ruiz;ES02
-H;PUB040;José_Luna;ES02
-H;PUB041;Beatriz_Navarro;ES02
-H;PUB042;Alberto_Castro;ES02
-H;PUB043;Rocío_Delgado;ES02
-H;PUB044;Sergio_Molina;ES02
-H;PUB045;Olivia_Ramírez;ES02
-H;PUB046;Federico_Márquez;ES02
-H;PUB047;Alicia_Cordero;ES02
-H;PUB048;Gerardo_Tapia;ES02
-H;PUB049;Patricio_Reyes;ES03
-H;PUB050;Jimena_Sosa;ES03
-H;PUB051;Rodrigo_Álvarez;ES03
-H;PUB052;Marisol_Peña;ES03
-H;PUB053;Emilio_Rangel;ES03
-H;PUB054;Leticia_Orozco;ES03
-H;PUB055;César_Domínguez;ES03
-H;PUB056;Anaís_Valdés;ES03
-H;PUB057;Guillermo_Fuentes;ES03
-H;PUB058;Paulina_Contreras;ES03
-H;PUB059;Hugo_Zamora;ES03
-H;PUB060;Claudia_Zúñiga;ES03
-H;PUB061;Agustín_Gallardo;ES04
-H;PUB062;Esperanza_Valencia;ES04
-H;PUB063;Salvador_Maldonado;ES04
-H;PUB064;Pilar_Aguirre;ES04
-H;PUB065;Feliciano_Robledo;ES04
-H;PUB066;Rosario_Escamilla;ES04
-H;PUB067;Teodoro_Barrios;ES04
-H;PUB068;Concepción_Vázquez;ES04
-S;STA001;Juan_Perez;CO01
-S;STA004;Pablo_Martinez;CO01
-S;STA007;Patricia_Nunez;CO03
-S;STA008;Fernando_Lopez;CO03
-S;STA009;Hugo_Rodriguez;CO04
-S;STA010;Sandra_Castro;CO04
-S;STA011;Luis_Torres_Tecnico;ES01
-S;STA012;Carlos_Mendez_Tecnico;ES02
-S;STA013;Ana_Rojas_Tecnico;ES03
-S;STA014;Pedro_Garcia_Tecnico;ES04
-S;STA015;Mario_Benitez_Guardia;RE01
-S;STA016;Jorge_Silva_Guardia;RE01
-S;STA017;Felipe_Rios_Almacen;RE02
-S;STA018;Lucia_Montero_Eventos;RE03
-S;STA019;Diego_Medina_Prensa;RE04
-S;STA020;Hugo_Rodriguez_Seguridad;RE05
-S;STA021;Sandra_Castro_Seguridad;RE05
-S;STA022;Antonio_Chef_Cocina;RE06
-S;STA023;Elena_Martin_Ayudante;RE06
-S;STA024;Ramon_Gomez_Parking;RE07
+A;ART009;Ozzy_Osbourne         ;ES01
+A;ART010;Slash                 ;ES01
+A;ART011;Kendrick_Lamar        ;ES02
+A;ART012;Drake                 ;ES02
+A;ART013;Nicki_Minaj           ;ES02
+A;ART014;Taylor_Swift          ;ES03
+A;ART015;Bruno_Mars            ;ES03
+A;ART016;Soledad_Pastorutti    ;ES04
+A;ART017;Chaqueño_Palavecino   ;ES04
+R;VEN001;Ana_Lopez             ;ST01
+R;VEN002;Carlos_Mendez         ;ST02
+R;VEN003;Luisa_Fernandez       ;ST03
+R;VEN004;Pedro_Gomez           ;ST04
+R;VEN005;Elena_Ruiz            ;ST05
+R;VEN006;Diego_Torres          ;ST06
+R;VEN007;Sofia_Castro          ;ST07
+R;VEN008;Miguel_Angel          ;ST08
+R;VEN009;Isabel_Romero         ;ST09
+R;VEN010;Julia_Navarro         ;ST10
+R;VEN011;Alvaro_Morales        ;ST11
+R;VEN012;Claudia_Pardo         ;ST12
+R;VEN013;Sergio_Miranda        ;ST13
+R;VEN014;Roberto_Jimenez       ;ST14
+R;VEN015;Teresa_Gil            ;ST15
+C;VEN017;Eva_Santos            ;ST12
+C;VEN018;Raul_Hernandez        ;CO03
+C;VEN020;Hector_Gimenez        ;ST09
+C;VEN021;Rosa_Alonso           ;CO04
+C;VEN022;Victor_Pons           ;ST07
+C;VEN023;Diana_Montes          ;ST06
+C;VEN024;Mario_Benitez         ;CO04
+C;VEN025;Jorge_Silva           ;ST04
+C;VEN026;Felipe_Rios           ;CO04
+C;VEN027;Lucia_Montero         ;ST02
+C;VEN028;Diego_Medina          ;CO04
+H;PUB001;Pedro_Dominico        ;CO01
+H;PUB002;Geronimo_benavidez    ;CO01
+H;PUB003;Laura_Diaz            ;CO01
+H;PUB004;Delfina_Gomez         ;CO02
+H;PUB005;Carmen_Ortega         ;CO02
+H;PUB006;Alberto_Campos        ;CO02
+H;PUB007;Pedro_Perez           ;CO04
+H;PUB008;Pablo_esse            ;CO04
+H;PUB017;Camila_Rojas          ;CO01
+H;PUB018;Daniel_Vargas         ;CO01
+H;PUB019;Nuria_Vidal           ;CO03
+H;PUB020;Lucía_Medina          ;ES01
+H;PUB021;Fernanda_Silva        ;CO01
+H;PUB022;Marina_Gómez          ;ES01
+H;PUB023;Héctor_Ortega         ;ES01
+H;PUB024;Elena_Miranda         ;ES01
+H;PUB025;Jorge_Paredes         ;ES01
+H;PUB026;Diego_Sanchez         ;CO02
+H;PUB027;Raúl_Fernández        ;ES01
+H;PUB028;Jorge_Luna            ;CO03
+H;PUB029;Mario_Robles          ;ES01
+H;PUB030;Ricardo_Miranda       ;CO03
+H;PUB031;Felipe_Mendoza        ;ES01
+H;PUB032;Santiago_Marin        ;CO04
+H;PUB033;Gustavo_Ríos          ;ES01
+H;PUB034;Raul_Cordero          ;CO04
+H;PUB035;Isabel_Fernandez      ;CO04
+H;PUB036;René_Guzmán           ;ES02
+H;PUB037;Ana_Sosa              ;CO04
+H;PUB038;Arturo_Salazar        ;ES02
+H;PUB039;Daniela_Ruiz          ;ES02
+H;PUB040;José_Luna             ;ES02
+H;PUB041;Beatriz_Navarro       ;ES02
+H;PUB042;Alberto_Castro        ;ES02
+H;PUB043;Rocío_Delgado         ;ES02
+H;PUB044;Sergio_Molina         ;ES02
+H;PUB045;Olivia_Ramírez        ;ES02
+H;PUB046;Federico_Márquez      ;ES02
+H;PUB047;Alicia_Cordero        ;ES02
+H;PUB048;Gerardo_Tapia         ;ES02
+H;PUB049;Patricio_Reyes        ;ES03
+H;PUB050;Jimena_Sosa           ;ES03
+H;PUB051;Rodrigo_Álvarez       ;ES03
+H;PUB052;Marisol_Peña          ;ES03
+H;PUB053;Emilio_Rangel         ;ES03
+H;PUB054;Leticia_Orozco        ;ES03
+H;PUB055;César_Domínguez       ;ES03
+H;PUB056;Anaís_Valdés          ;ES03
+H;PUB057;Guillermo_Fuentes     ;ES03
+H;PUB058;Paulina_Contreras     ;ES03
+H;PUB059;Hugo_Zamora           ;ES03
+H;PUB060;Claudia_Zúñiga        ;ES03
+H;PUB061;Agustín_Gallardo      ;ES04
+H;PUB062;Esperanza_Valencia    ;ES04
+H;PUB063;Salvador_Maldonado    ;ES04
+H;PUB064;Pilar_Aguirre         ;ES04
+H;PUB065;Feliciano_Robledo     ;ES04
+H;PUB066;Rosario_Escamilla     ;ES04
+H;PUB067;Teodoro_Barrios       ;ES04
+H;PUB068;Concepción_Vázquez    ;ES04
+S;STA001;Juan_Perez            ;CO01
+S;STA004;Pablo_Martinez        ;CO01
+S;STA007;Patricia_Nunez        ;CO03
+S;STA008;Fernando_Lopez        ;CO03
+S;STA009;Hugo_Rodriguez        ;CO04
+S;STA010;Sandra_Castro         ;CO04
+S;STA011;Luis_Torres_Tecnico   ;ES01
+S;STA012;Carlos_Mendez_Tecnico ;ES02
+S;STA013;Ana_Rojas_Tecnico     ;ES03
+S;STA014;Pedro_Garcia_Tecnico  ;ES04
+S;STA015;Mario_Benitez_Guardia ;RE01
+S;STA016;Jorge_Silva_Guardia   ;RE01
+S;STA017;Felipe_Rios_Almacen   ;RE02
+S;STA018;Lucia_Montero_Eventos ;RE03
+S;STA019;Diego_Medina_Prensa   ;RE04
+S;STA020;Hugo_Rodriguez_guardia;RE05
+S;STA021;Sandra_Castro_guardia ;RE05
+S;STA022;Antonio_Chef_Cocina   ;RE06
+S;STA023;Elena_Martin_Ayudante ;RE06
+S;STA024;Ramon_Gomez_Parking   ;RE07

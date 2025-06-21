@@ -4,18 +4,22 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-8344094"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="a7280" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
         <constraints border-constraint="North"/>
-        <properties/>
+        <properties>
+          <background color="-8344094"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="eda74" class="javax.swing.JLabel">
             <constraints/>
             <properties>
-              <text value="Label"/>
+              <text value="DATOS DE PERSONA"/>
             </properties>
           </component>
         </children>
@@ -23,13 +27,14 @@
       <grid id="19343" layout-manager="GridBagLayout">
         <constraints border-constraint="West"/>
         <properties>
+          <background color="-8344094"/>
           <preferredSize width="200" height="82"/>
         </properties>
         <border type="none"/>
         <children>
           <component id="4b318" class="javax.swing.JTextField" binding="campo_id">
             <constraints>
-              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+              <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
               <gridbag weightx="0.0" weighty="0.0"/>
@@ -38,25 +43,14 @@
           </component>
           <component id="29b1a" class="javax.swing.JButton" binding="btn_mostrar">
             <constraints>
-              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
+              <preferredSize width="100" height="40"/>
               <text value="Mostrar"/>
             </properties>
           </component>
-          <vspacer id="6fc1f">
-            <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-          </vspacer>
-          <hspacer id="88e5c">
-            <constraints>
-              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-          </hspacer>
           <component id="49be6" class="javax.swing.JLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -66,39 +60,67 @@
               <text value="Id :"/>
             </properties>
           </component>
-          <vspacer id="75b10">
+          <grid id="36c55" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
-              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="4" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
-          </vspacer>
-          <hspacer id="350c5">
+            <properties>
+              <background color="-8344094"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="bd846" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints>
-              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="3" row-span="2" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
-          </hspacer>
+            <properties>
+              <background color="-8344094"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="efd26" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-8344094"/>
+            </properties>
+            <border type="none"/>
+            <children/>
+          </grid>
         </children>
       </grid>
       <grid id="33e42" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints border-constraint="Center"/>
-        <properties/>
+        <properties>
+          <background color="-8344094"/>
+        </properties>
         <border type="none"/>
         <children>
           <grid id="7a6d9" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints border-constraint="East"/>
-            <properties/>
+            <properties>
+              <background color="-8344094"/>
+            </properties>
             <border type="none"/>
             <children/>
           </grid>
           <grid id="4802c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
             <constraints border-constraint="South"/>
-            <properties/>
+            <properties>
+              <background color="-8344094"/>
+            </properties>
             <border type="none"/>
             <children>
               <component id="e6913" class="javax.swing.JButton" binding="btn_personas">
                 <constraints/>
                 <properties>
+                  <preferredSize width="100" height="40"/>
                   <text value="Personas"/>
                 </properties>
               </component>

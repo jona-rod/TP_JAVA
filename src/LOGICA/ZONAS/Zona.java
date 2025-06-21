@@ -2,9 +2,10 @@ package LOGICA.ZONAS;
 
 import LOGICA.PERSONAS.Persona;
 
+import java.io.Serializable;
 import java.util.TreeMap;
 
-public abstract class Zona implements Comparable<Zona>{
+public abstract class Zona implements Comparable<Zona>, Serializable {
 
     String codigo;
     String descripcion;
@@ -60,16 +61,32 @@ public abstract class Zona implements Comparable<Zona>{
 
     public String muestraListaPersonasEnZona(){
         StringBuilder sb = new StringBuilder();
-        sb.append("\nLISTA DE PERSONAS EN ZONA\n");
+        sb.append("\n\tLISTA DE PERSONAS\n\t----------------\n\n");
         for(Persona persona : conjuntoPersona.values()){
-            sb.append("\t").append(persona.toString()).append("\n");
+            sb.append(persona.muestraPersonaListado()).append("\n");
         }
         return sb.toString();
     }
 
+
     @Override
     public String toString() {
-        return "\nID : " + codigo + "\nDescripcion: " + descripcion + "\nTipo Zona: " + tipoZona() + "\n\t" + muestraListaPersonasEnZona()+ /*lo comente para prueba hasta que carga de datos este completa*/ "\nCantidad de personas en la zona: " + concurrencia();
+        String tz;
+        char tipoZona = tipoZona();
+        if(tipoZona == 'C'){
+            tz = "Común";
+        }else if(tipoZona == 'E'){
+            tz = "Escenario";
+        }else if(tipoZona == 'R'){
+            tz = "Restringida";
+        }else{
+            tz = "Stand";
+        }
+
+        return "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"+
+               "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n\n"+
+
+                "  ID DE ZONA : " + codigo + "\n\n  DESCRIPCIÓN : " + descripcion + "\n\n  Tipo Zona: " + tz + "\n\n" + muestraListaPersonasEnZona()+ "\n  Cantidad de personas : " + concurrencia()+"\n";
     }
 
     @Override
