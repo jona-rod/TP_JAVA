@@ -6,7 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
+/**
+ * clase de la  ventana principal, muestra cuatro botones, listado personas, listado zonas, mueve persona, listado stands
+ * Utiliza la biblioteca swing para generar la interfaz
+ * Extiende de {@link JFrame}
+ * Esta clase otorga funciones y operaciones de clase controladora
+ *
+ * @see JFrame
+ */
 public class VentanaPrincipal extends JFrame {
     private JPanel ventana_principal;
     private JButton btn_consultar;
@@ -15,7 +22,10 @@ public class VentanaPrincipal extends JFrame {
     private JButton btn_mostrarStands;
     private JPanel principalWest;
     private JPanel principalEast;
-
+    /**
+     * Constructor de la clase, inicializa los componentes de la Interfaz Gráfica
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos de los artistas
+     */
     public VentanaPrincipal(Controladora controladora) {
 
         add(ventana_principal);
