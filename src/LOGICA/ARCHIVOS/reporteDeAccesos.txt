@@ -1,13 +1,19 @@
 -------- REPORTE DE ACCESOS --------
+ACCESO ACEPTADO
+Nombre: Ozzy_Osbourne         
+Id: ART009
+Cambio de zona de ES01 - Rock                      hacia CO01 - Plaza_central            
+
+
 ACCESO DENEGADO
 Nombre: Ozzy_Osbourne         
 Id: ART009
-No tiene habilitación de acceso a la zona: ST13 - Merch_oficial
+No tiene habilitación de acceso a la zona: ST12 - Carritos_bebidas         
 
 
 ACCESO ACEPTADO
 Nombre: Ozzy_Osbourne         
 Id: ART009
-Cambio de zona de CO02 - Patio_de_comidas hacia CO04 - Zona_de_compras
+Cambio de zona de CO01 - Plaza_central             hacia CO03 - Zona_de_descanso         
 
 

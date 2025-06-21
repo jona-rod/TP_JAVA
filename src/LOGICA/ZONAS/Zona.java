@@ -70,16 +70,14 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
      * @return la descripcion de la zona
      */
     public String getDescripcion() {
-        return descripcion;
+        return String.format("%-25s", descripcion);
     }
 
     /**
      * carga la descripcion de la zona
      * @param descripcion
      */
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
+    public void setDescripcion(String descripcion) {this.descripcion = descripcion;}
 
     /**
      * clase abstracta de la zona
