@@ -1,3 +1,5 @@
+package logica;
+
 import controladora.Controladora;
 import igu.VentanaPrincipal;
 import logica.listados.ListadoStands;

@@ -56,11 +56,8 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : PUB048		 Nombre : Gerardo_Tapia         
 
 
-	 ID : STA012		 Nombre : Carlos_Mendez_Tecnico 
 
-
-
-  Cantidad de personas : 16
+  Cantidad de personas : 15
 
   	LISTA DE EVENTOS
 	---------------
@@ -152,73 +149,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-  ID DE ZONA : ES01
-
-  DESCRIPCIÓN : Rock
-
-  Tipo Zona: Escenario
-
-
-	LISTA DE PERSONAS
-	----------------
-
-	 ID : ART009		 Nombre : Ozzy_Osbourne         
-
-
-	 ID : ART010		 Nombre : Slash                 
-
-
-	 ID : PUB001		 Nombre : Pedro_Dominico        
-
-
-	 ID : PUB020		 Nombre : Lucía_Medina          
-
-
-	 ID : PUB022		 Nombre : Marina_Gómez          
-
-
-	 ID : PUB023		 Nombre : Héctor_Ortega         
-
-
-	 ID : PUB024		 Nombre : Elena_Miranda         
-
-
-	 ID : PUB025		 Nombre : Jorge_Paredes         
-
-
-	 ID : PUB027		 Nombre : Raúl_Fernández        
-
-
-	 ID : PUB029		 Nombre : Mario_Robles          
-
-
-	 ID : PUB031		 Nombre : Felipe_Mendoza        
-
-
-	 ID : PUB033		 Nombre : Gustavo_Ríos          
-
-
-	 ID : STA011		 Nombre : Luis_Torres_Tecnico   
-
-
-
-  Cantidad de personas : 13
-
-  	LISTA DE EVENTOS
-	---------------
-
-
-	ART009 - 2025-03-15 20:30:00
-
-	ART010 - 2025-03-22 21:00:00
-
-
-  Capacidad máxima: 15
-
-
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
   ID DE ZONA : CO04
 
   DESCRIPCIÓN : Zona_de_compras
@@ -271,6 +201,70 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+  ID DE ZONA : ES01
+
+  DESCRIPCIÓN : Rock
+
+  Tipo Zona: Escenario
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : ART009		 Nombre : Ozzy_Osbourne         
+
+
+	 ID : ART010		 Nombre : Slash                 
+
+
+	 ID : PUB020		 Nombre : Lucía_Medina          
+
+
+	 ID : PUB022		 Nombre : Marina_Gómez          
+
+
+	 ID : PUB023		 Nombre : Héctor_Ortega         
+
+
+	 ID : PUB024		 Nombre : Elena_Miranda         
+
+
+	 ID : PUB025		 Nombre : Jorge_Paredes         
+
+
+	 ID : PUB027		 Nombre : Raúl_Fernández        
+
+
+	 ID : PUB029		 Nombre : Mario_Robles          
+
+
+	 ID : PUB031		 Nombre : Felipe_Mendoza        
+
+
+	 ID : PUB033		 Nombre : Gustavo_Ríos          
+
+
+	 ID : STA011		 Nombre : Luis_Torres_Tecnico   
+
+
+
+  Cantidad de personas : 12
+
+  	LISTA DE EVENTOS
+	---------------
+
+
+	ART009 - 2025-03-15 20:30:00
+
+	ART010 - 2025-03-22 21:00:00
+
+
+  Capacidad máxima: 15
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
   ID DE ZONA : ES04
 
   DESCRIPCIÓN : Folcklore
@@ -311,11 +305,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : PUB068		 Nombre : Concepción_Vázquez    
 
 
+	 ID : STA012		 Nombre : Carlos_Mendez_Tecnico 
+
+
 	 ID : STA014		 Nombre : Pedro_Garcia_Tecnico  
 
 
 
-  Cantidad de personas : 11
+  Cantidad de personas : 12
 
   	LISTA DE EVENTOS
 	---------------
@@ -342,6 +339,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	LISTA DE PERSONAS
 	----------------
 
+	 ID : PUB001		 Nombre : Pedro_Dominico        
+
+
 	 ID : PUB002		 Nombre : Geronimo_benavidez    
 
 
@@ -364,7 +364,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
-  Cantidad de personas : 7
+  Cantidad de personas : 8
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

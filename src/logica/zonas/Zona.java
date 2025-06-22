@@ -98,14 +98,6 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
     public int concurrencia(){return conjuntoPersona.size();}
 
     /**
-     * muestra el codigo y la descripcion de la zona
-     */
-    public void muestra() {
-        System.out.println(codigo);
-        System.out.println(descripcion);
-    }
-
-    /**
      * agrega una persona a la zona
      * @param per
      */
