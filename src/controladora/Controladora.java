@@ -113,9 +113,9 @@ public class Controladora {
      * @return listado de zonas
      */
     public String generaListadoZonas(){
-        ListadoZonas listado = new ListadoZonas();  // 7 generaListadoZonas
-        String list = listado.generaListado(gestion);
-        return list;
+
+        ListadoZonas.generaArchivoListadoZonas(gestion);
+        return ListadoZonas.generaListado(gestion);
     }
 
     //8
@@ -148,12 +148,8 @@ public class Controladora {
      * @return listado de stands
      */
     public String generaListadoStands(){
-        ListadoStands listado = new ListadoStands();
-        String lista = listado.generarListado(gestion);
-        return lista;
+
+        ListadoStands.generaArchivoListadoStands(gestion);
+        return ListadoStands.generarListado(gestion);
     }
-
-
-
-
 }

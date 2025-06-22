@@ -1,5 +1,7 @@
 import controladora.Controladora;
 import igu.VentanaPrincipal;
+import logica.listados.ListadoStands;
+import logica.listados.ListadoZonas;
 import persistencia.ArchivosSerializados;
 import persistencia.LecturaDeArchivosTXT;
 import logica.gestion.Gestion;
@@ -40,5 +42,10 @@ public class Main{
                 pantalla.setLocationRelativeTo(null);
             }
         });
+        // actualiza los listados de zonas y stands al finalizar el programa
+        //aunque los actualiza al consultar listados en pantalla si después de consultar se mueve
+        //una persona de una zona a otra, garantiza que se actualizan los archivos
+        ListadoZonas.generaArchivoListadoZonas(gestion);
+        ListadoStands.generaArchivoListadoStands(gestion);
     }
 }

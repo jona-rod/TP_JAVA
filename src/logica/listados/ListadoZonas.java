@@ -19,7 +19,7 @@ public class ListadoZonas {
      * @param gestion
      * @return el texto con el listado de todas las zonas
      */
-    public String generaListado(Gestion gestion) {
+    public static String generaListado(Gestion gestion) {
         int cantPersonas = 0;
 
         Collections.sort(gestion.getListadoZonas()); // Usa compareTo de Zona
@@ -31,16 +31,17 @@ public class ListadoZonas {
         }
         sb.append("La cantidad de personas en el predio es: ").append(cantPersonas);
 
+        return sb.toString();
+    }
+
+    public static void generaArchivoListadoZonas(Gestion gestion) {
         try{
             FileWriter file = new FileWriter("src//persistencia/archivos/listadoZonas.txt");
             BufferedWriter writer = new BufferedWriter(file);
-            writer.write(sb.toString());
+            writer.write(generaListado(gestion));
             writer.close();
         }catch(IOException e){
             System.err.println("Error al escribir el archivo: " + e.getMessage());
         }
-
-        return sb.toString();
     }
-
 }

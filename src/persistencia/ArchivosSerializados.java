@@ -98,8 +98,8 @@ public abstract class ArchivosSerializados {
      * @return true si alguno de los archivos no existe, false si ambos existen
      */
     public static boolean archivosNoExisten() {
-        File fZonas = new File("src/persistencia/archivos/zonasSerializado.dat");
-        File fPersonas = new File("src/persistencia/archivos/personasSerializado.dat");
-        return !(fZonas.exists() && fPersonas.exists());
+        File archivoZonas = new File("src/persistencia/archivos/zonasSerializado.dat");
+        File archivoPersonas = new File("src/persistencia/archivos/personasSerializado.dat");
+        return !(archivoZonas.exists() && archivoPersonas.exists());
     }
 }

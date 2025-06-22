@@ -20,9 +20,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : ART013		 Nombre : Nicki_Minaj           
 
 
-	 ID : PUB031		 Nombre : Felipe_Mendoza        
-
-
 	 ID : PUB036		 Nombre : René_Guzmán           
 
 
@@ -63,7 +60,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
-  Cantidad de personas : 17
+  Cantidad de personas : 16
 
   	LISTA DE EVENTOS
 	---------------
@@ -244,6 +241,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : PUB029		 Nombre : Mario_Robles          
 
 
+	 ID : PUB031		 Nombre : Felipe_Mendoza        
+
+
 	 ID : PUB033		 Nombre : Gustavo_Ríos          
 
 
@@ -251,7 +251,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
-  Cantidad de personas : 11
+  Cantidad de personas : 12
 
   	LISTA DE EVENTOS
 	---------------
