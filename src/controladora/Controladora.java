@@ -86,9 +86,9 @@ public class Controladora {
      */
     public void muevePersona(String idPersona, String idZona) throws IllegalArgumentException,Exception {
         try{
-
             gestion.muevePersona(idPersona, idZona);
-
+            ListadoStands.generaArchivoListadoStands(gestion);
+            ListadoZonas.generaArchivoListadoZonas(gestion);
         }catch (IllegalArgumentException e){
             throw new IllegalArgumentException(e.getMessage());
         } catch(Exception e) {
@@ -114,7 +114,6 @@ public class Controladora {
      */
     public String generaListadoZonas(){
 
-        ListadoZonas.generaArchivoListadoZonas(gestion);
         return ListadoZonas.generaListado(gestion);
     }
 
@@ -149,7 +148,12 @@ public class Controladora {
      */
     public String generaListadoStands(){
 
-        ListadoStands.generaArchivoListadoStands(gestion);
         return ListadoStands.generarListado(gestion);
     }
+
+    public void finalizaProgrema(){
+        ListadoZonas.generaArchivoListadoZonas(gestion);
+        ListadoStands.generaArchivoListadoStands(gestion);
+    }
+
 }

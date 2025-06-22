@@ -1,8 +1,6 @@
 package logica.reportes;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * clase que se encarga de crear un archivo de texto con los accesos que se hacen en el festival
@@ -21,13 +19,32 @@ public class ReporteAcceso {
      * constructor de la clase reporteAcceso
      * genera el reporte con los accesos que se van haciendo a las zonas, sean aceptados como denegados
      */
+
     public ReporteAcceso() {
         reporte = new StringBuilder();
-        reporte.append("-------- REPORTE DE ACCESOS --------").append("\n");
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo))) {
-            writer.write(reporte.toString());
-        } catch (IOException e) {
-            System.err.println("Error al generar el informe: " + e.getMessage());
+
+        // Verifica si el archivo existe
+        File archivo = new File(rutaArchivo);
+        boolean archivoExiste = archivo.exists();
+
+        // Si el archivo no existe, crea uno nuevo
+        if (!archivoExiste) {
+            reporte.append("-------- REPORTE DE ACCESOS --------").append("\n");
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo))) {
+                writer.write(reporte.toString());
+            } catch (IOException e) {
+                System.err.println("Error al generar el informe: " + e.getMessage());
+            }
+        } else {
+            // carga el contenido del archivo existente al stringBuilder
+            try (BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo))) {
+                String linea;
+                while ((linea = reader.readLine()) != null) {
+                    reporte.append(linea).append("\n");
+                }
+            } catch (IOException e) {
+                System.err.println("Error al leer el archivo existente: " + e.getMessage());
+            }
         }
     }
 

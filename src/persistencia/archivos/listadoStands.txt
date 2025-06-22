@@ -1,0 +1,405 @@
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST11
+
+  DESCRIPCIÓN : Fuente_agua
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+
+  Cantidad de personas : 0
+
+
+  Ubicacion:  CO03
+
+  Capacidad máxima: 5
+
+  Responsable: Alvaro_Morales        
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST01
+
+  DESCRIPCIÓN : Bar_de_jugos
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN001		 Nombre : Ana_Lopez             
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO01
+
+  Capacidad máxima: 5
+
+  Responsable: Ana_Lopez             
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST02
+
+  DESCRIPCIÓN : Puesto_de_postres
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN002		 Nombre : Carlos_Mendez         
+
+
+	 ID : VEN027		 Nombre : Lucia_Montero         
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO01
+
+  Capacidad máxima: 5
+
+  Responsable: Carlos_Mendez         
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST12
+
+  DESCRIPCIÓN : Carritos_bebidas
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN012		 Nombre : Claudia_Pardo         
+
+
+	 ID : VEN017		 Nombre : Eva_Santos            
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO03
+
+  Capacidad máxima: 5
+
+  Responsable: Claudia_Pardo         
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST06
+
+  DESCRIPCIÓN : Parrilla_rapida
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN006		 Nombre : Diego_Torres          
+
+
+	 ID : VEN023		 Nombre : Diana_Montes          
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO02
+
+  Capacidad máxima: 5
+
+  Responsable: Diego_Torres          
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST05
+
+  DESCRIPCIÓN : Comida_mexicana
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN005		 Nombre : Elena_Ruiz            
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO02
+
+  Capacidad máxima: 5
+
+  Responsable: Elena_Ruiz            
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST09
+
+  DESCRIPCIÓN : Masajes_5min
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN009		 Nombre : Isabel_Romero         
+
+
+	 ID : VEN020		 Nombre : Hector_Gimenez        
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO03
+
+  Capacidad máxima: 5
+
+  Responsable: Isabel_Romero         
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST10
+
+  DESCRIPCIÓN : Sillas_masaje
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN010		 Nombre : Julia_Navarro         
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO03
+
+  Capacidad máxima: 5
+
+  Responsable: Julia_Navarro         
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST03
+
+  DESCRIPCIÓN : Info_turistica
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN003		 Nombre : Luisa_Fernandez       
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO01
+
+  Capacidad máxima: 5
+
+  Responsable: Luisa_Fernandez       
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST08
+
+  DESCRIPCIÓN : Cafeteria
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN008		 Nombre : Miguel_Angel          
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO02
+
+  Capacidad máxima: 5
+
+  Responsable: Miguel_Angel          
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST04
+
+  DESCRIPCIÓN : Hamburguesas_art
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN004		 Nombre : Pedro_Gomez           
+
+
+	 ID : VEN025		 Nombre : Jorge_Silva           
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO02
+
+  Capacidad máxima: 5
+
+  Responsable: Pedro_Gomez           
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST14
+
+  DESCRIPCIÓN : Artesanias_loc
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN014		 Nombre : Roberto_Jimenez       
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO04
+
+  Capacidad máxima: 5
+
+  Responsable: Roberto_Jimenez       
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST13
+
+  DESCRIPCIÓN : Merch_oficial
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN013		 Nombre : Sergio_Miranda        
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO04
+
+  Capacidad máxima: 5
+
+  Responsable: Sergio_Miranda        
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST07
+
+  DESCRIPCIÓN : Vegetariano
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN007		 Nombre : Sofia_Castro          
+
+
+	 ID : VEN022		 Nombre : Victor_Pons           
+
+
+
+  Cantidad de personas : 2
+
+
+  Ubicacion:  CO02
+
+  Capacidad máxima: 5
+
+  Responsable: Sofia_Castro          
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  ID DE ZONA : ST15
+
+  DESCRIPCIÓN : Discos_vinilos
+
+  Tipo Zona: Stand
+
+
+	LISTA DE PERSONAS
+	----------------
+
+	 ID : VEN015		 Nombre : Teresa_Gil            
+
+
+
+  Cantidad de personas : 1
+
+
+  Ubicacion:  CO04
+
+  Capacidad máxima: 5
+
+  Responsable: Teresa_Gil            
+
