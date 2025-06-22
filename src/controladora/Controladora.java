@@ -3,6 +3,7 @@ package controladora;
 import logica.gestion.Gestion;
 import logica.listados.ListadoStands;
 import logica.listados.ListadoZonas;
+import logica.personas.Persona;
 
 /**
  * clase Controladora se encarga de manejar los distintos metodos que se usan en las ventanas, tiene como metodos:
@@ -53,11 +54,12 @@ public class Controladora {
     //3
 
     /**
-     * muestra los datos de la persona que contiene el id pasado por parametro
+     * muestra los datos de la persona que contiene el id pasado por parametro y actualiza los minutos de permanencia calculados con la fecha y hora actual
      * @param id
      * @return toString de la persona
      */
     public String muestraPersona(String id){
+        gestion.actualizaMinutosPermanencia();
         return gestion.getListadoPersonas().get(id).toString();
     }
 

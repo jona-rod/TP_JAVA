@@ -4,6 +4,8 @@ import logica.zonas.Evento;
 import logica.zonas.Zona;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
@@ -146,16 +148,21 @@ public abstract class Persona implements Serializable {
     }
 
     public Acceso ultimoAcceso(){
-        for(Acceso acceso : listaAccesos.reversed()){
-            if(acceso.getEstado()){
-                return acceso;
+        if(listaAccesos!=null && listaAccesos.size()>0){
+            for(Acceso acceso : listaAccesos.reversed()){
+                if(acceso.getEstado()){
+                    return acceso;
+                }
             }
-        }return null;
+        }
+        return null;
     }
 
-  //  public int calculaMinutosPermanencia(){
-
-   // }
+    public long calculaMinutosPermanencia() {
+        Acceso ultimoAcceso = ultimoAcceso();
+        LocalDateTime fechaHoraUltimoAcceso = ultimoAcceso.getFecha();
+        return ChronoUnit.MINUTES.between(fechaHoraUltimoAcceso, LocalDateTime.now());
+    }
 
     public void agregaEventoArtista(Evento evento){};
 

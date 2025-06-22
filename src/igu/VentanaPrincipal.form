@@ -20,7 +20,7 @@
             <constraints/>
             <properties>
               <background color="-8344094"/>
-              <font name="DIN Alternate" style="0"/>
+              <font name="DIN Alternate" size="14" style="0"/>
               <foreground color="-458755"/>
               <text value="FESTIVAL"/>
             </properties>

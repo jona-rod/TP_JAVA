@@ -157,6 +157,7 @@
           <component id="4b4f0" class="javax.swing.JLabel">
             <constraints/>
             <properties>
+              <font name="DIN Alternate" size="14" style="0"/>
               <text value="Mueve personas entre zonas"/>
             </properties>
           </component>

@@ -191,7 +191,7 @@ public class Gestion implements Serializable {
      * @param idZonaDestino
      * @throws IllegalArgumentException
      */
-        public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
+    public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
 
             if (!listadoPersonas.containsKey(idPersona)) {            // verifica que la persona exista
                 throw new IllegalArgumentException("La persona no existe");
@@ -199,18 +199,14 @@ public class Gestion implements Serializable {
             if (!conjuntoZonas.containsKey(idZonaDestino)) {        // verifica que la persona exista
                 throw new IllegalArgumentException("La zona no existe");
             }
-
             Persona per = listadoPersonas.get(idPersona);
             String zonaOrigen = per.zonaActual();
-
             if (idZonaDestino.equals(zonaOrigen)) {         // verifica que la persona no se encuentra actualmente en la zona
                 throw new Exception("La persona ya se encuentra en la zona indicada");
             }
-
             Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 0, false);
             StringBuilder mensaje = new StringBuilder();
             Exception excepcion = null;
-
             try {
                 if (conjuntoZonas.get(idZonaDestino).zonaLlena()) {         // verifica la capacidad máxima
                     mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n")
@@ -231,7 +227,6 @@ public class Gestion implements Serializable {
                     excepcion = new Exception("ACCESO DENEGADO, la persona no tiene habilitación para ingresar a la zona");
                     throw excepcion;
                 }
-
                 // el acceso es aceptado
                 nuevo.setEstado(true);
                 conjuntoZonas.get(idZonaDestino).agregaPersona(listadoPersonas.get(per.getId()));
@@ -243,17 +238,25 @@ public class Gestion implements Serializable {
                         .append(" hacia ").append(idZonaDestino).append(" - ")
                         .append(conjuntoZonas.get(idZonaDestino).getDescripcion()).append("\n\n");
                         nuevo.setEstado(true);
+                        per.ultimoAcceso().setMinutosPermanencia(per.calculaMinutosPermanencia());
             } finally {
-                // Siempre registramos el acceso, sea aceptado o denegado
+                // Se registra el acceso sea ACEPTADO o DENEGADO
                 reporte.agregaAcceso(mensaje.toString());
                 listadoPersonas.get(idPersona).cargaAcceso(nuevo);
 
-                // Si hubo una excepción, la lanzamos después de registrar el acceso
+                // Si hubo una excepción se lanza después de registrar el acceso
                 if (excepcion != null) {
                     throw excepcion;
                 }
             }
         }
+
+     public void actualizaMinutosPermanencia() {
+        for (Persona persona : listadoPersonas.values()) {
+            persona.ultimoAcceso().setMinutosPermanencia(persona.calculaMinutosPermanencia());
+        }
+    }
+
 
     /**
      * muestra un texto con un listado de todas las personas del festival, con los datos de cada uno de ellos

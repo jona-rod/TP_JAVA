@@ -24,7 +24,7 @@ public class Acceso implements Serializable{
     /**
      * minutos que esta en la zona
      */
-    int cantidadMinutosPermanencia;
+    long cantidadMinutosPermanencia;
     /**
      * se hizo o no se hizo el acceso
      */
@@ -80,8 +80,12 @@ public class Acceso implements Serializable{
      * devuelve los minutos que estuvo en la zona
      * @return minutos de permanencia
      */
-    public int getCantidadMinutosPermanencia() {
+    public long getCantidadMinutosPermanencia() {
         return cantidadMinutosPermanencia;
+    }
+
+    public void setMinutosPermanencia(long cantidadMinutosPermanencia) {
+        this.cantidadMinutosPermanencia = cantidadMinutosPermanencia;
     }
 
     /**

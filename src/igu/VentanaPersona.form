@@ -19,6 +19,7 @@
           <component id="eda74" class="javax.swing.JLabel">
             <constraints/>
             <properties>
+              <font name="DIN Alternate" size="14" style="0"/>
               <text value="DATOS DE PERSONA"/>
             </properties>
           </component>

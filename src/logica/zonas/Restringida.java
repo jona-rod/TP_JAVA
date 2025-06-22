@@ -12,7 +12,7 @@ public class Restringida extends Zona implements Serializable{
     /**
      * identificador de capacidad ,maxima en las zonas restringidas
      */
-    private final int capacidadMaxima = 5;
+    private final int capacidadMaxima = 100;
 
     /**
      * constructor de la zona Restringida
