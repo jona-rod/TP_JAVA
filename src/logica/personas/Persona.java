@@ -35,8 +35,8 @@ public abstract class Persona implements Serializable {
 
     /**
      * constructor de la clase
-     * @param id
-     * @param nombre
+     * @param id identificador unico de la persona
+     * @param nombre nombre de la persona
      */
     public Persona(String id, String nombre) {
         this.id = id;
@@ -55,7 +55,7 @@ public abstract class Persona implements Serializable {
 
     /**
      * carga el identificador unico de la persona
-     * @param id
+     * @param id identificador unico de la persona
      */
     public void setId(String id) {
         this.id = id;
@@ -71,7 +71,7 @@ public abstract class Persona implements Serializable {
 
     /**
      * carga el nombre de la persona
-     * @param nombre
+     * @param nombre nombre de la persona
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -96,7 +96,7 @@ public abstract class Persona implements Serializable {
 
     /**
      * carga en ListaAccesos un acceso nuevo que tuvo la persona
-     * @param ac
+     * @param ac acceso para agregarle a la persona
      */
     public void cargaAcceso(Acceso ac) {
         listaAccesos.add(ac);
@@ -104,7 +104,7 @@ public abstract class Persona implements Serializable {
 
     /**
      * carga en zonasAutorizadas una nueva zona autorizada para la persona
-     * @param zona
+     * @param zona zona para agregar a las zonas autorizadas para la persona
      */
     public void cargaZonaAutorizada(Zona zona) {zonasAutorizadas.add(zona);}
 
@@ -117,14 +117,14 @@ public abstract class Persona implements Serializable {
     /**
      * abstracta que se usa en las clases hijo,//busca en el atributo "zonasHabilitadas" y devuelve si está habilitado
      * (reedefine en cada subclase)
-     * @param zona
+     * @param zona para ver si esta habilitado a ingresar
      * @return null
      */
     public abstract boolean habilitado(Zona zona);
 
     /**
      * devuelve si una zona esta dentro de las zonas autorizadas de la persona
-     * @param zona
+     * @param zona para comprobar si esta dentro de las zonas autorizadas de la persona
      * @return true si la zona esta dentro de la zonas autorizadas, false si no lo esta
      */
     protected boolean zonaHabilitada(Zona zona){

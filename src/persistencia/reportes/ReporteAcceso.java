@@ -11,7 +11,7 @@ public class ReporteAcceso {
      */
     StringBuilder reporte;
     /**
-     *
+     * guarda la ruta al archivo txt
      */
     private static final String rutaArchivo = "src/persistencia/archivos/reporteDeAccesos.txt";
 
@@ -54,7 +54,7 @@ public class ReporteAcceso {
 
     /**
      * agrega un acceso al reporte, se utiliza en la clase Gestion
-     * @param registro
+     * @param registro devuelve el registro si fue autorizado o no el acceso
      */
     public void agregaAcceso(String registro) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo, true))) {

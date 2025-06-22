@@ -22,7 +22,7 @@ public class VentanaZonas extends JFrame {
 
     /**
      * Constructor de la Clase, genera una ventana en la que se muestran los datos de todas las zonas que hay en el festival
-     * @param controladora
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos del programa
      */
     public VentanaZonas(Controladora controladora) {
         add(ventana_zonas);

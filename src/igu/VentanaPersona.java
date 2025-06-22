@@ -24,7 +24,7 @@ public class VentanaPersona extends JFrame {
 
     /**
      * Constructor de la Clase, genera una ventana en la que se muestran los datos de todas las personas que hay en el festival
-     * @param controladora
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos del programa
      */
     public VentanaPersona(Controladora controladora) {
         add(ventana_persona);

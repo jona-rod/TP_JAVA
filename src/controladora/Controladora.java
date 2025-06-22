@@ -23,7 +23,7 @@ public class Controladora {
 
     /**
      * constructor de la clase Controladora
-     * @param gestion
+     * @param gestion gestiona los metodos del programa
      */
     public Controladora(Gestion gestion) {
         this.gestion = gestion;
@@ -44,7 +44,7 @@ public class Controladora {
 
     /**
      * verifica que la persona que contiene el id pasado por parametro este en el festival
-     * @param id
+     * @param id identificador unico de la persona
      * @return persona con identficador recibido por parametro
      */
     public boolean verificarPersona(String id){
@@ -55,7 +55,7 @@ public class Controladora {
 
     /**
      * muestra los datos de la persona que contiene el id pasado por parametro y actualiza los minutos de permanencia calculados con la fecha y hora actual
-     * @param id
+     * @param id identificador unico de la persona
      * @return toString de la persona
      */
     public String muestraPersona(String id){
@@ -69,7 +69,7 @@ public class Controladora {
 
     /**
      * muestra el listado de las zonas con las personas que tiene cada una, ordenado por cantidad de gente de mayor a menor
-     * @return
+     * @return listado de las zonas con los datos de cada persona que hya en ella
      */
     public String muestraListadoZonasConPersonas(){
         return gestion.muestraListadoZonasConPersonas();
@@ -79,10 +79,10 @@ public class Controladora {
 
     /**
      * mueve una persona de una zona a otra, siempre y cuando la misma este habilitada para entrar a la otra zona
-     * @param idPersona
-     * @param idZona
-     * @throws IllegalArgumentException
-     * @throws Exception
+     * @param idPersona identificador unico de persona
+     * @param idZona identificador unico de zona
+     * @throws IllegalArgumentException si hay algun error de datos
+     * @throws Exception si hay algun error de datos
      */
     public void muevePersona(String idPersona, String idZona) throws IllegalArgumentException,Exception {
         try{
@@ -121,7 +121,7 @@ public class Controladora {
 
     /**
      * verifica que el id recibido por parametro pertenezca a una zona, y devuelve la zona que contiene ese id
-     * @param idZona
+     * @param idZona identificador unico de zona
      * @return zona con id pasado por parametro
      */
     public boolean verificarZona(String idZona){
@@ -132,7 +132,7 @@ public class Controladora {
 
     /**
      * muestra los datos de la zona que contiene el id pasado por parametro
-     * @param idZona
+     * @param idZona identificador unico de zona
      * @return datos de la zona
      */
     public String muestraZona(String idZona){

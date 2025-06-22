@@ -100,7 +100,7 @@ S;STA008;Fernando_Lopez        ;CO03
 S;STA009;Hugo_Rodriguez        ;CO04
 S;STA010;Sandra_Castro         ;CO04
 S;STA011;Luis_Torres_Tecnico   ;ES01
-S;STA012;Carlos_Mendez_Tecnico ;ES04
+S;STA012;Carlos_Mendez_Tecnico ;ES02
 S;STA013;Ana_Rojas_Tecnico     ;ES03
 S;STA014;Pedro_Garcia_Tecnico  ;ES04
 S;STA015;Mario_Benitez_Guardia ;RE01

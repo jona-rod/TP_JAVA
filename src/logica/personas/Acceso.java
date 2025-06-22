@@ -32,10 +32,10 @@ public class Acceso implements Serializable{
 
     /**
      * constructor de la clase Acceso
-     * @param zona
-     * @param fechaHora
-     * @param cantidadMinutosPermanencia
-     * @param estado
+     * @param zona contiene la en la que esta la persona
+     * @param fechaHora fecha y hora del acceso
+     * @param cantidadMinutosPermanencia minutos que estuvo en la zona
+     * @param estado si fue aceptado o denegado el acceso
      */
     public Acceso(Zona zona, LocalDateTime fechaHora, int cantidadMinutosPermanencia, boolean estado) {
         this.zona = zona;
@@ -70,7 +70,7 @@ public class Acceso implements Serializable{
 
     /**
      * carga el estado del acceso
-     * @param estado
+     * @param estado si fue aceptado o denegado el acceso
      */
     public void setEstado(boolean estado){
         this.estado=estado;

@@ -77,7 +77,7 @@ public class Stand extends Restringida implements Serializable {
      */
     @Override
     public boolean zonaLlena(){
-        return !(conjuntoPersona.size() < capacidadMaxima);
+        return !(conjuntoPersona.size() < 5);
     }
 
     /**

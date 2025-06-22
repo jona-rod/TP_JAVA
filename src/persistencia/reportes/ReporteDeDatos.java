@@ -23,7 +23,7 @@ public class ReporteDeDatos {
 
     /**
      * agrega un error al texto del informe el cual es recibido como parametro
-     * @param error
+     * @param error trae los errores que hay en la carga de los archivos txt
      */
     public void agregaError(String error){
         informe.append("\n").append(error);

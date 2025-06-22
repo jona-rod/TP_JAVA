@@ -34,10 +34,7 @@ public class LecturaDeArchivosTXT {
      /**
      * Lee los datos desde el archivo "ZONAS.txt", valida la consistencia de datos, generando un informe de cada linea que contiene un error,
      * Lee cada linea el archivo, estando separada por punto y coma (;), y conteniendo informacion sobre una Zona
-     * @param ConjuntoZonas
-     * @throws StringIndexOutOfBoundsException
-     * @throws IllegalArgumentException
-      * @throws IOException
+     * @param ConjuntoZonas contiene todas las zonas del festival
      */
     public void leeZonas(Gestion ConjuntoZonas) {
         informe.agregaError("\n------------- REPORTE DE ZONAS -------------\n");
@@ -80,7 +77,7 @@ public class LecturaDeArchivosTXT {
 
     /**
      * valida los datos de las zonas
-     * @param bloque
+     * @param bloque contiene los datos enviados por el archivo de texto
      * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
      * @throws StringIndexOutOfBoundsException si contiene mas de 4 bloques separados por punto y coma (;)
      */
@@ -112,10 +109,7 @@ public class LecturaDeArchivosTXT {
     /**
      * Lee los datos desde el archivo "Eventos.txt", valida la consistencia de datos, generando un informe de cada linea que contiene un error,
      * Lee cada linea el archivo, estando separada por punto y coma (;), y conteniendo informacion sobre un evento
-     * @param conjuntoZonas
-     * @throws StringIndexOutOfBoundsException
-     * @throws IllegalArgumentException
-     * @throws IOException
+     * @param conjuntoZonas contiene todas las zonas del festival
      */
     public void leeEventos(Gestion conjuntoZonas) {
         informe.agregaError("\n------------- REPORTE DE EVENTOS -------------\n");
@@ -135,10 +129,10 @@ public class LecturaDeArchivosTXT {
 
                     // Buscar escenario y agregar evento
                     Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
-                    Persona persona = (Persona) conjuntoZonas.buscaPersonaPorId(artista);
+                    //Persona persona = (Persona) listadoPersonas.buscaPersonaPorId(artista);
                     Evento nuevoEvento = new Evento(fechaHora, artista);
                     escenario.cargaEvento(nuevoEvento);
-                    persona.agregaEventoArtista(nuevoEvento);
+                    //persona.agregaEventoArtista(nuevoEvento);
 
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
@@ -156,7 +150,7 @@ public class LecturaDeArchivosTXT {
 
     /**
      * valida los datos cargados en eventos, y verifica que no haya ningun error
-     * @param bloque
+     * @param bloque contiene los datos del archivo de texto
      * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
      */
     private void validaDatosEventos(String[] bloque) throws IllegalArgumentException {
@@ -195,11 +189,7 @@ public class LecturaDeArchivosTXT {
      *  Lee los datos desde el archivo "PERSONAS.txt", valida la consistencia de datos, generando un informe de
      *  cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
      *  y conteniendo informacion sobre una persona
-     * @param listadoPersonas
-     * @throws StringIndexOutOfBoundsException
-     * @throws IllegalArgumentException
-     * @throws Exception
-     * @throws IOException
+     * @param listadoPersonas contiene todas las personas del festival
      */
     public void leePersonas(Gestion listadoPersonas) {
         informe.agregaError("\n------------- REPORTE DE PERSONAS -------------\n");
@@ -239,7 +229,7 @@ public class LecturaDeArchivosTXT {
 
     /**
      * valida los datos de la persona que no haya ningun error
-     * @param bloque
+     * @param bloque contiene los datos del archivo de texto
      * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
      * @throws StringIndexOutOfBoundsException cantidad de bloques separados por punto y coma (;) distinto a 4
      */
@@ -266,10 +256,7 @@ public class LecturaDeArchivosTXT {
      * Lee los datos desde el archivo "Accesos.txt", valida la consistencia de datos, generando un informe de
      * cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
      * y conteniendo informacion sobre un acceso
-     * @param listadoPersonas
-     * @throws StringIndexOutOfBoundsException
-     * @throws IllegalArgumentException
-     * @throws IOException
+     * @param listadoPersonas contiene todas las personas del festival
      */
     public void leeAccesos(Gestion listadoPersonas){
         informe.agregaError("\n------------- REPORTE DE ACCESOS -------------\n");
@@ -307,7 +294,7 @@ public class LecturaDeArchivosTXT {
 
     /**
      * valida los datos de los accesos que no tengan ningun error
-     * @param bloque
+     * @param bloque contiene los datos del archivo de texto
      * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
      */
     public void validaDatosAccesos(String[] bloque) throws IllegalArgumentException {
@@ -351,10 +338,7 @@ public class LecturaDeArchivosTXT {
      * Lee los datos desde el archivo "ZonasHabilitadas.txt", valida la consistencia de datos, generando un informe de
      * cada linea que contiene un error,Lee cada linea el archivo, estando separada por punto y coma (;),
      * y conteniendo informacion sobre una zona habilitada
-     * @param listadoPersonas
-     * @throws StringIndexOutOfBoundsException
-     * @throws IllegalArgumentException
-     * @throws IOException
+     * @param listadoPersonas contiene todas las personas del festival
      */
     public void leeHabilitadas(Gestion listadoPersonas){
         informe.agregaError("\n------------- REPORTE DE ZONAS HABILITADAS -------------\n");
@@ -387,7 +371,7 @@ public class LecturaDeArchivosTXT {
 
     /**
      * valida los datos de zonas habilitadas que no tengan ningun error
-     * @param bloque
+     * @param bloque contiene los datos del archivo de texto
      * @throws IllegalArgumentException la linea tiene alguna inconsistencia de datos
      * @throws StringIndexOutOfBoundsException la cantidad de bloques separados por punto y coma (;) es distinto de 2
      */

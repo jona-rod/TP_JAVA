@@ -9,8 +9,8 @@ import logica.zonas.Zona;
 public class Staff extends Persona {
     /**
      * constructor de la clase Staff
-     * @param id
-     * @param nombre
+     * @param id identificador unico del staff
+     * @param nombre nombre de la persona
      */
     public Staff(String id, String nombre) {
         super(id, nombre);
@@ -27,7 +27,7 @@ public class Staff extends Persona {
 
     /**
      * devuelve si la persona esta habilitada para ingresar a una zona
-     * @param zona
+     * @param zona zona para comprobar si esta habilitado a ingresar
      * @return true, ya que el staff esta habilitado para ingresar a todas las zonas
      */
     @Override

@@ -9,8 +9,8 @@ import logica.zonas.Zona;
 public class Asistente extends Persona {
     /**
      * constructor de la clase Asistente
-     * @param id
-     * @param nombre
+     * @param id identificador unico del asistente
+     * @param nombre nombre del asistente
      */
     public Asistente(String id, String nombre) {
         super(id, nombre);
@@ -27,7 +27,7 @@ public class Asistente extends Persona {
 
     /**
      * indica si la persona esta habilitada para ingresar a una zona
-     * @param zona
+     * @param zona zona para comprobar si esta habilitado
      * @return true si la persona esta habilitada, false si la persona no esta habilitada
      */
     @Override
