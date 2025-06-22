@@ -25,7 +25,7 @@ public class VentanaMuevePersona extends JFrame{
     /**
      * Constructor de la Clase, genera una ventana en la que se muestran los datos de las personas y los datos de las zonas,
      * teniendo un boton desplegable para poner un id de persona y un id de zona para mover a esa persona
-     * @param controladora
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos del programaa
      */
     public VentanaMuevePersona(Controladora controladora) {
         add(ventana_mueve_personas);

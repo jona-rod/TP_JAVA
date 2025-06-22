@@ -19,8 +19,8 @@ public class Artista extends Persona {
 
     /**
      * constructor de la clase Artista
-     * @param identificador
-     * @param nom
+     * @param identificador identificador unico del artista
+     * @param nom nombre del artista
      */
     public Artista(String identificador, String nom) {
         super(identificador, nom);
@@ -69,7 +69,7 @@ public class Artista extends Persona {
 
     /**
      * indica si el artista esta habilitado para entrar a una zona
-     * @param zona
+     * @param zona zona para comprobar si esta habilitado
      * @return true si esta habilitado para ingresar y false si no esta habilitado
      */
     @Override
@@ -79,7 +79,7 @@ public class Artista extends Persona {
 
     /**
      * añade un evento a la lista de eventos del artista
-     * @param evento
+     * @param evento evento para agregar a su lista de eventos
      */
     @Override
     public void agregaEventoArtista(Evento evento){

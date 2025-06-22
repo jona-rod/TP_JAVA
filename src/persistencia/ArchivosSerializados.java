@@ -41,9 +41,9 @@ public abstract class ArchivosSerializados {
 
     /**
      * carga los datos de las zonas en archivos serializados
-     * @param conjuntoZonas
-     * @param listadoZonas
-     * @param listadoStands
+     * @param conjuntoZonas contiene todas las zonas del festival
+     * @param listadoZonas contiene las zonas del festival ordenadas por cantidad de gente
+     * @param listadoStands contiene todos los stands del festival ordenados alfabeticamente por el nombre del responsable
      */
     private static void cargarZonas(TreeMap<String, Zona> conjuntoZonas, ArrayList<Zona> listadoZonas, ArrayList<Stand> listadoStands) {
         try (ObjectInputStream cargaSerializados = new ObjectInputStream(new FileInputStream("src/persistencia/archivos/zonasSerializado.dat"))) {
@@ -66,7 +66,7 @@ public abstract class ArchivosSerializados {
 
     /**
      * guarda los datos en archivos serializados
-     * @param conjuntoZonas
+     * @param conjuntoZonas contiene todas las zonas del festival
      */
     private static void guardarZonas(TreeMap<String, Zona> conjuntoZonas) {
         try (ObjectOutputStream serializa = new ObjectOutputStream(new FileOutputStream("src/persistencia/archivos/zonasSerializado.dat"))) {
@@ -82,7 +82,7 @@ public abstract class ArchivosSerializados {
 
     /**
      * carga los datos de personas en archivos serializados
-     * @param listadoPersonas
+     * @param listadoPersonas contiene todas las personas del festival
      */
     private static void cargarPersonas(TreeMap<String, Persona> listadoPersonas) {
         try (ObjectInputStream cargaSerializados = new ObjectInputStream(new FileInputStream("src/persistencia/archivos/personasSerializado.dat"))) {
@@ -100,7 +100,7 @@ public abstract class ArchivosSerializados {
 
     /**
      * guarda los datos de personas en archivos serializados
-     * @param listadoPersonas
+     * @param listadoPersonas contiene todas las personas del festival
      */
     private static void guardarPersonas(TreeMap<String, Persona> listadoPersonas) {
         try (ObjectOutputStream serializa = new ObjectOutputStream(new FileOutputStream("src/persistencia/archivos/personasSerializado.dat"))) {

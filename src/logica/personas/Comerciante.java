@@ -9,8 +9,8 @@ import logica.zonas.Zona;
 public class Comerciante extends Persona {
     /**
      * constructor de la clase Comerciante
-     * @param identificador
-     * @param nombre
+     * @param identificador identificador unico del comerciante
+     * @param nombre nombre de la persona
      */
         public Comerciante(String identificador,String nombre) {
             super(identificador,nombre);
@@ -36,7 +36,7 @@ public class Comerciante extends Persona {
 
     /**
      * indica las zonas a la que esta habilitado a entrar el comerciante
-     * @param zona
+     * @param zona zona para comprobar si esta habilitado a ingresar
      * @return true si la zona recibida puede ingresar, false si no puede ingresar
      */
     @Override

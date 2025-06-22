@@ -21,7 +21,7 @@ public class VentanaStands extends JFrame {
     private JTextArea area_texto_stands;
     /**
      * Constructor de la Clase, genera una ventana en la que se muestran los datos de todos los stands que hay en el festival
-     * @param controladora
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos del programa
      */
     public VentanaStands(Controladora controladora) {
         add(ventana_stands);

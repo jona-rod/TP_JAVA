@@ -24,7 +24,7 @@ public class VentanaPrincipal extends JFrame {
     private JPanel principalEast;
     /**
      * Constructor de la clase, inicializa los componentes de la Interfaz Gráfica
-     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos de los artistas
+     * @param controladora Objeto de la clase {@link Controladora} que conecta con la clase gestion que gestiona los datos del programa
      */
     public VentanaPrincipal(Controladora controladora) {
 
