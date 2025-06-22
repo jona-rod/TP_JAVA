@@ -2,7 +2,7 @@ package persistencia;
 
 import logica.gestion.Gestion;
 import logica.personas.*;
-import logica.reportes.ReporteDeDatos;
+import persistencia.reportes.ReporteDeDatos;
 import logica.zonas.*;
 
 import java.io.BufferedReader;

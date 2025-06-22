@@ -3,7 +3,7 @@ package logica.gestion;
 import persistencia.ArchivosSerializados;
 import logica.personas.Acceso;
 import logica.personas.Persona;
-import logica.reportes.ReporteAcceso;
+import persistencia.reportes.ReporteAcceso;
 import logica.zonas.Stand;
 import logica.zonas.Zona;
 

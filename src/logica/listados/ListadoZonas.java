@@ -29,7 +29,12 @@ public class ListadoZonas {
             sb.append(z.toString()).append("\n");
             cantPersonas += z.concurrencia();
         }
-        sb.append("La cantidad de personas en el predio es: ").append(cantPersonas);
+        sb.append("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n"+
+                "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n\n");
+        sb.append("Personas en zonas : " + cantPersonas + "\n\n");
+        int cantPersonasPredio = gestion.getListadoPersonas().size();
+        sb.append("Personas en stands : " + (cantPersonasPredio - cantPersonas) + "\n\n");
+        sb.append("Total de personas en el predio : ").append(cantPersonasPredio).append("\n\n");
 
         return sb.toString();
     }

@@ -1,4 +1,4 @@
-package logica.reportes;
+package persistencia.reportes;
 
 import java.io.*;
 
