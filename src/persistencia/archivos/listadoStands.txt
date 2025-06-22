@@ -11,8 +11,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	LISTA DE PERSONAS
 	----------------
 
+	 ID : VEN011		 Nombre : Alvaro_Morales        
 
-  Cantidad de personas : 0
+
+
+  Cantidad de personas : 1
 
 
   Ubicacion:  CO03

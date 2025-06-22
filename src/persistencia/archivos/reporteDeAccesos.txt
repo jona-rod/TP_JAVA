@@ -95,3 +95,39 @@ Id: VEN011
 Cambio de zona de ST11 - Fuente_agua               hacia CO01 - Plaza_central            
 
 
+ACCESO DENEGADO
+Nombre: Alvaro_Morales        
+Id: VEN011
+No tiene habilitación de acceso a la zona: ST11 - Fuente_agua              
+
+
+ACCESO ACEPTADO
+Nombre: Alvaro_Morales        
+Id: VEN011
+Cambio de zona de CO01 - Plaza_central             hacia ST06 - Parrilla_rapida          
+
+
+ACCESO ACEPTADO
+Nombre: Alvaro_Morales        
+Id: VEN011
+Cambio de zona de ST06 - Parrilla_rapida           hacia CO01 - Plaza_central            
+
+
+ACCESO ACEPTADO
+Nombre: Teresa_Gil            
+Id: VEN015
+Cambio de zona de ST15 - Discos_vinilos            hacia CO01 - Plaza_central            
+
+
+ACCESO ACEPTADO
+Nombre: Roberto_Jimenez       
+Id: VEN014
+Cambio de zona de ST14 - Artesanias_loc            hacia CO01 - Plaza_central            
+
+
+ACCESO ACEPTADO
+Nombre: Teresa_Gil            
+Id: VEN015
+Cambio de zona de CO01 - Plaza_central             hacia ST15 - Discos_vinilos           
+
+

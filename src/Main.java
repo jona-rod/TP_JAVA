@@ -44,9 +44,5 @@ public class Main{
                 pantalla.setLocationRelativeTo(null);
             }
         });
-        // actualiza los listados de zonas y stands al finalizar el programa
-        //aunque los actualiza al consultar listados en pantalla si después de consultar se mueve
-        //una persona de una zona a otra, garantiza que se actualizan los archivos
-
     }
 }
