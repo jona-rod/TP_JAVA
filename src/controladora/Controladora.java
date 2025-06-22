@@ -3,7 +3,6 @@ package controladora;
 import logica.gestion.Gestion;
 import logica.listados.ListadoStands;
 import logica.listados.ListadoZonas;
-import logica.personas.Persona;
 
 /**
  * clase Controladora se encarga de manejar los distintos metodos que se usan en las ventanas, tiene como metodos:
@@ -13,7 +12,8 @@ import logica.personas.Persona;
  * los datos y cada persona que esta en esa zona con los datos, muevePersona mueve una persona de una zona a otra, siempre y cuando
  * este habilitada la persona para ingresar a la otra zona, guardaDatos guarda los datos, generaListadoZonas crea un listado de
  * todas las zonas, verificarZona verifica que la zona exista, muestraZona devuelve la zona que contiene el id pasado por parametro,
- * generaListadoStands crea el listado de los stands
+ * generaListadoStands crea el listado de los stands, finalizaPrograma genera los listados de stands y personas aunque no lo
+ * hagan en el programa
  */
 public class Controladora {
     /**
@@ -151,7 +151,11 @@ public class Controladora {
         return ListadoStands.generarListado(gestion);
     }
 
-    public void finalizaProgrema(){
+    /**
+     * se encarga de generar los archivos actualizados de listado zonas y listado stands al cerrar el archivo
+     * aunque en el programa no se hagan
+     */
+    public void finalizaPrograma(){
         ListadoZonas.generaArchivoListadoZonas(gestion);
         ListadoStands.generaArchivoListadoStands(gestion);
     }

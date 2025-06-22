@@ -38,6 +38,13 @@ public abstract class ArchivosSerializados {
     }
 
     // Métodos para Zonas
+
+    /**
+     * carga los datos de las zonas en archivos serializados
+     * @param conjuntoZonas
+     * @param listadoZonas
+     * @param listadoStands
+     */
     private static void cargarZonas(TreeMap<String, Zona> conjuntoZonas, ArrayList<Zona> listadoZonas, ArrayList<Stand> listadoStands) {
         try (ObjectInputStream cargaSerializados = new ObjectInputStream(new FileInputStream("src/persistencia/archivos/zonasSerializado.dat"))) {
             Zona zona;
@@ -57,6 +64,10 @@ public abstract class ArchivosSerializados {
         }
     }
 
+    /**
+     * guarda los datos en archivos serializados
+     * @param conjuntoZonas
+     */
     private static void guardarZonas(TreeMap<String, Zona> conjuntoZonas) {
         try (ObjectOutputStream serializa = new ObjectOutputStream(new FileOutputStream("src/persistencia/archivos/zonasSerializado.dat"))) {
             for (Zona zona : conjuntoZonas.values()) {
@@ -68,6 +79,11 @@ public abstract class ArchivosSerializados {
     }
 
     // Métodos para Personas
+
+    /**
+     * carga los datos de personas en archivos serializados
+     * @param listadoPersonas
+     */
     private static void cargarPersonas(TreeMap<String, Persona> listadoPersonas) {
         try (ObjectInputStream cargaSerializados = new ObjectInputStream(new FileInputStream("src/persistencia/archivos/personasSerializado.dat"))) {
             Persona persona;
@@ -82,6 +98,10 @@ public abstract class ArchivosSerializados {
         }
     }
 
+    /**
+     * guarda los datos de personas en archivos serializados
+     * @param listadoPersonas
+     */
     private static void guardarPersonas(TreeMap<String, Persona> listadoPersonas) {
         try (ObjectOutputStream serializa = new ObjectOutputStream(new FileOutputStream("src/persistencia/archivos/personasSerializado.dat"))) {
             for (Persona persona : listadoPersonas.values()) {

@@ -18,7 +18,7 @@ public class Escenario extends Zona {
     /**
      * identificador de capacidadMaxima en cada escenario
      */
-    private static final int capacidadMaxima = 100;
+    private static final int capacidadMaxima = 15;
 
     /**
      * constructor de la zona

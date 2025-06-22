@@ -10,14 +10,16 @@ import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
 /**
- * clase Persona, es una clase abstracta de la cual derivan los distintos tipos de personas. tiene los metodos: cosntructor,
+ * clase Persona, implementa Serializable, es una clase abstracta de la cual derivan los distintos tipos de personas. tiene los metodos: cosntructor,
  * getId devuelve el identificador de la persona, setId carga el identificador de la persona, getNombre devuelve el nombre de
  * la persona, setNombre carga el nombre de la persona, getAccesos devuelve la lista de accesos de la persona, getZonasAutorizadas
  * devuelve la lista de zonas autorizadas de la persona, cargaAcceso carga un acceso a la lista de accesos de la persona
  * cargaZonasAutorizadas carga una zona autorizasa a la cual puede ingresar la persona, tipoPersona abstracta, habilitado abstracta
  * zonaHabilitada devuelve si una zona esta habilitada a ingresar la persona,zonaActual indica la zona en la cual tuvo el ultimo
  * acceso aceptado la persona, muestraListaAccesosPersona muestra una lista de los accesos que tuvo la persona,
- * muestraListaZonasAutorizadasPersona muestra una lista de las zonas a la que puede ingresar la persona, toString
+ * muestraListaZonasAutorizadasPersona muestra una lista de las zonas a la que puede ingresar la persona, toString, ultimoAcceso
+ * devuelve el ultimo acceso que fue aceptado de la persona, calculaMinutosPermanencia devuelve el tiempo que estuvo en el
+ * ultimo acceso la persona
  */
 public abstract class Persona implements Serializable {
     /**
@@ -147,6 +149,10 @@ public abstract class Persona implements Serializable {
         return null;
     }
 
+    /**
+     * devuelve el ultimo acceso valido de la persona
+     * @return ultimo acceso valido
+     */
     public Acceso ultimoAcceso(){
         if(listaAccesos!=null && listaAccesos.size()>0){
             for(Acceso acceso : listaAccesos.reversed()){
@@ -158,6 +164,10 @@ public abstract class Persona implements Serializable {
         return null;
     }
 
+    /**
+     * devuelve el tiempo que estuvo en el ultimo acceso la persona, cuando hace un cambio de zona
+     * @return diferencia entre hora de entrada y hora de salida de la zona
+     */
     public long calculaMinutosPermanencia() {
         Acceso ultimoAcceso = ultimoAcceso();
         LocalDateTime fechaHoraUltimoAcceso = ultimoAcceso.getFecha();

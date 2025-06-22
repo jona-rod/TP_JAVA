@@ -251,6 +251,9 @@ public class Gestion implements Serializable {
             }
         }
 
+        /**
+         * actualiza los minutos que la persona esta en la zona, teniendo en cuenta el ultimo acceso
+         */
      public void actualizaMinutosPermanencia() {
         for (Persona persona : listadoPersonas.values()) {
             persona.ultimoAcceso().setMinutosPermanencia(persona.calculaMinutosPermanencia());
@@ -287,6 +290,10 @@ public class Gestion implements Serializable {
         return sb.toString();
     }
 
+        /**
+         * muestra el listado de todas las zonas con las personas que hay dentro de cada una de ellas
+         * @return texto con listado
+         */
     public String muestraListadoZonasConPersonas(){
         StringBuilder sb = new StringBuilder();
         for(Zona zona : conjuntoZonas.values()){

@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 
 /**
- * Clase Zona, es una clase abstracta que contiene los metodos necesarios que tienen el resto de clases que heredan de ella
+ * Clase Zona,implementa Comparable y Serializable, es una clase abstracta que contiene los metodos necesarios que tienen el resto de clases que heredan de ella
  * tiene un constructor, getCodigo que devuelve el codigo (id) de la zona, setCodigo que carga el codigo de una zona,getConjuntoPersona
  * devuelve una copia del conjunto de personas de la zona, get descripcion devuelve el nombre de la zona, setDescripcion
  * carga el nombre de la zona, tipoZona abstracta, zonaLlena abstracta, concurrencia devuelve la cantidad de personas que

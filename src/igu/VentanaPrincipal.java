@@ -95,7 +95,7 @@ public class VentanaPrincipal extends JFrame {
         this.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                controladora.finalizaProgrema();
+                controladora.finalizaPrograma();
                 System.exit(0);
             }
         });
