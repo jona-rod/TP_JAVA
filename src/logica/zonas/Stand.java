@@ -23,9 +23,9 @@ public class Stand extends Restringida implements Serializable {
 
     /**
      * constructor de la clase Stand
-     * @param codigo
-     * @param descripcion
-     * @param ubicacion
+     * @param codigo String id indentificatorio de la zona
+     * @param descripcion String descripción de la zona
+     * @param ubicacion String ubicacion en donde se encuentra el stand
      */
     public Stand(String codigo, String descripcion, String ubicacion) {
         super(codigo,descripcion);
@@ -40,7 +40,7 @@ public class Stand extends Restringida implements Serializable {
 
     /**
      * carga la ubicacion
-     * @param ubicacion
+     * @param ubicacion String ubicacion en donde se encuentra el stand
      */
     public void setUbicacion(String ubicacion){this.ubicacion = ubicacion;}
 
@@ -52,7 +52,7 @@ public class Stand extends Restringida implements Serializable {
 
     /**
      * carga el responsble del stand
-     * @param responsable
+     * @param responsable String nombre del responsable del stand
      */
     public void setResponsable(String responsable){this.responsable = responsable;}
 

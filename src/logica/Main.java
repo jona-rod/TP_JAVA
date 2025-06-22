@@ -1,5 +1,4 @@
 package logica;
-
 import controladora.Controladora;
 import igu.VentanaPrincipal;
 import logica.listados.ListadoStands;
@@ -7,7 +6,6 @@ import logica.listados.ListadoZonas;
 import persistencia.ArchivosSerializados;
 import persistencia.LecturaDeArchivosTXT;
 import logica.gestion.Gestion;
-
 import javax.swing.*;
 
 

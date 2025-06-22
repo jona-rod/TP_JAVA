@@ -16,8 +16,8 @@ public class Restringida extends Zona implements Serializable{
 
     /**
      * constructor de la zona Restringida
-     * @param codigo
-     * @param descripcion
+     * @param codigo String id identificatorio de la zona
+     * @param descripcion String descripción de la zona
      */
     public Restringida(String codigo, String descripcion) {
         super(codigo, descripcion);

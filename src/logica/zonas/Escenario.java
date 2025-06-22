@@ -22,8 +22,8 @@ public class Escenario extends Zona {
 
     /**
      * constructor de la zona
-     * @param codigo
-     * @param descripcion
+     * @param codigo String id identificatorio de la zona
+     * @param descripcion String descripción de la zona
      */
     public Escenario(String codigo, String descripcion) {
         super(codigo, descripcion);

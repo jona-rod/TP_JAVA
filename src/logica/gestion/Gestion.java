@@ -58,9 +58,6 @@ public class Gestion implements Serializable {
         listadoZonas = new ArrayList<>();
         listadoStands = new ArrayList<>();
         reporte = new ReporteAcceso();
-
-
-
     }
 
     public void guardarDatos() {
@@ -102,7 +99,7 @@ public class Gestion implements Serializable {
     /**
      * agrega una nueva zona al festival, si una zona distinta a stand la agrega a conjuntoZonas si es un stand lo agrega
      * a listadoStands
-     * @param zona
+     * @param zona objeto Zona
      */
     public void agregarZona(Zona zona) {
         conjuntoZonas.put(zona.getCodigo(), zona);
@@ -110,12 +107,11 @@ public class Gestion implements Serializable {
             listadoZonas.add(zona);
         else //stand
             listadoStands.add((Stand) zona);
-
     }
 
     /**
      * elimina una zona del festival
-     * @param zona
+     * @param zona objeto Zona
      */
     public void eliminarZona(Zona zona) {
         conjuntoZonas.remove(zona.getCodigo());
@@ -128,10 +124,10 @@ public class Gestion implements Serializable {
     /**
      * añade una nueva persona al festival, cargandola con sus datos a listadoPersonas, tambien carga si debe el responsable
      * de los stands
-     * @param persona
-     * @param idZona
-     * @param per
-     * @throws Exception
+     * @param persona objeto Persona
+     * @param idZona String id de la zona
+     * @param per char inicial tipo de persona
+     * @throws Exception zona no existe y capacidad completa de la zona
      */
     public void cargaPersona(Persona persona,String idZona, char per) throws Exception {
         String mensaje = "La persona con id:  " + persona.getId() + ", Nombre : " + persona.getNombre() + " no pudo registrarse";
@@ -156,8 +152,8 @@ public class Gestion implements Serializable {
 
     /**
      * busca una zona a traves del id con acceso directo en conjuntoZonas
-     * @param codigo
-     * @return zona que contiene el id enviado como parametro
+     * @param codigo String id zona
+     * @return Zona  que contiene el id enviado como parametro
      */
     public  Zona buscarZonaPorCodigo(String codigo) {
         if (codigo == null || codigo.trim().isEmpty()) {
@@ -170,7 +166,7 @@ public class Gestion implements Serializable {
 
     /**
      * busca una persona a traves del id con acceso directo en listadoPersonas
-     * @param idPersona
+     * @param idPersona String id persona
      * @return persona que contiene el id enviado como parametro
      */
     public Persona buscaPersonaPorId(String idPersona){
@@ -187,9 +183,10 @@ public class Gestion implements Serializable {
      * se encarga de mover una persona de una zona a otra, sacando del listado de personas de la zona en la que estaba y agregando
      * en el listado de personas de la nueva zona, esto lo hace si la persona esta habilitada para ingresar a la nueva zona
      * sino lo esta tira una excepecion y queda unicamente como un acceso denegado
-     * @param idPersona
-     * @param idZonaDestino
-     * @throws IllegalArgumentException
+     * @param idPersona String id persona
+     * @param idZonaDestino String id persona
+     * @throws IllegalArgumentException persona no existe,zona no existe, persona ya se encuentra en la zona indicada, zona con capacidad completa,
+     * la persona no tiene habilitacion para ingresar a la zona
      */
     public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
 
@@ -217,7 +214,6 @@ public class Gestion implements Serializable {
                     excepcion = new Exception("La persona no puede ingresar a la zona debido a que la capacidad está completa");
                     throw excepcion;
                 }
-
                 if (!per.habilitado(conjuntoZonas.get(idZonaDestino))) {        //verifica que la persona este habilitadad. Verifica las zonas permitidas y la lista de zonas habilitadas
                     mensaje.append("ACCESO DENEGADO").append("\n").append("Nombre: ").append(per.getNombre()).append("\n")
                             .append("Id: ").append(idPersona).append("\n")
@@ -263,7 +259,7 @@ public class Gestion implements Serializable {
 
     /**
      * muestra un texto con un listado de todas las personas del festival, con los datos de cada uno de ellos
-     * @return el listado de las personas
+     * @return String con el listado de las personas
      */
     public String muestraListadoPersonas(){
         StringBuilder sb = new StringBuilder();
@@ -281,8 +277,6 @@ public class Gestion implements Serializable {
                     tipoPersona = "Comerciante";
                 } else
                     tipoPersona = "Staff";
-
-
                 sb.append("........................................................................................................................................................................................................................................................................................................")
                         .append("\n\n  ID: ").append(persona.getId()).append("\t").append("\t").append(persona.getNombre()).append("\t").append(tipoPersona).append("\t\t").append(persona.zonaActual()).append("  -  ").append(descripcion).append("\t  ( ").append(conjuntoZonas.get(persona.zonaActual()).tipoZona()).append(" )") .append("\n\n");
             }
@@ -292,7 +286,7 @@ public class Gestion implements Serializable {
 
         /**
          * muestra el listado de todas las zonas con las personas que hay dentro de cada una de ellas
-         * @return texto con listado
+         * @return String con listado
          */
     public String muestraListadoZonasConPersonas(){
         StringBuilder sb = new StringBuilder();

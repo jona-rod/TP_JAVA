@@ -22,8 +22,8 @@ public class Evento implements Serializable {
 
     /**
      * constructor de la clase
-     * @param fechaHora
-     * @param artista
+     * @param fechaHora objeto LocalDateTime
+     * @param artista String id artista
      */
     public Evento(LocalDateTime fechaHora, String artista) {
         this.fechaHora = fechaHora;

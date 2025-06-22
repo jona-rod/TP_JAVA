@@ -14,9 +14,9 @@ import java.io.IOException;
  */
 public class ListadoStands {
     /**
-     * genera un listado de los stands enstando ardenados al ¿fabeticamente por los nombres de las personas responsables de
-     * cada stand,Ordena usando el Comparator estático de Stand
-     * @param gestion
+     * genera un listado de los stands ordenados alfábeticamente por los nombres de las personas responsables de
+     * cada stand.Ordena usando el Comparator estático de Stand
+     * @param gestion objeto Gestion
      * @return el texto con el listado de los stands ordenados alfabeticamente
      */
     public static String generarListado(Gestion gestion) {
@@ -28,7 +28,11 @@ public class ListadoStands {
         }
         return sb.toString();
     }
-
+    /**
+     * genera un archivo con el listado de los stands ordenados alfabéticamente por los nombres de las personas responsables de
+     * cada stand.Ordena usando el Comparator estático de Stand
+     * @param gestion objeto Gestion
+     */
     public static void generaArchivoListadoStands(Gestion gestion) {
         try{
             FileWriter file = new FileWriter("src//persistencia/archivos/listadoStands.txt");

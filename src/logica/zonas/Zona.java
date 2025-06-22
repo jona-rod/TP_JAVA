@@ -32,8 +32,8 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * constructor de la clase Zona
-     * @param codigo
-     * @param descripcion
+     * @param codigo codigo identificatorio de la zona
+     * @param descripcion descripcion de la zona
      */
     public Zona(String codigo, String descripcion) {
         this.codigo = codigo;
@@ -51,7 +51,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * carga el codigo de la zona
-     * @param codigo
+     * @param codigo código de la zona
      */
     public void setCodigo(String codigo) {
         this.codigo = codigo;
@@ -75,7 +75,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * carga la descripcion de la zona
-     * @param descripcion
+     * @param descripcion String descripcion de la zona
      */
     public void setDescripcion(String descripcion) {this.descripcion = descripcion;}
 
@@ -99,7 +99,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * agrega una persona a la zona
-     * @param per
+     * @param per objeto Persona
      */
     public void agregaPersona(Persona per){
         conjuntoPersona.put(per.getId(), per);
@@ -107,7 +107,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * elimina una persona de la zona
-     * @param idPersona
+     * @param idPersona String id persona
      */
     public void eliminaPersona(String idPersona) {
         conjuntoPersona.remove(idPersona);
@@ -115,7 +115,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      * carga un evento
-     * @param evento
+     * @param evento objeto Evento
      */
     public void cargaEvento(Evento evento){};
 
@@ -158,7 +158,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
 
     /**
      *compara las zonas por la cantidad de gente que hay en cada una
-     * @param otra the object to be compared.
+     * @param otra el objeto comparado.
      * @return
      */
     @Override

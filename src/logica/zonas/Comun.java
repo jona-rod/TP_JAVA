@@ -8,8 +8,8 @@ package logica.zonas;
 public class Comun extends Zona {
     /**
      * Constructor de la clse Comun
-     * @param codigo
-     * @param descripcion
+     * @param codigo String id identificatorio de la zona
+     * @param descripcion String descripción de la zona
      */
     public Comun(String codigo, String descripcion) {
         super(codigo, descripcion);

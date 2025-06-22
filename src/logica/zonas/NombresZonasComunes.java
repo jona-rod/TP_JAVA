@@ -8,7 +8,7 @@ public enum NombresZonasComunes {
 
     /**
      * metodo para validar si una zona pertenece a la enumeracion
-     * @param TipoZ
+     * @param TipoZ String descripcion de la zona a buscar
      * @return true si la zona pertenece a la enumeracion, false si la zona no pertenece
      */
     public static boolean pertenece(String TipoZ) {
