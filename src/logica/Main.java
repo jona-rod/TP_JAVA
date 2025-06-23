@@ -8,7 +8,9 @@ import persistencia.LecturaDeArchivosTXT;
 import logica.gestion.Gestion;
 import javax.swing.*;
 
-
+/**
+ * clase main
+ */
 public class Main{
     /**
      * Metodo principal del programa.

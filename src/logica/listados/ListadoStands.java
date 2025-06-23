@@ -13,6 +13,11 @@ import java.io.IOException;
  * los stands
  */
 public class ListadoStands {
+
+    /**
+     * constructor del objeto LstadoStands
+    */
+    public ListadoStands() {}
     /**
      * genera un listado de los stands ordenados alfábeticamente por los nombres de las personas responsables de
      * cada stand.Ordena usando el Comparator estático de Stand

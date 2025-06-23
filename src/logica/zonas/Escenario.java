@@ -34,9 +34,7 @@ public class Escenario extends Zona {
      * copia de lista de eventos
      * @return copia  de la lista de eventos para evitar modificaciones externas
      */
-    public List<Evento> getEventos() {
-        return new ArrayList<>(eventos); //
-    }
+    public List<Evento> getEventos() {return eventos;}
 
     /**
      * muestra de eventos del escenario
@@ -78,7 +76,7 @@ public class Escenario extends Zona {
 
     /**
      * carga los eventos de los escenarios
-     * @param evento
+     * @param evento carga objeto Evento en
      */
     @Override
     public void cargaEvento(Evento evento) {

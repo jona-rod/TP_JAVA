@@ -48,6 +48,11 @@ public class ReporteAcceso {
         }
     }
 
+    /**
+     * devuelve atributo reporte
+     * @return Stringbuilder reporte
+     */
+
     public StringBuilder getReporte() {
         return reporte;
     }

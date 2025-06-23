@@ -63,7 +63,10 @@ public class Acceso implements Serializable{
     public LocalDateTime getFecha() {
         return fechaHora;
     }
-
+    /**
+     * carga la fecha del acceso
+     * @param fechaHora objeto LocalDateTime
+     */
     public void setFecha(LocalDateTime fechaHora) {
         this.fechaHora = fechaHora;
     }
@@ -83,7 +86,10 @@ public class Acceso implements Serializable{
     public long getCantidadMinutosPermanencia() {
         return cantidadMinutosPermanencia;
     }
-
+    /**
+     * carga los minutos que estuvo en la zona
+     * @param cantidadMinutosPermanencia tipo long
+     */
     public void setMinutosPermanencia(long cantidadMinutosPermanencia) {
         this.cantidadMinutosPermanencia = cantidadMinutosPermanencia;
     }

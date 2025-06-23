@@ -4,7 +4,25 @@ package logica.zonas;
  * enumeracion de las distintas zonas comunes. Contiene un pertenece que retorna si una zona esta en la enumeracion
  */
 public enum NombresZonasComunes {
-    Plaza_central,Patio_de_comidas,Zona_de_descanso,Zona_de_compras;
+    /**
+     * Plaza central del establecimiento
+     */
+    Plaza_central,
+
+    /**
+     * Área dedicada a locales de comida
+     */
+    Patio_de_comidas,
+
+    /**
+     * Zona designada para descanso
+     */
+    Zona_de_descanso,
+
+    /**
+     * Área destinada a tiendas y comercios
+     */
+    Zona_de_compras;
 
     /**
      * metodo para validar si una zona pertenece a la enumeracion

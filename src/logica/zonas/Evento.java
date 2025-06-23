@@ -31,13 +31,15 @@ public class Evento implements Serializable {
     }
 
     /**
-     * @return la fecha y hora del evento
+     * devuele el atributo LocalDateTime fechaHora
+     * @return objeto LocalDateTime con la fecha y hora del evento
      */
     public LocalDateTime getFechaHora() {
         return fechaHora;
     }
 
     /**
+     * devuelve el atributo Artista
      * @return el artista del evento
      */
     public String getArtista() {

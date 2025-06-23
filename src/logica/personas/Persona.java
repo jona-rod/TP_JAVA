@@ -173,7 +173,10 @@ public abstract class Persona implements Serializable {
         LocalDateTime fechaHoraUltimoAcceso = ultimoAcceso.getFecha();
         return ChronoUnit.MINUTES.between(fechaHoraUltimoAcceso, LocalDateTime.now());
     }
-
+    /**
+     * carga un objeto Evento al objeto Artista
+     * @param evento objeto Evento
+     */
     public void agregaEventoArtista(Evento evento){};
 
     /**
@@ -203,13 +206,18 @@ public abstract class Persona implements Serializable {
         return sb.toString();
     }
 
+    /**
+     * muestra listado de pesonas
+     * @return String
+     */
+
     public String muestraPersonaListado(){
         return  "\t ID : " + id + "\t\t Nombre : " + nombre + "\n\n";
     }
 
     /**
      * toString de la zona Persona
-     * @return texto con id,nombre,lista de accesos y lista de zonas autorizadas
+     * @return String texto con id,nombre,lista de accesos y lista de zonas autorizadas
      */
     @Override
     public String toString() {

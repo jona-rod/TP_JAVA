@@ -167,7 +167,7 @@ public abstract class Zona implements Comparable<Zona>, Serializable {
     /**
      *compara las zonas por la cantidad de gente que hay en cada una
      * @param otra el objeto comparado.
-     * @return
+     * @return int resultado de la comparación
      */
     @Override
     public int compareTo(Zona otra) {

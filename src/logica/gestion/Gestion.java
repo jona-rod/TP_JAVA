@@ -60,6 +60,9 @@ public class Gestion implements Serializable {
         reporte = new ReporteAcceso();
     }
 
+    /**
+     * guarda los datos a través de la clase ArchivosSerializados en archivos binarios
+     */
     public void guardarDatos() {
         ArchivosSerializados.guardarDatos(this);
     }
@@ -182,15 +185,16 @@ public class Gestion implements Serializable {
     /**
      * se encarga de mover una persona de una zona a otra, sacando del listado de personas de la zona en la que estaba y agregando
      * en el listado de personas de la nueva zona, esto lo hace si la persona esta habilitada para ingresar a la nueva zona
-     * sino lo esta tira una excepecion y queda unicamente como un acceso denegado
+     * sino lo esta tira una excepción y queda unicamente como un acceso denegado
      * @param idPersona String id persona
      * @param idZonaDestino String id persona
-     * @throws IllegalArgumentException persona no existe,zona no existe, persona ya se encuentra en la zona indicada, zona con capacidad completa,
-     * la persona no tiene habilitacion para ingresar a la zona
+     * @throws IllegalArgumentException la persona no existe, la zona no existe
+     * @throws Exception la persona ya se encuentra en la zona indicada, la zona está con capacidad completa,
+     * la persona no tiene habilitación para ingresar a la zona
      */
     public void muevePersona(String idPersona, String idZonaDestino) throws IllegalArgumentException, Exception {
 
-            if (!listadoPersonas.containsKey(idPersona)) {            // verifica que la persona exista
+        if (!listadoPersonas.containsKey(idPersona)) {            // verifica que la persona exista
                 throw new IllegalArgumentException("La persona no existe");
             }
             if (!conjuntoZonas.containsKey(idZonaDestino)) {        // verifica que la persona exista

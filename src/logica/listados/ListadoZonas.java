@@ -14,6 +14,12 @@ import java.util.Collections;
  */
 public class ListadoZonas {
 
+
+    /**
+     * constructor del objeto ListadoZonas
+     */
+    public ListadoZonas() {}
+
     /**
      * genera un listado con las zonas y los datos de cada una
      * @param gestion objeto Gestion
