@@ -129,10 +129,10 @@ public class LecturaDeArchivosTXT {
 
                     // Buscar escenario y agregar evento
                     Escenario escenario = (Escenario) conjuntoZonas.buscarZonaPorCodigo(idEscenario);
-                    //Persona persona = (Persona) listadoPersonas.buscaPersonaPorId(artista);
+                    Persona persona = (Persona) conjuntoZonas.buscaPersonaPorId(artista);
                     Evento nuevoEvento = new Evento(fechaHora, artista);
                     escenario.cargaEvento(nuevoEvento);
-                    //persona.agregaEventoArtista(nuevoEvento);
+                    persona.agregaEventoArtista(nuevoEvento);
 
                 } catch (StringIndexOutOfBoundsException e) {
                     informe.agregaError("Error en linea " + linea + " - " + e.getMessage());
