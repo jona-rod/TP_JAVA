@@ -3,7 +3,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST11
 
-  DESCRIPCIÓN : Fuente_agua
+  DESCRIPCIÓN : Camisetas
 
   Tipo Zona: Stand
 
@@ -29,7 +29,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST01
 
-  DESCRIPCIÓN : Bar_de_jugos
+  DESCRIPCIÓN : Bar de jugos
 
   Tipo Zona: Stand
 
@@ -55,7 +55,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST02
 
-  DESCRIPCIÓN : Puesto_de_postres
+  DESCRIPCIÓN : Puesto de postres
 
   Tipo Zona: Stand
 
@@ -84,7 +84,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST12
 
-  DESCRIPCIÓN : Carritos_bebidas
+  DESCRIPCIÓN : Carrito bebidas
 
   Tipo Zona: Stand
 
@@ -113,7 +113,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST06
 
-  DESCRIPCIÓN : Parrilla_rapida
+  DESCRIPCIÓN : Parrilla rápida
 
   Tipo Zona: Stand
 
@@ -142,7 +142,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST05
 
-  DESCRIPCIÓN : Comida_mexicana
+  DESCRIPCIÓN : Comida mexicana
 
   Tipo Zona: Stand
 
@@ -168,7 +168,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST09
 
-  DESCRIPCIÓN : Masajes_5min
+  DESCRIPCIÓN : Masajes 5min
 
   Tipo Zona: Stand
 
@@ -197,7 +197,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST10
 
-  DESCRIPCIÓN : Sillas_masaje
+  DESCRIPCIÓN : Sillas masaje
 
   Tipo Zona: Stand
 
@@ -223,7 +223,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST03
 
-  DESCRIPCIÓN : Info_turistica
+  DESCRIPCIÓN : Info turística
 
   Tipo Zona: Stand
 
@@ -275,7 +275,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST04
 
-  DESCRIPCIÓN : Hamburguesas_art
+  DESCRIPCIÓN : Hamburguesas
 
   Tipo Zona: Stand
 
@@ -304,7 +304,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST14
 
-  DESCRIPCIÓN : Artesanias_loc
+  DESCRIPCIÓN : Artesanias
 
   Tipo Zona: Stand
 
@@ -330,7 +330,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST13
 
-  DESCRIPCIÓN : Merch_oficial
+  DESCRIPCIÓN : Merch oficial
 
   Tipo Zona: Stand
 
@@ -356,7 +356,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST07
 
-  DESCRIPCIÓN : Vegetariano
+  DESCRIPCIÓN : Comida veggie
 
   Tipo Zona: Stand
 
@@ -385,7 +385,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ST15
 
-  DESCRIPCIÓN : Discos_vinilos
+  DESCRIPCIÓN : Discos vinilos
 
   Tipo Zona: Stand
 

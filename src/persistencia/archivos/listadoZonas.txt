@@ -3,7 +3,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ES02
 
-  DESCRIPCIÓN : Hip-Hop
+  DESCRIPCIÓN : Escenario Hip-Hop
 
   Tipo Zona: Escenario
 
@@ -56,21 +56,36 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : PUB048		 Nombre : Gerardo_Tapia         
 
 
-	 ID : STA012		 Nombre : Carlos_Mendez_Tecnico 
 
-
-
-  Cantidad de personas : 16
+  Cantidad de personas : 15
 
   	LISTA DE EVENTOS
 	---------------
 
 
-	ART011 - 2025-03-16 21:30:00
+	ART011 - 2025-06-30 21:45:00
 
-	ART012 - 2025-03-23 20:00:00
+	ART012 - 2025-06-30 22:00:00
 
-	ART013 - 2025-04-06 23:00:00
+	ART013 - 2025-06-30 23:15:00
+
+	ART011 - 2025-07-01 20:45:00
+
+	ART011 - 2025-07-01 21:30:00
+
+	ART013 - 2025-07-01 23:15:00
+
+	ART012 - 2025-07-02 20:00:00
+
+	ART013 - 2025-07-02 23:00:00
+
+	ART012 - 2025-07-03 20:00:00
+
+	ART012 - 2025-07-03 21:00:00
+
+	ART013 - 2025-07-03 22:15:00
+
+	ART011 - 2025-07-04 19:30:00
 
 
   Capacidad máxima: 15
@@ -81,7 +96,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ES03
 
-  DESCRIPCIÓN : Pop
+  DESCRIPCIÓN : Escenario Pop
 
   Tipo Zona: Escenario
 
@@ -141,9 +156,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	---------------
 
 
-	ART014 - 2025-03-17 20:00:00
+	ART014 - 2025-06-30 21:30:00
 
-	ART015 - 2025-03-24 21:15:00
+	ART015 - 2025-06-30 22:45:00
+
+	ART014 - 2025-07-01 19:45:00
+
+	ART014 - 2025-07-01 20:00:00
+
+	ART014 - 2025-07-02 19:30:00
+
+	ART015 - 2025-07-02 21:15:00
+
+	ART015 - 2025-07-04 20:00:00
+
+	ART015 - 2025-07-04 21:00:00
 
 
   Capacidad máxima: 15
@@ -154,7 +181,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ES01
 
-  DESCRIPCIÓN : Rock
+  DESCRIPCIÓN : Escenario Rock
 
   Tipo Zona: Escenario
 
@@ -166,9 +193,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 	 ID : ART010		 Nombre : Slash                 
-
-
-	 ID : PUB001		 Nombre : Pedro_Dominico        
 
 
 	 ID : PUB020		 Nombre : Lucía_Medina          
@@ -201,6 +225,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	 ID : STA011		 Nombre : Luis_Torres_Tecnico   
 
 
+	 ID : STA012		 Nombre : Carlos_Mendez_Tecnico 
+
+
 
   Cantidad de personas : 13
 
@@ -208,9 +235,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	---------------
 
 
-	ART009 - 2025-03-15 20:30:00
+	ART009 - 2025-06-30 21:15:00
 
-	ART010 - 2025-03-22 21:00:00
+	ART010 - 2025-06-30 22:30:00
+
+	ART009 - 2025-07-01 20:30:00
+
+	ART010 - 2025-07-01 21:45:00
+
+	ART010 - 2025-07-02 21:00:00
+
+	ART010 - 2025-07-02 22:30:00
+
+	ART009 - 2025-07-03 20:15:00
+
+	ART009 - 2025-07-04 19:15:00
 
 
   Capacidad máxima: 15
@@ -273,7 +312,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
   ID DE ZONA : ES04
 
-  DESCRIPCIÓN : Folcklore
+  DESCRIPCIÓN : Escenario Folcklore
 
   Tipo Zona: Escenario
 
@@ -321,9 +360,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	---------------
 
 
-	ART016 - 2025-03-18 19:00:00
+	ART016 - 2025-06-30 21:00:00
 
-	ART017 - 2025-03-25 20:45:00
+	ART017 - 2025-06-30 23:00:00
+
+	ART017 - 2025-07-01 22:00:00
+
+	ART016 - 2025-07-02 20:30:00
+
+	ART017 - 2025-07-02 21:15:00
+
+	ART016 - 2025-07-03 19:00:00
+
+	ART016 - 2025-07-03 22:45:00
+
+	ART017 - 2025-07-04 20:45:00
 
 
   Capacidad máxima: 15
@@ -341,6 +392,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 	LISTA DE PERSONAS
 	----------------
+
+	 ID : PUB001		 Nombre : Pedro_Dominico        
+
 
 	 ID : PUB002		 Nombre : Geronimo_benavidez    
 
@@ -364,7 +418,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
 
-  Cantidad de personas : 7
+  Cantidad de personas : 8
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

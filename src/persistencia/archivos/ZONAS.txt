@@ -2,25 +2,25 @@ C;CO01;Plaza_central
 C;CO02;Patio_de_comidas
 C;CO03;Zona_de_descanso
 C;CO04;Zona_de_compras
-S;ST01;Bar_de_jugos;CO01
-S;ST02;Puesto_de_postres;CO01
-S;ST03;Info_turistica;CO01
-S;ST04;Hamburguesas_art;CO02
-S;ST05;Comida_mexicana;CO02
-S;ST06;Parrilla_rapida;CO02
-S;ST07;Vegetariano;CO02
+S;ST01;Bar de jugos;CO01
+S;ST02;Puesto de postres;CO01
+S;ST03;Info turística;CO01
+S;ST04;Hamburguesas;CO02
+S;ST05;Comida mexicana;CO02
+S;ST06;Parrilla rápida;CO02
+S;ST07;Comida veggie;CO02
 S;ST08;Cafeteria;CO02
-S;ST09;Masajes_5min;CO03
-S;ST10;Sillas_masaje;CO03
-S;ST11;Fuente_agua;CO03
-S;ST12;Carritos_bebidas;CO03
-S;ST13;Merch_oficial;CO04
-S;ST14;Artesanias_loc;CO04
-S;ST15;Discos_vinilos;CO04
-E;ES01;Rock
-E;ES02;Hip-Hop
-E;ES03;Pop
-E;ES04;Folcklore
+S;ST09;Masajes 5min;CO03
+S;ST10;Sillas masaje;CO03
+S;ST11;Camisetas;CO03
+S;ST12;Carrito bebidas;CO03
+S;ST13;Merch oficial;CO04
+S;ST14;Artesanias;CO04
+S;ST15;Discos vinilos;CO04
+E;ES01;Escenario Rock
+E;ES02;Escenario Hip-Hop
+E;ES03;Escenario Pop
+E;ES04;Escenario Folcklore
 R;RE01;Camarines
 R;RE02;Depósito
 R;RE03;Organización

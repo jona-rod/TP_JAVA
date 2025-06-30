@@ -9,6 +9,7 @@ import logica.zonas.Zona;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
@@ -207,6 +208,8 @@ public class Gestion implements Serializable {
             }
             Acceso nuevo = new Acceso(conjuntoZonas.get(idZonaDestino), LocalDateTime.now(), 0, false);
             StringBuilder mensaje = new StringBuilder();
+            DateTimeFormatter formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            mensaje.append(LocalDateTime.now().format(formato).toString() + "\n");
             Exception excepcion = null;
             try {
                 if (conjuntoZonas.get(idZonaDestino).zonaLlena()) {         // verifica la capacidad máxima
